@@ -1,0 +1,1399 @@
+{
+  "sections": [
+    {
+      "id": "nomen",
+      "title": "1. İsimlər, Artikllar və Sifətin Hallanması",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Artiklların Tam Cədvəli (Müəyyən və Qeyri-müəyyən)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hal",
+              "Der (müəyyən)",
+              "Ein (qeyri-müəyyən)",
+              "Die (müəyyən)",
+              "Eine (qeyri-müəyyən)",
+              "Das (müəyyən)",
+              "Ein (qeyri-müəyyən)"
+            ],
+            [
+              "<strong>Nominativ</strong>",
+              "der Mann",
+              "ein Mann",
+              "die Frau",
+              "eine Frau",
+              "das Kind",
+              "ein Kind"
+            ],
+            [
+              "<strong>Akkusativ</strong>",
+              "den Mann",
+              "einen Mann",
+              "die Frau",
+              "eine Frau",
+              "das Kind",
+              "ein Kind"
+            ],
+            [
+              "<strong>Dativ</strong>",
+              "dem Mann",
+              "einem Mann",
+              "der Frau",
+              "einer Frau",
+              "dem Kind",
+              "einem Kind"
+            ],
+            [
+              "<strong>Genitiv</strong>",
+              "des Mannes",
+              "eines Mannes",
+              "der Frau",
+              "einer Frau",
+              "des Kindes",
+              "eines Kindes"
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Sifətin Müəyyən Artiklla Hallanması (Adjektivdeklination)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hal",
+              "Maskulin (der)",
+              "Feminin (die)",
+              "Neutrum (das)",
+              "Plural (die)"
+            ],
+            [
+              "<strong>Nominativ</strong>",
+              "der gut<b>e</b> Mann",
+              "die gut<b>e</b> Frau",
+              "das gut<b>e</b> Kind",
+              "die gut<b>en</b> Kinder"
+            ],
+            [
+              "<strong>Akkusativ</strong>",
+              "den gut<b>en</b> Mann",
+              "die gut<b>e</b> Frau",
+              "das gut<b>e</b> Kind",
+              "die gut<b>en</b> Kinder"
+            ],
+            [
+              "<strong>Dativ</strong>",
+              "dem gut<b>en</b> Mann",
+              "der gut<b>en</b> Frau",
+              "dem gut<b>en</b> Kind",
+              "den gut<b>en</b> Kindern"
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Sifətin Müqayisə Dərəcələri (Komparativ və Superlativ)"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "Adi sifətlər",
+              "items": [
+                "<span class=\"german\">alt (köhnə)</span> → <span class=\"german\">älter</span> → <span class=\"german\">am ältesten</span>",
+                "<span class=\"german\">jung (gənc)</span> → <span class=\"german\">jünger</span> → <span class=\"german\">am jüngsten</span>",
+                "<span class=\"german\">schnell (sürətli)</span> → <span class=\"german\">schneller</span> → <span class=\"german\">am schnellsten</span>"
+              ],
+              "p": [],
+              "class": "example-box"
+            },
+            {
+              "title": "Xüsusi hallar",
+              "items": [
+                "<span class=\"german\">gut (yaxşı)</span> → <span class=\"german\">besser</span> → <span class=\"german\">am besten</span>",
+                "<span class=\"german\">viel (çox)</span> → <span class=\"german\">mehr</span> → <span class=\"german\">am meisten</span>",
+                "<span class=\"german\">gern (xoşuma gəlir)</span> → <span class=\"german\">lieber</span> → <span class=\"german\">am liebsten</span>"
+              ],
+              "p": [],
+              "class": "example-box warning"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "<strong>Qeyd:</strong> Müqayisə dərəcələrində \"als\" (kimdən/dan) sözü ilə müqayisə edilir: <span class=\"german\">Ich bin älter als du.</span> (Mən səndən yaşlıyam)"
+        }
+      ]
+    },
+    {
+      "id": "evizlik",
+      "title": "2. Əvəzliklərin Tam Hallanması",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Şəxs Əvəzlikləri (Personalpronomen)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hal",
+              "ich (mən)",
+              "du (sən)",
+              "er (o,k)",
+              "sie (o,q)",
+              "wir (biz)",
+              "ihr (siz)",
+              "sie (onlar)"
+            ],
+            [
+              "<strong>Nominativ</strong>",
+              "ich",
+              "du",
+              "er",
+              "sie",
+              "wir",
+              "ihr",
+              "sie"
+            ],
+            [
+              "<strong>Akkusativ</strong>",
+              "mich",
+              "dich",
+              "ihn",
+              "sie",
+              "uns",
+              "euch",
+              "sie"
+            ],
+            [
+              "<strong>Dativ</strong>",
+              "mir",
+              "dir",
+              "ihm",
+              "ihr",
+              "uns",
+              "euch",
+              "ihnen"
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Yiyəlik Əvəzlikləri (Possessivpronomen) ƏSAS"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "Maskulin (der)",
+              "items": [],
+              "p": [
+                "<strong>mein</strong> (mənim) - <strong>dein</strong> (sənin) - <strong>sein</strong> (onun k/q) - <strong>ihr</strong> (onun q)",
+                "<em>Nümunə:</em> Das ist <span class=\"highlight\">mein</span> Vater. (Bu mənim atamdır)"
+              ],
+              "class": "verb-conjugation"
+            },
+            {
+              "title": "Feminin (die)",
+              "items": [],
+              "p": [
+                "<strong>meine</strong> - <strong>deine</strong> - <strong>seine</strong> - <strong>ihre</strong>",
+                "<em>Nümunə:</em> Ich liebe <span class=\"highlight\">meine</span> Mutter. (Mən anamı sevirəm)"
+              ],
+              "class": "verb-conjugation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verben",
+      "title": "3. Fellər, Prefikslər və Qayıdış Felləri",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Düzgün Olmayan Fellər (Unregelmäßige Verben) ƏSAS"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "sein (olmaq)",
+              "items": [],
+              "p": [
+                "<strong>Präsens:</strong> ich bin, du bist, er ist, wir sind, ihr seid, sie sind",
+                "<strong>Präteritum:</strong> ich war, du warst, er war, wir waren, ihr wart, sie waren"
+              ],
+              "class": "example-box warning"
+            },
+            {
+              "title": "haben (sahib olmaq)",
+              "items": [],
+              "p": [
+                "<strong>Präsens:</strong> ich habe, du hast, er hat, wir haben, ihr habt, sie haben",
+                "<strong>Präteritum:</strong> ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten"
+              ],
+              "class": "example-box warning"
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Ayrılan Prefikslər (Trennbare Präfixe) Diqqət"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">aufstehen (durmaq):</span> Ich <span class=\"highlight\">stehe</span> um 7 Uhr <span class=\"highlight\">auf</span>. (Saat 7-də dururam)",
+            "<span class=\"german\">anrufen (zəng etmək):</span> Er <span class=\"highlight\">ruft</span> mich morgen <span class=\"highlight\">an</span>. (O mənə sabah zəng edəcək)"
+          ],
+          "class": "example-box"
+        },
+        {
+          "type": "h3",
+          "text": "Qayıdış Felləri (Reflexive Verben) Vacib"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">sich freuen (sevinmək):</span> Ich freue <span class=\"highlight\">mich</span> auf deinen Besuch. (Sənin ziyarətinə sevinirəm)",
+            "<span class=\"german\">sich waschen (yuyunmaq):</span> Er wäscht <span class=\"highlight\">sich</span> jeden Morgen. (O hər səhər yuyunur)"
+          ],
+          "class": "example-box"
+        }
+      ]
+    },
+    {
+      "id": "modal",
+      "title": "4. Modal Fellər və İstifadə Qaydaları",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Modal Fellərin Tam Cədvəli ƏSAS"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Fel",
+              "Mənası",
+              "Präsens (ich/er)",
+              "Präteritum",
+              "Nümunə"
+            ],
+            [
+              "<strong>können</strong>",
+              "bacarmaq (bacarıq)",
+              "kann",
+              "konnte",
+              "Ich kann schwimmen. (Üzə bilirəm)"
+            ],
+            [
+              "<strong>müssen</strong>",
+              "məcbur olmaq (lazım olmaq)",
+              "muss",
+              "musste",
+              "Ich muss arbeiten. (İşləməliyəm)"
+            ],
+            [
+              "<strong>dürfen</strong>",
+              "icazəli olmaq (icazə vermək)",
+              "darf",
+              "durfte",
+              "Darf ich hereinkommen? (Daxil ola bilərəmmi?)"
+            ],
+            [
+              "<strong>sollen</strong>",
+              "lazım olmaq (tövsiyə etmək)",
+              "soll",
+              "sollte",
+              "Du sollst nicht lügen. (Yalan danışmamalısan)"
+            ],
+            [
+              "<strong>wollen</strong>",
+              "istəmək (qəti qərarlı)",
+              "will",
+              "wollte",
+              "Ich will Arzt werden. (Həkim olmaq istəyirəm)"
+            ],
+            [
+              "<strong>mögen</strong>",
+              "bəyənmək (xoşlamaq)",
+              "mag",
+              "mochte",
+              "Ich mag Pizza. (Mənə pizza xoş gəlir)"
+            ],
+            [
+              "<strong>möchten</strong>",
+              "istəmək (nəzakətli)",
+              "möchte",
+              "möchte",
+              "Ich möchte eine Tasse Kaffee. (Bir fincan qəhvə istəyirəm)"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "<p><strong>Qayda:</strong> Modal feldən sonra gələn fel cümlənin sonunda və infinitiv formada olur.</p>\n                <p><em>Nümunə:</em> Ich <span class=\"highlight\">will</span> morgen ins Kino <span class=\"highlight\">gehen</span>. (Sabah kinoya getmək istəyirəm)</p>"
+        }
+      ]
+    },
+    {
+      "id": "tempora",
+      "title": "5. Keçmiş Zamanlar (Perfekt, Präteritum, Plusquamperfekt)",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Perfekt (İndiki Bitmiş) - Ən Çox İstifadə Olunan ƏSAS"
+        },
+        {
+          "type": "p",
+          "text": "Danışıq dilində ən çox istifadə olunur. \"haben\" və ya \"sein\" köməkçi feli + Partizip II forması."
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "haben ilə - Çoxu fellər",
+              "items": [],
+              "p": [
+                "<strong>ich habe gespielt</strong> (oynadım)",
+                "<strong>du hast gearbeitet</strong> (işlədin)",
+                "<strong>er hat gelernt</strong> (öyrəndi)"
+              ],
+              "class": "verb-conjugation"
+            },
+            {
+              "title": "sein ilə - Hərəkət bildirən fellər",
+              "items": [],
+              "p": [
+                "<strong>ich bin gegangen</strong> (getdim)",
+                "<strong>du bist gekommen</strong> (gəldin)",
+                "<strong>er ist gefahren</strong> (geddi)"
+              ],
+              "class": "verb-conjugation"
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Plusquamperfekt (Keçmiş Bitmiş)"
+        },
+        {
+          "type": "p",
+          "text": "Keçmişdə digər hərəkətdən əvvəl baş vermiş hərəkəti bildirir."
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">Nachdem ich gegessen hatte, ging ich spazieren.</span> (Yedikdən sonra gəzməyə getdim)"
+          ],
+          "class": "example-box warning"
+        }
+      ]
+    },
+    {
+      "id": "passiv",
+      "title": "6. Məchul Növ (Passiv) və Gələcək Zaman",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Məchul Növün Tam Hallanması"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Zaman",
+              "Formul",
+              "Nümunə",
+              "Tərcümə"
+            ],
+            [
+              "Präsens Passiv",
+              "wird + Partizip II",
+              "Das Auto <span class=\"highlight\">wird repariert</span>.",
+              "Maşın təmir olunur."
+            ],
+            [
+              "Präteritum Passiv",
+              "wurde + Partizip II",
+              "Das Auto <span class=\"highlight\">wurde repariert</span>.",
+              "Maşın təmir olundu."
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Gələcək Zaman (Futur I) Sadə"
+        },
+        {
+          "type": "p",
+          "text": "Gələcəkdə baş verəcək hərəkəti və ya ehtimalı bildirir."
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">Ich werde morgen arbeiten.</span> (Sabah işləyəcəyəm)",
+            "<span class=\"german\">Er wird nächstes Jahr nach Deutschland fahren.</span> (O gələn il Almaniyaya gedəcək)"
+          ],
+          "class": "example-box success"
+        }
+      ]
+    },
+    {
+      "id": "praep",
+      "title": "7. Sözönüləri (Präpositionen) və Birləşmələri",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Sözönlərini Hallara Görə Qruplaşdırma ƏSAS"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "Akkusativ tələb edənlər",
+              "items": [
+                "<span class=\"german\">für</span> (üçün) - Das Geschenk ist <span class=\"highlight\">für dich</span>.",
+                "<span class=\"german\">durch</span> (vasitəsilə) - Wir fahren <span class=\"highlight\">durch den Tunnel</span>.",
+                "<span class=\"german\">ohne</span> (olmadan) - Ich trinke Kaffee <span class=\"highlight\">ohne Zucker</span>."
+              ],
+              "p": [],
+              "class": "example-box"
+            },
+            {
+              "title": "Dativ tələb edənlər",
+              "items": [
+                "<span class=\"german\">mit</span> (ilə) - Ich fahre <span class=\"highlight\">mit dem Bus</span>.",
+                "<span class=\"german\">nach</span> (sonra, yerə) - Wir fahren <span class=\"highlight\">nach Berlin</span>.",
+                "<span class=\"german\">von</span> (-dan) - Das ist ein Geschenk <span class=\"highlight\">von meiner Mutter</span>."
+              ],
+              "p": [],
+              "class": "example-box"
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Vacib Qısaltmalar"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">am</span> = an dem",
+            "<span class=\"german\">im</span> = in dem",
+            "<span class=\"german\">zum</span> = zu dem",
+            "<span class=\"german\">zur</span> = zu der"
+          ],
+          "class": "example-box success"
+        }
+      ]
+    },
+    {
+      "id": "satz",
+      "title": "8. Bağlayıcılar (Konjunktionen) və Cümlə Quruluşu",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Bağlayıcıların Növünə Görə Qruplaşdırılması"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Bağlayıcı",
+              "Tərcümə",
+              "Fel Yeri",
+              "Nümunə"
+            ],
+            [
+              "<strong>und, aber, oder, denn, sondern</strong>",
+              "və, amma, və ya, çünki, əksinə",
+              "Düz (Fel 2-ci yerdə)",
+              "Ich lese ein Buch, <span style=\"background-color: #ffff00; font-weight: bold;\">aber</span> er sieht fern."
+            ],
+            [
+              "<strong>weil, da, dass, ob, wenn, falls, als, während, bevor, nachdem, bis, seit, damit, obwohl</strong>",
+              "çünki, ki, olub-olmadığı, əgər, -anda, ikən, əvvəl, sonra, -dək, -dan bəri, üçün, baxmayaraq",
+              "<span style=\"background-color: #ffff00; font-weight: bold;\">Tərs (Fel ən sonda)</span>",
+              "Ich bleibe zu Hause, <span style=\"background-color: #ffff00; font-weight: bold;\">weil</span> ich krank <span style=\"background-color: #ffff00; font-weight: bold;\">bin</span>."
+            ],
+            [
+              "<strong>deshalb, deswegen, darum, trotzdem, dennoch, dann, danach, sonst</strong>",
+              "ona görə, buna baxmayaraq, sonra, əks halda",
+              "<span style=\"background-color: #ffff00; font-weight: bold;\">İnversiya (Bağlayıcı + Fel)</span>",
+              "Ich bin krank. <span style=\"background-color: #ffff00; font-weight: bold;\">Deshalb bleibe</span> ich zu Hause."
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "\"dass\" Bağlayıcısı ilə Yan Cümlələr ƏSAS"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">Ich weiß, dass du Recht hast.</span> (Bilirəm ki, sən haqlısan)",
+            "<span class=\"german\">Es tut mir leid, dass ich zu spät komme.</span> (Gec gəldiyim üçün üzr istəyirəm)"
+          ],
+          "class": "example-box"
+        }
+      ]
+    },
+    {
+      "id": "konjunktiv",
+      "title": "9. Subyunktiv (Konjunktiv) - Şərt və Arzu Bildirən",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Konjunktiv II - Real Olmayan Şərtlər və Arzular ƏSAS"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "wäre (olardım) - sein felinin Konjunktiv II",
+              "items": [],
+              "p": [
+                "<span class=\"german\">Ich wäre gerne reich.</span> (Varlı olmağı arzulayırdım)",
+                "<span class=\"german\">Wenn ich du wäre, würde ich das nicht tun.</span> (Əgər sənin yerində olsaydım, bunu etməzdim)"
+              ],
+              "class": "example-box warning"
+            },
+            {
+              "title": "hätte (var idim) - haben felinin Konjunktiv II",
+              "items": [],
+              "p": [
+                "<span class=\"german\">Ich hätte gerne mehr Zeit.</span> (Daha çox vaxtımın olmasını arzulayırdım)",
+                "<span class=\"german\">Wenn ich Geld hätte, würde ich reisen.</span> (Əgər pulum olsaydı, səyahət edərdim)"
+              ],
+              "class": "example-box warning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genitiv",
+      "title": "11. Genitiv (Yiyəlik Halı) Rəsmi",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Genitiv Halının Quruluşu"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Artikl",
+              "Kişi (der)",
+              "Qadın (die)",
+              "Orta (das)",
+              "Cəm (die)"
+            ],
+            [
+              "Müəyyən",
+              "des Mann<b>es</b>",
+              "der Frau",
+              "des Kind<b>es</b>",
+              "der Kinder"
+            ],
+            [
+              "Qeyri-müəyyən",
+              "eines Mann<b>es</b>",
+              "einer Frau",
+              "eines Kind<b>es</b>",
+              "---"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "<strong>Qayda:</strong> Kişi və orta cinsli tək isimlərə -es və ya -s şəkilçisi gəlir.\n                <br>Çox hecalı isimlər: des Mann<b>es</b>, qısa isimlər: des Auto<b>s</b>"
+        },
+        {
+          "type": "h3",
+          "text": "Genitiv ilə Sözönüləri"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">während (zamanı)</span> - während <span class=\"highlight\">des Unterrichts</span> (dərs zamanı)",
+            "<span class=\"german\">wegen (görə)</span> - wegen <span class=\"highlight\">des Regens</span> (yağışa görə)",
+            "<span class=\"german\">statt (əvəzinə)</span> - statt <span class=\"highlight\">eines Autos</span> (maşın əvəzinə)",
+            "<span class=\"german\">trotz (baxmayaraq)</span> - trotz <span class=\"highlight\">der Kälte</span> (soyuğa baxmayaraq)"
+          ],
+          "class": "example-box"
+        }
+      ]
+    },
+    {
+      "id": "ndeklination",
+      "title": "12. n-Deklination (Zəif İsimlər) Xüsusi",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Qayda: Tək hallarda sona -n/-ən gəlir"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hal",
+              "der Junge (oğlan)",
+              "der Name (ad)",
+              "der Herr (cənab)",
+              "der Mensch (insan)"
+            ],
+            [
+              "Nominativ",
+              "der Junge",
+              "der Name",
+              "der Herr",
+              "der Mensch"
+            ],
+            [
+              "Akkusativ",
+              "den Junge<b>n</b>",
+              "den Name<b>n</b>",
+              "den Herr<b>n</b>",
+              "den Mensch<b>en</b>"
+            ],
+            [
+              "Dativ",
+              "dem Junge<b>n</b>",
+              "dem Name<b>n</b>",
+              "dem Herr<b>n</b>",
+              "dem Mensch<b>en</b>"
+            ],
+            [
+              "Genitiv",
+              "des Junge<b>n</b>",
+              "des Name<b>ns</b>",
+              "des Herr<b>n</b>",
+              "des Mensch<b>en</b>"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "<strong>Hansı isimlər?:</strong> Canlı varlıqlar (der Junge, der Student), -e ilə bitən isimlər (der Name),\n                bəzi xüsusi isimlər (der Herr, der Mensch, der Prinz)."
+        },
+        {
+          "type": "h3",
+          "text": "Əsas n-Deklination İsimləri"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "-e ilə bitənlər",
+              "items": [],
+              "p": [
+                "der Junge (oğlan)<br>der Name (ad)<br>der Kunde (müştəri)<br>der Kollege (həmkar)"
+              ],
+              "class": "example-box warning"
+            },
+            {
+              "title": "Digər zəif isimlər",
+              "items": [],
+              "p": [
+                "der Herr (cənab)<br>der Mensch (insan)<br>der Prinz (şahzadə)<br>der Nachbar (qonşu)"
+              ],
+              "class": "example-box warning"
+            },
+            {
+              "title": "Milliyyətlər",
+              "items": [],
+              "p": [
+                "der Türke (türk)<br>der Franzose (fransız)<br>der Russe (rus)<br>der Chinese (çinli)"
+              ],
+              "class": "example-box warning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronominaladverb",
+      "title": "13. Pronominaladverbien (da- / wo- Birləşmələri) Vacib",
+      "content": [
+        {
+          "type": "h3",
+          "text": "da- / wo- + Sözönü = Yeni söz"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Sözönü",
+              "da- (bununla)",
+              "wo- (nə ilə)",
+              "Məna"
+            ],
+            [
+              "für",
+              "<span class=\"highlight\">dafür</span>",
+              "<span class=\"highlight\">wofür</span>",
+              "bunun üçün / nə üçün"
+            ],
+            [
+              "mit",
+              "<span class=\"highlight\">damit</span>",
+              "<span class=\"highlight\">womit</span>",
+              "bununla / nə ilə"
+            ],
+            [
+              "über",
+              "<span class=\"highlight\">darüber</span>",
+              "<span class=\"highlight\">worüber</span>",
+              "bu barədə / nə barədə"
+            ],
+            [
+              "auf",
+              "<span class=\"highlight\">darauf</span>",
+              "<span class=\"highlight\">worauf</span>",
+              "buna / nəyə"
+            ],
+            [
+              "an",
+              "<span class=\"highlight\">daran</span>",
+              "<span class=\"highlight\">woran</span>",
+              "bunda / nədə"
+            ],
+            [
+              "von",
+              "<span class=\"highlight\">davon</span>",
+              "<span class=\"highlight\">wovon</span>",
+              "bundan / nədən"
+            ],
+            [
+              "zu",
+              "<span class=\"highlight\">dazu</span>",
+              "<span class=\"highlight\">wozu</span>",
+              "buna / nəyə"
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "İstifadə Nümunələri"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "da- (bununla) - Cavab",
+              "items": [
+                "<span class=\"german\">Ich denke <span class=\"highlight\">daran</span>.</span> (Mən bunda düşünürəm)",
+                "<span class=\"german\">Ich freue mich <span class=\"highlight\">darauf</span>.</span> (Mən buna sevinirəm)",
+                "<span class=\"german\">Er besteht <span class=\"highlight\">darauf</span>.</span> (O bunda israr edir)",
+                "<span class=\"german\">Wir warten <span class=\"highlight\">darauf</span>.</span> (Biz bunu gözləyirik)"
+              ],
+              "p": [],
+              "class": "example-box"
+            },
+            {
+              "title": "wo- (nə ilə) - Sual",
+              "items": [
+                "<span class=\"german\"><span class=\"highlight\">Woran</span> denkst du?</span> (Nə düşünürsən?)",
+                "<span class=\"german\"><span class=\"highlight\">Worüber</span> sprichst du?</span> (Nə danışırsan?)",
+                "<span class=\"german\"><span class=\"highlight\">Wofür</span> interessierst du dich?</span> (Nəyə maraqlanırsan?)",
+                "<span class=\"german\"><span class=\"highlight\">Womit</span> kann ich dir helfen?</span> (Nə ilə sənə kömək edə bilərəm?)"
+              ],
+              "p": [],
+              "class": "example-box"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "<strong>Xüsusi hallar:</strong> in, an, auf, über, unter, vor, zwischen sözönləri ilə işlədikdə \"da-\" əvəzinə \"dar-\" olur.\n                <br><em>Nümunə:</em> in → <span class=\"highlight\">darin</span>, an → <span class=\"highlight\">daran</span>"
+        }
+      ]
+    },
+    {
+      "id": "infinitiv",
+      "title": "14. Infinitiv mit \"zu\" (zu + Məsdər) Məqsəd",
+      "content": [
+        {
+          "type": "h3",
+          "text": "zu + Məsdər Quruluşu"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">Ich versuche, Deutsch <span class=\"highlight\">zu lernen</span>.</span> (Alman dilini öyrənməyə çalışıram)",
+            "<span class=\"german\">Er beginnt <span class=\"highlight\">zu arbeiten</span>.</span> (O işləməyə başlayır)",
+            "<span class=\"german\">Sie hat vor, nach Deutschland <span class=\"highlight\">zu fahren</span>.</span> (Onun Almaniyaya getmək planı var)",
+            "<span class=\"german\">Es ist wichtig, pünktlich <span class=\"highlight\">zu sein</span>.</span> (Vaxtında olmaq vacibdir)"
+          ],
+          "class": "example-box success"
+        },
+        {
+          "type": "h3",
+          "text": "\"zu\" olmadan istifadə edən fellər"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "Modal fellər",
+              "items": [],
+              "p": [
+                "Ich <span class=\"highlight\">kann</span> schwimmen. (deyil: zu schwimmen)",
+                "Du <span class=\"highlight\">musst</span> lernen. (deyil: zu lernen)"
+              ],
+              "class": "example-box warning"
+            },
+            {
+              "title": "Bəzi xüsusi fellər",
+              "items": [],
+              "p": [
+                "Ich <span class=\"highlight\">gehe</span> einkaufen. (alış-verişə gedirəm)",
+                "Er <span class=\"highlight\">lernt</span> kochen. (yemək bişirməyi öyrənir)"
+              ],
+              "class": "example-box warning"
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "zu + Məsdər ilə İşlənən Əsas Fellər"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">anfangen</span> (başlamaq) - Ich fange an <span class=\"highlight\">zu lesen</span>.",
+            "<span class=\"german\">aufhören</span> (dayandırmaq) - Hör auf <span class=\"highlight\">zu reden</span>!",
+            "<span class=\"german\">versuchen</span> (cəhd etmək) - Ich versuche <span class=\"highlight\">zu schlafen</span>.",
+            "<span class=\"german\">vergessen</span> (unutmaq) - Ich habe vergessen <span class=\"highlight\">anzurufen</span>.",
+            "<span class=\"german\">planen</span> (planlamaq) - Wir planen <span class=\"highlight\">zu reisen</span>.",
+            "<span class=\"german\">hoffen</span> (ümid etmək) - Ich hoffe <span class=\"highlight\">zu gewinnen</span>."
+          ],
+          "class": "example-box"
+        }
+      ]
+    },
+    {
+      "id": "partizip",
+      "title": "15. Partizip I & II Sifət kimi Peşəkar",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Partizip I (Präsens Partizip) - Aktiv məna"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">das <span class=\"highlight\">laufende</span> Kind</span> (qaçan uşaq)",
+            "<span class=\"german\">das <span class=\"highlight\">kochende</span> Wasser</span> (qaynayan su)",
+            "<span class=\"german\">die <span class=\"highlight\">lachende</span> Frau</span> (gülən qadın)",
+            "<span class=\"german\">der <span class=\"highlight\">arbeitende</span> Mann</span> (işləyən kişi)"
+          ],
+          "class": "example-box"
+        },
+        {
+          "type": "h3",
+          "text": "Partizip II (Perfekt Partizip) - Passiv/Keçmiş məna"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">das <span class=\"highlight\">gekaufte</span> Auto</span> (alınmış maşın)",
+            "<span class=\"german\">die <span class=\"highlight\">geschriebene</span> E-Mail</span> (yazılmış e-poçt)",
+            "<span class=\"german\">der <span class=\"highlight\">geöffnete</span> Brief</span> (açılmış məktub)",
+            "<span class=\"german\">das <span class=\"highlight\">gebrochene</span> Fenster</span> (qırılmış pəncərə)"
+          ],
+          "class": "example-box"
+        },
+        {
+          "type": "h3",
+          "text": "Hallanma Cədvəli"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hal",
+              "Partizip I (laufend)",
+              "Partizip II (gekauft)"
+            ],
+            [
+              "Nominativ",
+              "der laufende Mann",
+              "der gekaufte Wagen"
+            ],
+            [
+              "Akkusativ",
+              "den laufenden Mann",
+              "den gekauften Wagen"
+            ],
+            [
+              "Dativ",
+              "dem laufenden Mann",
+              "dem gekauften Wagen"
+            ],
+            [
+              "Genitiv",
+              "des laufenden Mannes",
+              "des gekauften Wagens"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relativ",
+      "title": "16. Relativsätze (Nisbi Cümlələr) ƏSAS",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Relativpronomen (Nisbi Əvəzliklər)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "İsim",
+              "der/die/das",
+              "welcher/welche/welches",
+              "was (şeylər üçün)",
+              "wo (yerlər üçün)"
+            ],
+            [
+              "Kişi",
+              "<span class=\"highlight\">der</span>",
+              "welcher",
+              "---",
+              "---"
+            ],
+            [
+              "Qadın",
+              "<span class=\"highlight\">die</span>",
+              "welche",
+              "---",
+              "---"
+            ],
+            [
+              "Orta",
+              "<span class=\"highlight\">das</span>",
+              "welches",
+              "<span class=\"highlight\">was</span>",
+              "<span class=\"highlight\">wo</span>"
+            ],
+            [
+              "Cəm",
+              "<span class=\"highlight\">die</span>",
+              "welche",
+              "<span class=\"highlight\">was</span>",
+              "---"
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Nümunə Cümlələr"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "der/die/das ilə",
+              "items": [
+                "<span class=\"german\">Der Mann, <span class=\"highlight\">der</span> dort steht, ist mein Lehrer.</span> (Orada duran kişi mənim müəllimimdir)",
+                "<span class=\"german\">Die Frau, <span class=\"highlight\">die</span> ich gestern traf, ist Ärztin.</span> (Dünən görüşdüyüm qadın həkimdir)",
+                "<span class=\"german\">Das Buch, <span class=\"highlight\">das</span> ich lese, ist sehr spannend.</span> (Oxuduğum kitab çox maraqlıdır)",
+                "<span class=\"german\">Die Kinder, <span class=\"highlight\">die</span> im Garten spielen, sind laut.</span> (Bağçada oynayan uşaqlar səs-küylüdür)"
+              ],
+              "p": [],
+              "class": "example-box"
+            },
+            {
+              "title": "was/wo ilə",
+              "items": [
+                "<span class=\"german\">Alles, <span class=\"highlight\">was</span> du sagst, ist richtig.</span> (Dediyin hər şey doğrudur)",
+                "<span class=\"german\">Das ist das Beste, <span class=\"highlight\">was</span> mir passiert ist.</span> (Bu mənim başıma gələn ən yaxşı şeydir)",
+                "<span class=\"german\">Berlin, <span class=\"highlight\">wo</span> ich wohne, ist eine große Stadt.</span> (Yaşadığım Berlin böyük şəhərdir)",
+                "<span class=\"german\">Das Haus, <span class=\"highlight\">in dem</span> ich wohne, ist alt.</span> (Yaşadığım ev köhnədir)"
+              ],
+              "p": [],
+              "class": "example-box"
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Relativsatz Quruluşu"
+        },
+        {
+          "type": "rule",
+          "text": "<p><strong>Qayda 1:</strong> Relativsatz əsas cümlədən vergüllə ayrılır.</p>\n                <p><strong>Qayda 2:</strong> Relativpronomen cins və sayca isimlə uyğun, halca isə yan cümlədəki rolu ilə uyğun olur.</p>\n                <p><strong>Qayda 3:</strong> Fel yan cümlənin sonunda olur (tərs qayda).</p>\n                <p><em>Nümunə:</em> Der Mann <span class=\"highlight\">, der</span> das Auto fährt <span class=\"highlight\">,</span> ist mein Vater.</p>"
+        }
+      ]
+    },
+    {
+      "id": "partizip-adjektiv",
+      "title": "18. Partizip I & II Sifət kimi Daha Zəngin Dil",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Partizip I (Aktiv Məna) - \"Hazırda edən\""
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">kochen → <span class=\"highlight\">kochend</span></span> - das <span class=\"highlight\">kochende</span> Wasser (qaynayan su)",
+            "<span class=\"german\">lachen → <span class=\"highlight\">lachend</span></span> - die <span class=\"highlight\">lachende</span> Frau (gülən qadın)",
+            "<span class=\"german\">laufen → <span class=\"highlight\">laufend</span></span> - der <span class=\"highlight\">laufende</span> Mann (qaçan kişi)",
+            "<span class=\"german\">schlafen → <span class=\"highlight\">schlafend</span></span> - das <span class=\"highlight\">schlafende</span> Kind (yatayan uşaq)"
+          ],
+          "class": "example-box"
+        },
+        {
+          "type": "h3",
+          "text": "Partizip II (Passiv/Keçmiş Məna) - \"Edilmiş\""
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">kaufen → <span class=\"highlight\">gekauft</span></span> - das <span class=\"highlight\">gekaufte</span> Auto (alınmış maşın)",
+            "<span class=\"german\">schreiben → <span class=\"highlight\">geschrieben</span></span> - der <span class=\"highlight\">geschriebene</span> Brief (yazılmış məktub)",
+            "<span class=\"german\">öffnen → <span class=\"highlight\">geöffnet</span></span> - die <span class=\"highlight\">geöffnete</span> Tür (açılmış qapı)",
+            "<span class=\"german\">brechen → <span class=\"highlight\">gebrochen</span></span> - das <span class=\"highlight\">gebrochene</span> Fenster (qırılmış pəncərə)"
+          ],
+          "class": "example-box"
+        },
+        {
+          "type": "h3",
+          "text": "Hallanma Nümunələri"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hal",
+              "Partizip I (laufend)",
+              "Partizip II (gekauft)"
+            ],
+            [
+              "Nominativ",
+              "der <span class=\"highlight\">laufende</span> Mann",
+              "der <span class=\"highlight\">gekaufte</span> Wagen"
+            ],
+            [
+              "Akkusativ",
+              "den <span class=\"highlight\">laufenden</span> Mann",
+              "den <span class=\"highlight\">gekauften</span> Wagen"
+            ],
+            [
+              "Dativ",
+              "dem <span class=\"highlight\">laufenden</span> Mann",
+              "dem <span class=\"highlight\">gekauften</span> Wagen"
+            ],
+            [
+              "Genitiv",
+              "des <span class=\"highlight\">laufenden</span> Mannes",
+              "des <span class=\"highlight\">gekauften</span> Wagens"
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Xüsusi Hallar"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "Qeyri-müntəzəm Partizip II",
+              "items": [
+                "sehen → gesehen - das gesehene Bild",
+                "trinken → getrunken - das getrunkene Wasser",
+                "lesen → gelesen - das gelesene Buch",
+                "nehmen → genommen - das genommene Geld"
+              ],
+              "p": [],
+              "class": "example-box warning"
+            },
+            {
+              "title": "ge olmayan Partizip II",
+              "items": [
+                "studieren → studiert - der studierte Mann",
+                "fotografieren → fotografiert - das fotografierte Haus",
+                "diskutieren → diskutiert - die diskutierte Frage",
+                "organisieren → organisiert - die organisierte Reise"
+              ],
+              "p": [],
+              "class": "example-box warning"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "<strong>Qayda:</strong> Partizip I və II sifət kimi işləndikdə normal sifət hallanması qaydalarına uyğun hallanır.\n                (Məsələn: der laufende Mann, die laufenden Männer)"
+        }
+      ]
+    },
+    {
+      "id": "verben-praepositionen",
+      "title": "19. Verben mit Präpositionen (Feil + Sözönü) Əzbərlənməli",
+      "content": [
+        {
+          "type": "h3",
+          "text": "Ən Çox İstifadə Olunan Feil + Sözönü Birləşmələri"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "mit + Dativ",
+              "items": [
+                "<span class=\"german\">beginnen <span class=\"highlight\">mit</span></span> (başlamaq) - Ich beginne <span class=\"highlight\">mit</span> der Arbeit.",
+                "<span class=\"german\">rechnen <span class=\"highlight\">mit</span></span> (gözləmək) - Ich rechne <span class=\"highlight\">mit</span> deiner Hilfe.",
+                "<span class=\"german\">sprechen <span class=\"highlight\">mit</span></span> (danışmaq) - Ich spreche <span class=\"highlight\">mit</span> dem Lehrer.",
+                "<span class=\"german\">vergleichen <span class=\"highlight\">mit</span></span> (müqayisə etmək) - Ich vergleiche es <span class=\"highlight\">mit</span> dem Original."
+              ],
+              "p": [],
+              "class": "example-box"
+            },
+            {
+              "title": "über + Akkusativ",
+              "items": [
+                "<span class=\"german\">sprechen <span class=\"highlight\">über</span></span> (danışmaq) - Wir sprechen <span class=\"highlight\">über</span> Politik.",
+                "<span class=\"german\">sich freuen <span class=\"highlight\">über</span></span> (sevinmək) - Ich freue mich <span class=\"highlight\">über</span> das Geschenk.",
+                "<span class=\"german\">nachdenken <span class=\"highlight\">über</span></span> (düşünmək) - Ich denke <span class=\"highlight\">über</span> das Problem nach.",
+                "<span class=\"german\">berichten <span class=\"highlight\">über</span></span> (hesabat vermək) - Er berichtet <span class=\"highlight\">über</span> die Reise."
+              ],
+              "p": [],
+              "class": "example-box"
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "auf + Akkusativ",
+              "items": [
+                "<span class=\"german\">warten <span class=\"highlight\">auf</span></span> (gözləmək) - Ich warte <span class=\"highlight\">auf</span> den Bus.",
+                "<span class=\"german\">sich freuen <span class=\"highlight\">auf</span></span> (gələcəyə sevinmək) - Ich freue mich <span class=\"highlight\">auf</span> den Urlaub.",
+                "<span class=\"german\">antworten <span class=\"highlight\">auf</span></span> (cavab vermək) - Er antwortet <span class=\"highlight\">auf</span> meine Frage.",
+                "<span class=\"german\">achten <span class=\"highlight\">auf</span></span> (diqqət etmək) - Achte <span class=\"highlight\">auf</span> die Kinder!"
+              ],
+              "p": [],
+              "class": "example-box"
+            },
+            {
+              "title": "für + Akkusativ",
+              "items": [
+                "<span class=\"german\">danken <span class=\"highlight\">für</span></span> (təşəkkür etmək) - Ich danke dir <span class=\"highlight\">für</span> deine Hilfe.",
+                "<span class=\"german\">sich interessieren <span class=\"highlight\">für</span></span> (maraqlanmaq) - Ich interessiere mich <span class=\"highlight\">für</span> Musik.",
+                "<span class=\"german\">sorgen <span class=\"highlight\">für</span></span> (qayğı göstərmək) - Sie sorgt <span class=\"highlight\">für</span> die Kinder.",
+                "<span class=\"german\">halten <span class=\"highlight\">für</span></span> (sanmaq) - Ich halte ihn <span class=\"highlight\">für</span> ehrlich."
+              ],
+              "p": [],
+              "class": "example-box"
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Xüsusi Birləşmələr Cədvəli"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Feil",
+              "Sözönü",
+              "Hal",
+              "Mənası",
+              "Nümunə"
+            ],
+            [
+              "<strong>achten</strong>",
+              "auf",
+              "Akk",
+              "diqqət etmək",
+              "Achte auf die Straße!"
+            ],
+            [
+              "<strong>ankommen</strong>",
+              "auf",
+              "Akk",
+              "asılı olmaq",
+              "Es kommt auf dich an."
+            ],
+            [
+              "<strong>bitten</strong>",
+              "um",
+              "Akk",
+              "xahiş etmək",
+              "Ich bitte um Verzeihung."
+            ],
+            [
+              "<strong>denken</strong>",
+              "an",
+              "Akk",
+              "xatırlamaq",
+              "Ich denke an dich."
+            ],
+            [
+              "<strong>erkennen</strong>",
+              "an",
+              "Dat",
+              "tanımaq",
+              "Ich erkenne ihn an der Stimme."
+            ],
+            [
+              "<strong>glauben</strong>",
+              "an",
+              "Akk",
+              "inanmaq",
+              "Ich glaube an Gott."
+            ],
+            [
+              "<strong>halten</strong>",
+              "von",
+              "Dat",
+              "fikir bildirmək",
+              "Was hältst du von ihm?"
+            ],
+            [
+              "<strong>hoffen</strong>",
+              "auf",
+              "Akk",
+              "ümid etmək",
+              "Ich hoffe auf gutes Wetter."
+            ],
+            [
+              "<strong>sich kümmern</strong>",
+              "um",
+              "Akk",
+              "qayğı göstərmək",
+              "Sie kümmert sich um die Patienten."
+            ],
+            [
+              "<strong>lachen</strong>",
+              "über",
+              "Akk",
+              "gülmək",
+              "Wir lachen über den Witz."
+            ],
+            [
+              "<strong>sich sehnen</strong>",
+              "nach",
+              "Dat",
+              "həsrət çəkmək",
+              "Ich sehne mich nach dir."
+            ],
+            [
+              "<strong>sprechen</strong>",
+              "mit/von",
+              "Dat",
+              "danışmaq",
+              "Sprich mit dem Chef."
+            ],
+            [
+              "<strong>träumen</strong>",
+              "von",
+              "Dat",
+              "xəyal etmək",
+              "Ich träume von einer Reise."
+            ],
+            [
+              "<strong>sich verlieben</strong>",
+              "in",
+              "Akk",
+              "aşiq olmaq",
+              "Er verliebt sich in sie."
+            ],
+            [
+              "<strong>sich verlassen</strong>",
+              "auf",
+              "Akk",
+              "güvənmək",
+              "Ich verlasse mich auf dich."
+            ],
+            [
+              "<strong>sich wundern</strong>",
+              "über",
+              "Akk",
+              "təəccüblənmək",
+              "Ich wundere mich über sein Verhalten."
+            ]
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Əzbərləmə Üsulları"
+        },
+        {
+          "type": "grid",
+          "boxes": [
+            {
+              "title": "1. Eyni Sözönlü Fel Qrupları",
+              "items": [],
+              "p": [
+                "<strong>an + Akk:</strong> denken, glauben, sich erinnern",
+                "<strong>auf + Akk:</strong> warten, hoffen, sich freuen",
+                "<strong>über + Akk:</strong> sich freuen, sprechen, lachen",
+                "<strong>mit + Dat:</strong> sprechen, beginnen, rechnen"
+              ],
+              "class": "example-box success"
+            },
+            {
+              "title": "2. Qarışıq Sözönlər",
+              "items": [],
+              "p": [
+                "<strong>sich freuen:</strong>\n                        <br>• <span class=\"highlight\">über</span> + Akk (indiki)\n                        <br>• <span class=\"highlight\">auf</span> + Akk (gələcək)",
+                "<strong>sprechen:</strong>\n                        <br>• <span class=\"highlight\">mit</span> + Dat (kimnən)\n                        <br>• <span class=\"highlight\">über</span> + Akk (nə haqqında)"
+              ],
+              "class": "example-box success"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "<strong>Yadda Saxlamaq üçün:</strong> Feil + sözönü birləşmələrini cümlələrlə birlikdə əzbərləyin.\n                Məsələn: \"Ich warte <span class=\"highlight\">auf</span> den Bus\" cümləsini tam əzbərləyin."
+        },
+        {
+          "type": "h3",
+          "text": "Pronominaladverb ilə İstifadə"
+        },
+        {
+          "type": "example-box",
+          "title": "",
+          "items": [
+            "<span class=\"german\">Ich warte <span class=\"highlight\">auf den Bus</span>.</span> → Ich warte <span class=\"highlight\">darauf</span>.",
+            "<span class=\"german\">Ich freue mich <span class=\"highlight\">auf die Ferien</span>.</span> → Ich freue mich <span class=\"highlight\">darauf</span>.",
+            "<span class=\"german\">Er denkt <span class=\"highlight\">an seine Freundin</span>.</span> → Er denkt <span class=\"highlight\">daran</span>.",
+            "<span class=\"german\">Wir sprechen <span class=\"highlight\">über das Wetter</span>.</span> → Wir sprechen <span class=\"highlight\">darüber</span>."
+          ],
+          "class": "example-box"
+        }
+      ]
+    }
+  ]
+}

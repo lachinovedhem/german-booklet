@@ -1,0 +1,678 @@
+[
+  {
+    "category": "Gündəlik Salamlaşma və Əlaqə",
+    "subcategory": "Salamlaşma",
+    "items": [
+      {
+        "german": "Guten Morgen!",
+        "azeri": "Sabahınız xeyir!"
+      },
+      {
+        "german": "Hallo! Wie geht's?",
+        "azeri": "Salam! Necəsiniz?"
+      },
+      {
+        "german": "Was geht?",
+        "azeri": "Nə var, nə yox? (gənclər arasında)"
+      },
+      {
+        "german": "Servus! / Moin!",
+        "azeri": "Salam! (regional)"
+      },
+      {
+        "german": "Na, alles klar?",
+        "azeri": "Yaxşısan? Hər şey qaydasındadır?"
+      }
+    ]
+  },
+  {
+    "category": "Gündəlik Salamlaşma və Əlaqə",
+    "subcategory": "Vedalaşma",
+    "items": [
+      {
+        "german": "Tschüss! / Ciao!",
+        "azeri": "Sağol! / Xudahafiz!"
+      },
+      {
+        "german": "Bis später!",
+        "azeri": "Sonra görüşərik!"
+      },
+      {
+        "german": "Mach's gut!",
+        "azeri": "Yaxşı ol! (dostlara)"
+      },
+      {
+        "german": "Wir sehen uns!",
+        "azeri": "Görüşərik!"
+      },
+      {
+        "german": "Pass auf dich auf!",
+        "azeri": "Özünə qayğı göstər!"
+      }
+    ]
+  },
+  {
+    "category": "Gündəlik Salamlaşma və Əlaqə",
+    "subcategory": "Təşəkkür və Cavab",
+    "items": [
+      {
+        "german": "Danke schön! / Vielen Dank!",
+        "azeri": "Çox sağ olun!"
+      },
+      {
+        "german": "Danke, gleichfalls!",
+        "azeri": "Sağ ol, sənə də!"
+      },
+      {
+        "german": "Kein Problem! / Gern geschehen!",
+        "azeri": "Problem deyil! / Xoşuma gəldi!"
+      },
+      {
+        "german": "Nichts zu danken!",
+        "azeri": "Təşəkkürə ehtiyac yoxdur!"
+      },
+      {
+        "german": "Das war selbstverständlich.",
+        "azeri": "Bu təbii idi."
+      }
+    ]
+  },
+  {
+    "category": "Gündəlik Salamlaşma və Əlaqə",
+    "subcategory": "Üzr və Cavab",
+    "items": [
+      {
+        "german": "Entschuldigung, ...",
+        "azeri": "Bağışlayın, ..."
+      },
+      {
+        "german": "Es tut mir leid!",
+        "azeri": "Təəssüf edirəm!"
+      },
+      {
+        "german": "Verzeihung!",
+        "azeri": "Üzr istəyirəm!"
+      },
+      {
+        "german": "Schon okay!",
+        "azeri": "Hər şey qaydasındadır!"
+      },
+      {
+        "german": "Macht nichts!",
+        "azeri": "Eybi yoxdur!"
+      }
+    ]
+  },
+  {
+    "category": "Rəftar və Təklif",
+    "subcategory": "Təklif",
+    "items": [
+      {
+        "german": "Möchtest du...?",
+        "azeri": "İstəyərdinmi...?"
+      },
+      {
+        "german": "Kann ich dir helfen?",
+        "azeri": "Sənə kömək edə bilərəmmi?"
+      },
+      {
+        "german": "Darf ich...?",
+        "azeri": "İcazənizlə...?"
+      },
+      {
+        "german": "Hättest du Lust auf...?",
+        "azeri": "... etmək istəyi varmı?"
+      },
+      {
+        "german": "Wie wäre es mit...?",
+        "azeri": "... necə olar?"
+      }
+    ]
+  },
+  {
+    "category": "Rəftar və Təklif",
+    "subcategory": "Razılıq və İmtina",
+    "items": [
+      {
+        "german": "Ja, gerne!",
+        "azeri": "Bəli, xoşuma gələr!"
+      },
+      {
+        "german": "Klar! / Natürlich!",
+        "azeri": "Əlbəttə! / Təbii ki!"
+      },
+      {
+        "german": "Leider nein.",
+        "azeri": "Təəssüf ki, yox."
+      },
+      {
+        "german": "Ich habe keine Zeit.",
+        "azeri": "Vəxtim yoxdur."
+      },
+      {
+        "german": "Vielleicht ein anderes Mal.",
+        "azeri": "Bəlkə başqa bir dəfə."
+      }
+    ]
+  },
+  {
+    "category": "Ünsiyyət",
+    "subcategory": "Başa Düşmə",
+    "items": [
+      {
+        "german": "Ich verstehe.",
+        "azeri": "Başa düşürəm."
+      },
+      {
+        "german": "Ich verstehe nicht.",
+        "azeri": "Başa düşmürəm."
+      },
+      {
+        "german": "Können Sie das bitte wiederholen?",
+        "azeri": "Zəhmət olmasa təkrar edə bilərsinizmi?"
+      },
+      {
+        "german": "Können Sie langsamer sprechen?",
+        "azeri": "Daha yavaş danışa bilərsinizmi?"
+      },
+      {
+        "german": "Was bedeutet...?",
+        "azeri": "... nə deməkdir?"
+      }
+    ]
+  },
+  {
+    "category": "Ünsiyyət",
+    "subcategory": "Fikir Bildirmə",
+    "items": [
+      {
+        "german": "Ich denke, dass...",
+        "azeri": "Məncə..."
+      },
+      {
+        "german": "Meiner Meinung nach...",
+        "azeri": "Mənim fikrimcə..."
+      },
+      {
+        "german": "Ich finde, dass...",
+        "azeri": "Mən hesab edirəm ki..."
+      },
+      {
+        "german": "Das glaube ich nicht.",
+        "azeri": "Buna inanmıram."
+      },
+      {
+        "german": "Da bin ich mir sicher.",
+        "azeri": "Bundan əminəm."
+      }
+    ]
+  },
+  {
+    "category": "Ünsiyyət",
+    "subcategory": "Sual və Cavab",
+    "items": [
+      {
+        "german": "Was meinst du dazu?",
+        "azeri": "Bunun barədə nə düşünürsən?"
+      },
+      {
+        "german": "Wie findest du...?",
+        "azeri": "... necə sənə gəlir?"
+      },
+      {
+        "german": "Hast du eine Idee?",
+        "azeri": "Fikrin varmı?"
+      },
+      {
+        "german": "Weißt du, ob...?",
+        "azeri": "Bilirsənmi, əgər...?"
+      },
+      {
+        "german": "Ich habe keine Ahnung.",
+        "azeri": "Heç bir fikrim yoxdur."
+      }
+    ]
+  },
+  {
+    "category": "Təcili və Kömək",
+    "subcategory": "Kömək Çağırışı",
+    "items": [
+      {
+        "german": "Hilfe!",
+        "azeri": "Kömək edin!"
+      },
+      {
+        "german": "Rufen Sie die Polizei!",
+        "azeri": "Polisi çağırın!"
+      },
+      {
+        "german": "Es brennt!",
+        "azeri": "Yanğın var!"
+      },
+      {
+        "german": "Ich brauche sofort Hilfe!",
+        "azeri": "Dərhal kömək lazımdır!"
+      },
+      {
+        "german": "Kann jemand helfen?",
+        "azeri": "Kimsə kömək edə bilərmi?"
+      }
+    ]
+  },
+  {
+    "category": "Təcili və Kömək",
+    "subcategory": "Sağlamlıq",
+    "items": [
+      {
+        "german": "Mir geht es nicht gut.",
+        "azeri": "Özümü yaxşı hiss etmirəm."
+      },
+      {
+        "german": "Ich habe Schmerzen.",
+        "azeri": "Ağrılarım var."
+      },
+      {
+        "german": "Wo ist die nächste Apotheke?",
+        "azeri": "Ən yaxın aptek haradadır?"
+      },
+      {
+        "german": "Ich bin allergisch gegen...",
+        "azeri": "Mənim ...-a qarşı allergiyam var."
+      },
+      {
+        "german": "Ich nehme Medikamente.",
+        "azeri": "Dərman qəbul edirəm."
+      }
+    ]
+  },
+  {
+    "category": "Səyahət və Nəqliyyat",
+    "subcategory": "Yol Soruşma",
+    "items": [
+      {
+        "german": "Wie komme ich zum...?",
+        "azeri": "... necə gedə bilərəm?"
+      },
+      {
+        "german": "Ist es weit von hier?",
+        "azeri": "Buradan uzaqdırmı?"
+      },
+      {
+        "german": "Können Sie es auf der Karte zeigen?",
+        "azeri": "Xəritədə göstərə bilərsinizmi?"
+      },
+      {
+        "german": "Gehe geradeaus.",
+        "azeri": "Düz gedin."
+      },
+      {
+        "german": "Biegen Sie links/rechts ab.",
+        "azeri": "Sola/sağa dönün."
+      }
+    ]
+  },
+  {
+    "category": "Səyahət və Nəqliyyat",
+    "subcategory": "Nəqliyyat Vasitələri",
+    "items": [
+      {
+        "german": "Wann fährt der nächste Bus?",
+        "azeri": "Növbəti avtobus nə vaxt gedir?"
+      },
+      {
+        "german": "Eine Fahrkarte nach..., bitte.",
+        "azeri": "... üçün bir bilet, zəhmət olmasa."
+      },
+      {
+        "german": "Ist dieser Platz frei?",
+        "azeri": "Bu yer boşdurmu?"
+      },
+      {
+        "german": "Wo muss ich umsteigen?",
+        "azeri": "Harada köçməliyəm?"
+      },
+      {
+        "german": "Ich habe mich verlaufen.",
+        "azeri": "Yolumdan azmışam."
+      }
+    ]
+  },
+  {
+    "category": "Alış-veriş",
+    "subcategory": "Mağazada",
+    "items": [
+      {
+        "german": "Ich suche...",
+        "azeri": "Mən ... axtarıram."
+      },
+      {
+        "german": "Haben Sie...?",
+        "azeri": "Sizdə ... varmı?"
+      },
+      {
+        "german": "Kann ich es anprobieren?",
+        "azeri": "Geyinib baxa bilərəmmi?"
+      },
+      {
+        "german": "Wo ist die Umkleidekabine?",
+        "azeri": "Paltar dəyişmə otağı haradadır?"
+      },
+      {
+        "german": "Das ist zu teuer.",
+        "azeri": "Bu çox bahadır."
+      }
+    ]
+  },
+  {
+    "category": "Alış-veriş",
+    "subcategory": "Ödəniş",
+    "items": [
+      {
+        "german": "Zahlen, bitte.",
+        "azeri": "Hesabı, zəhmət olmasa."
+      },
+      {
+        "german": "Kann ich mit Karte zahlen?",
+        "azeri": "Kartla ödəyə bilərəmmi?"
+      },
+      {
+        "german": "Stimmt so.",
+        "azeri": "Qalan pulu saxlayın. (bahşiş üçün)"
+      },
+      {
+        "german": "Ich nehme es.",
+        "azeri": "Bunu alıram."
+      },
+      {
+        "german": "Ich überlege noch.",
+        "azeri": "Hələ düşünürəm."
+      }
+    ]
+  },
+  {
+    "category": "Yemək və Restoran",
+    "subcategory": "Sifariş",
+    "items": [
+      {
+        "german": "Ich hätte gern...",
+        "azeri": "Mən ... istəyərdim."
+      },
+      {
+        "german": "Was empfehlen Sie?",
+        "azeri": "Nə tövsiyə edirsiniz?"
+      },
+      {
+        "german": "Für mich bitte...",
+        "azeri": "Mənim üçün, zəhmət olmasa..."
+      },
+      {
+        "german": "Ohne Zwiebeln, bitte.",
+        "azeri": "Soğansız, zəhmət olmasa."
+      },
+      {
+        "german": "Ist es scharf?",
+        "azeri": "Acılıdırmı?"
+      }
+    ]
+  },
+  {
+    "category": "Yemək və Restoran",
+    "subcategory": "Servis zamanı",
+    "items": [
+      {
+        "german": "Guten Appetit!",
+        "azeri": "Nuş olsun!"
+      },
+      {
+        "german": "Es schmeckt sehr gut!",
+        "azeri": "Çox dadlıdır!"
+      },
+      {
+        "german": "Die Rechnung, bitte.",
+        "azeri": "Hesabı, zəhmət olmasa."
+      },
+      {
+        "german": "Zusammen oder getrennt?",
+        "azeri": "Birlikdə yoxsa ayrı-ayrı?"
+      },
+      {
+        "german": "Kann ich die Speisekarte haben?",
+        "azeri": "Menyunu ala bilərəmmi?"
+      }
+    ]
+  },
+  {
+    "category": "Telefon və Texnologiya",
+    "subcategory": "Telefon Ünsiyyəti",
+    "items": [
+      {
+        "german": "Hallo, wer spricht?",
+        "azeri": "Salam, kim danışır?"
+      },
+      {
+        "german": "Kann ich mit... sprechen?",
+        "azeri": "... ilə danışa bilərəmmi?"
+      },
+      {
+        "german": "Einen Moment, bitte.",
+        "azeri": "Bir an, zəhmət olmasa."
+      },
+      {
+        "german": "Ich rufe später nochmal an.",
+        "azeri": "Sonra yenidən zəng edəcəyəm."
+      },
+      {
+        "german": "Die Leitung ist besetzt.",
+        "azeri": "Xətt məşğuldur."
+      }
+    ]
+  },
+  {
+    "category": "Telefon və Texnologiya",
+    "subcategory": "İnternet və Texnologiya",
+    "items": [
+      {
+        "german": "Haben Sie WLAN?",
+        "azeri": "WiFi-niz varmı?"
+      },
+      {
+        "german": "Wie ist das Passwort?",
+        "azeri": "Parol nədir?"
+      },
+      {
+        "german": "Der Akku ist leer.",
+        "azeri": "Batareya bitib."
+      },
+      {
+        "german": "Kann ich hier laden?",
+        "azeri": "Burada doldurmaq olarmı?"
+      },
+      {
+        "german": "Ich habe kein Netz.",
+        "azeri": "Şəbəkəm yoxdur."
+      }
+    ]
+  },
+  {
+    "category": "İş və Təhsil",
+    "subcategory": "İş Məkanı",
+    "items": [
+      {
+        "german": "Ich arbeite als...",
+        "azeri": "Mən ... kimi işləyirəm."
+      },
+      {
+        "german": "Was sind Ihre Arbeitszeiten?",
+        "azeri": "İş saatlarınız nədir?"
+      },
+      {
+        "german": "Ich habe heute frei.",
+        "azeri": "Bu gün işim yoxdur."
+      },
+      {
+        "german": "Können wir einen Termin vereinbaren?",
+        "azeri": "Görüş təyin edə bilərikmi?"
+      },
+      {
+        "german": "Das ist meine Visitenkarte.",
+        "azeri": "Bu mənim vizit kartımdır."
+      }
+    ]
+  },
+  {
+    "category": "İş və Təhsil",
+    "subcategory": "Təhsil",
+    "items": [
+      {
+        "german": "Ich lerne Deutsch.",
+        "azeri": "Alman dili öyrənirəm."
+      },
+      {
+        "german": "Was heißt das auf Deutsch?",
+        "azeri": "Bu almanca necə deyilir?"
+      },
+      {
+        "german": "Können Sie das bitte erklären?",
+        "azeri": "Zəhmət olmasa izah edə bilərsinizmi?"
+      },
+      {
+        "german": "Ich habe eine Frage.",
+        "azeri": "Bir sualım var."
+      },
+      {
+        "german": "Das verstehe ich noch nicht.",
+        "azeri": "Bunu hələ başa düşmürəm."
+      }
+    ]
+  },
+  {
+    "category": "Təbrik və Arzular",
+    "subcategory": "Xüsusi Günlər",
+    "items": [
+      {
+        "german": "Alles Gute zum Geburtstag!",
+        "azeri": "Ad gününüz mübarək!"
+      },
+      {
+        "german": "Frohe Weihnachten!",
+        "azeri": "Milad bayramınız mübarək!"
+      },
+      {
+        "german": "Guten Rutsch!",
+        "azeri": "Yeni iliniz mübarək!"
+      },
+      {
+        "german": "Herzlichen Glückwunsch!",
+        "azeri": "Təbriklər!"
+      },
+      {
+        "german": "Alles Liebe!",
+        "azeri": "Sevgilərlə!"
+      }
+    ]
+  },
+  {
+    "category": "Təbrik və Arzular",
+    "subcategory": "Ümumi Arzular",
+    "items": [
+      {
+        "german": "Viel Erfolg!",
+        "azeri": "Uğurlar!"
+      },
+      {
+        "german": "Gute Besserung!",
+        "azeri": "Tez sağalın!"
+      },
+      {
+        "german": "Schönes Wochenende!",
+        "azeri": "Xoş həftəsonu!"
+      },
+      {
+        "german": "Gute Reise!",
+        "azeri": "Xoş səfərlər!"
+      },
+      {
+        "german": "Viel Spaß!",
+        "azeri": "Xoş əylənin!"
+      }
+    ]
+  },
+  {
+    "category": "Rəy və Duyğu",
+    "subcategory": "Bəyənmə",
+    "items": [
+      {
+        "german": "Das gefällt mir!",
+        "azeri": "Bu mənim xoşuma gəlir!"
+      },
+      {
+        "german": "Super! / Toll!",
+        "azeri": "Əla! / Möhtəşəm!"
+      },
+      {
+        "german": "Ausgezeichnet!",
+        "azeri": "Mükəmməl!"
+      },
+      {
+        "german": "Das ist wunderbar!",
+        "azeri": "Bu gözəldir!"
+      },
+      {
+        "german": "Ich liebe es!",
+        "azeri": "Bunu sevirəm!"
+      }
+    ]
+  },
+  {
+    "category": "Rəy və Duyğu",
+    "subcategory": "Bəyənməmə",
+    "items": [
+      {
+        "german": "Das gefällt mir nicht.",
+        "azeri": "Bu mənim xoşuma gəlmir."
+      },
+      {
+        "german": "Das ist schrecklich!",
+        "azeri": "Bu dəhşətlidir!"
+      },
+      {
+        "german": "Ich hasse es!",
+        "azeri": "Bundan nifrət edirəm!"
+      },
+      {
+        "german": "Das ist langweilig.",
+        "azeri": "Bu darıxdırıcıdır."
+      },
+      {
+        "german": "Nicht mein Fall.",
+        "azeri": "Mənim zövqüm deyil."
+      }
+    ]
+  },
+  {
+    "category": "Sleng və Gündəlik Deyimlər",
+    "subcategory": "Müasir İfadələr",
+    "items": [
+      {
+        "german": "Cool!",
+        "azeri": "Əla!"
+      },
+      {
+        "german": "Läuft bei dir!",
+        "azeri": "Yaxşı gedirsən! (gənclər)"
+      },
+      {
+        "german": "Alter! / Digga!",
+        "azeri": "Dostum! (gənc slengi)"
+      },
+      {
+        "german": "Kein Stress!",
+        "azeri": "Narahat olma!"
+      },
+      {
+        "german": "Ich hab's kapiert.",
+        "azeri": "Başa düşdüm."
+      }
+    ]
+  }
+]
