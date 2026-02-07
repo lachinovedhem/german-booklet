@@ -7,6 +7,7 @@ import { Layers, Sparkles } from 'lucide-react';
 const MiscellaneousPage = () => {
     const [search, setSearch] = useState('');
     const [filter, setFilter] = useState('all');
+    const [priorityFilter, setPriorityFilter] = useState('all');
 
     const types = useMemo(() => {
         const t = new Set(miscData.map(item => item.type));
@@ -19,9 +20,10 @@ const MiscellaneousPage = () => {
                 item.word.toLowerCase().includes(search.toLowerCase()) ||
                 item.trans.toLowerCase().includes(search.toLowerCase());
             const matchesFilter = filter === 'all' || item.type === filter;
-            return matchesSearch && matchesFilter;
+            const matchesPriority = priorityFilter === 'all' || item.priority === parseInt(priorityFilter);
+            return matchesSearch && matchesFilter && matchesPriority;
         });
-    }, [search, filter]);
+    }, [search, filter, priorityFilter]);
 
     return (
         <div className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -29,24 +31,35 @@ const MiscellaneousPage = () => {
             <div className="sticky top-16 md:top-0 z-20 -mx-4 md:-mx-6 px-4 md:px-6 py-4 bg-slate-50/95 backdrop-blur-md border-b border-slate-200/50">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-4">
                     <div className="space-y-2">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-[10px] font-black uppercase tracking-widest">
-                            <Layers size={12} /> Əlavə Resurslar
-                        </div>
-                        <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">Digər</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">Digər</h2>
                         <p className="text-slate-500 font-medium max-w-md hidden md:block">Saylar, əvəzliklər, zərflər və digər vacib qrammatik elementlər.</p>
                     </div>
 
-                    <select
-                        value={filter}
-                        onChange={(e) => setFilter(e.target.value)}
-                        className="bg-white/50 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-sm border border-white/60 text-sm font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer"
-                    >
-                        {types.map(t => (
-                            <option key={t} value={t}>
-                                {t === 'all' ? 'Hamısı' : t}
-                            </option>
-                        ))}
-                    </select>
+                    <div className="flex gap-2 w-full md:w-auto">
+                        <select
+                            value={filter}
+                            onChange={(e) => setFilter(e.target.value)}
+                            className="flex-1 md:flex-none bg-white/50 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-sm border border-white/60 text-sm font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer"
+                        >
+                            {types.map(t => (
+                                <option key={t} value={t}>
+                                    {t === 'all' ? 'Hamısı' : t}
+                                </option>
+                            ))}
+                        </select>
+
+                        <select
+                            value={priorityFilter}
+                            onChange={(e) => setPriorityFilter(e.target.value)}
+                            className="flex-1 md:flex-none bg-white/50 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-sm border border-white/60 text-sm font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer"
+                        >
+                            <option value="all">Hamısı</option>
+                            <option value="1">Çox vacib</option>
+                            <option value="2">Vacib</option>
+                            <option value="3">Orta</option>
+                            <option value="4">Nadir</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div className="relative">

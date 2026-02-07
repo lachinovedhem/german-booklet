@@ -51,7 +51,7 @@
 
 /* Original Grammar Styles */
 .grammar-section {
-  @apply bg-white p-6 mb-6 rounded-xl shadow-sm border-t-4 border-slate-800 relative overflow-hidden;
+  @apply bg-white p-6 md:p-8 mb-6 rounded-2xl shadow-sm border-t-4 border-slate-800 relative overflow-hidden;
 }
 
 .grammar-section::before {
@@ -68,7 +68,7 @@
 }
 
 .grammar-table {
-  @apply w-full border-collapse my-4 text-sm shadow-sm overflow-hidden rounded-lg border border-slate-200;
+  @apply w-full border-collapse my-4 text-[15px] shadow-sm overflow-hidden rounded-xl border border-slate-200;
 }
 
 .grammar-table th {
@@ -76,7 +76,7 @@
 }
 
 .grammar-table td {
-  @apply p-3 border border-slate-100 text-slate-600 align-top;
+  @apply p-4 border border-slate-100 text-slate-600 align-middle;
 }
 
 .grammar-table tr:nth-child(even) {
@@ -108,7 +108,7 @@
 }
 
 .azeri {
-  @apply text-slate-500 italic text-[0.95em];
+  @apply text-slate-500 italic text-[0.9em];
 }
 
 .highlight {

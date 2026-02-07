@@ -39,10 +39,7 @@ const PhrasesPage = () => {
             <div className="sticky top-16 md:top-0 z-20 -mx-4 md:-mx-6 px-4 md:px-6 py-4 bg-slate-50/95 backdrop-blur-md border-b border-slate-200/50">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-4">
                     <div className="space-y-2">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 text-[10px] font-black uppercase tracking-widest">
-                            <MessageSquare size={12} /> Ünsiyyət
-                        </div>
-                        <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">İfadələr</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">İfadələr</h2>
                         <p className="text-slate-500 font-medium max-w-md hidden md:block">Gündəlik həyatda və işdə ən çox istifadə olunan cümlələr.</p>
                     </div>
 

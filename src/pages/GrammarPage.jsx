@@ -49,7 +49,7 @@ const GrammarPage = () => {
                 case 'h3':
                     return <h3 key={idx} className="grammar-h3">{item.text}</h3>;
                 case 'p':
-                    return <p key={idx} className="text-sm text-slate-600 mb-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: item.text }} />;
+                    return <p key={idx} className="text-base text-slate-600 mb-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: item.text }} />;
                 case 'table':
                     return (
                         <div key={idx} className="overflow-x-auto my-4">
@@ -102,6 +102,8 @@ const GrammarPage = () => {
                     return (
                         <div key={idx} className="rule" dangerouslySetInnerHTML={{ __html: item.text }} />
                     );
+                case 'html':
+                    return <div key={idx} dangerouslySetInnerHTML={{ __html: item.html }} />;
                 default:
                     return null;
             }

@@ -28,7 +28,7 @@ const ProfessionsPage = () => {
                 <div className="space-y-3">
                     <div className="flex items-center justify-between gap-3">
                         <div>
-                            <h2 className="text-2xl md:text-4xl font-black text-slate-900 tracking-tighter">Peşələr</h2>
+                            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">Peşələr</h2>
                             <p className="text-slate-500 font-medium max-w-md hidden md:block text-sm">İş sahələrinə uyğun gündəlik ifadələr və dialoqlar.</p>
                         </div>
                         {/* Active Category Info - Mobile Only */}
