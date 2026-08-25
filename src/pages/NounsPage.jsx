@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import SearchBar from '../components/SearchBar';
 import DataCard from '../components/DataCard';
+import { useIncremental } from '../utils/useIncremental';
 import nounsData from '../data/nouns.json';
 
 const NounsPage = () => {
@@ -23,6 +24,8 @@ const NounsPage = () => {
             return matchesSearch && matchesFilter && matchesPriority;
         });
     }, [search, activeFilter, priorityFilter]);
+
+    const { visible, hasMore, sentinelRef, total } = useIncremental(filteredData);
 
     return (
         <div className="space-y-6 animate-in fade-in duration-500">
@@ -65,14 +68,21 @@ const NounsPage = () => {
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {filteredData.map((item, idx) => (
+                {visible.map((item) => (
                     <DataCard
-                        key={idx}
+                        key={`${item.art}-${item.word}`}
                         type="noun"
                         item={item}
                     />
                 ))}
             </div>
+
+            {hasMore && (
+                <div ref={sentinelRef} className="flex items-center justify-center py-8 text-xs font-medium text-slate-400">
+                    <div className="w-5 h-5 border-2 border-slate-200 border-t-primary rounded-full animate-spin mr-2" />
+                    {visible.length} / {total} yüklənir...
+                </div>
+            )}
 
             {filteredData.length === 0 && (
                 <div className="text-center py-20 bg-white rounded-3xl border-2 border-dashed border-slate-200">

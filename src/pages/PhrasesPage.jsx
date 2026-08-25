@@ -63,8 +63,8 @@ const PhrasesPage = () => {
             </div>
 
             <div className="space-y-10">
-                {filteredData.map((section, sIdx) => (
-                    <div key={sIdx} className="space-y-4">
+                {filteredData.map((section) => (
+                    <div key={`${section.category}-${section.subcategory}`} className="space-y-4">
                         <div className="mb-3">
                             <h3 className="text-[10px] font-black text-slate-400 uppercase tracking-wider px-2 py-1 bg-slate-50 rounded-lg inline-block">
                                 {section.subcategory}
@@ -74,12 +74,13 @@ const PhrasesPage = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {section.items.map((item, iIdx) => (
                                 <DataCard
-                                    key={`${sIdx}-${iIdx}`}
+                                    key={`${item.german}-${iIdx}`}
                                     type="phrase"
                                     item={{
                                         german: item.german,
                                         translation: item.azeri,
-                                        cat: section.subcategory
+                                        cat: section.subcategory,
+                                        note: item.note
                                     }}
                                 />
                             ))}

@@ -74,7 +74,7 @@ const GrammarPage = () => {
                         </div>
                     );
                 case 'example-box':
-                case 'grid':
+                case 'grid': {
                     const boxes = item.type === 'example-box' ? [{ ...item }] : item.boxes;
                     return (
                         <div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
@@ -94,6 +94,7 @@ const GrammarPage = () => {
                             ))}
                         </div>
                     );
+                }
                 case 'tip':
                     return (
                         <div key={idx} className="tip" dangerouslySetInnerHTML={{ __html: item.text }} />

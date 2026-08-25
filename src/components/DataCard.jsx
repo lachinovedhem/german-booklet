@@ -1,9 +1,23 @@
-import React, { useState } from 'react';
-import { Volume2, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Volume2, ChevronDown, ChevronUp, Star } from 'lucide-react';
 import { speak } from '../utils/speech';
+import { isFavorite, toggleFavorite } from '../utils/favorites';
 
-const DataCard = ({ item, type }) => {
+const DataCard = ({ item, type, onToggle }) => {
     const [isExpanded, setIsExpanded] = useState(false);
+    const [starred, setStarred] = useState(isFavorite(item, type));
+
+    // Sync starred state if item or type changes (important for search/filtering)
+    useEffect(() => {
+        setStarred(isFavorite(item, type));
+    }, [item, type]);
+
+    const handleToggleFavorite = (e) => {
+        e.stopPropagation();
+        const newState = toggleFavorite(item, type);
+        setStarred(newState);
+        if (onToggle) onToggle(newState);
+    };
 
     const getArticleColor = (art) => {
         switch (art?.toLowerCase()) {
@@ -69,18 +83,29 @@ const DataCard = ({ item, type }) => {
 
                 <div className="flex items-center gap-1 shrink-0">
                     <button
+                        onClick={handleToggleFavorite}
+                        className={`p-1.5 rounded-lg transition-colors ${starred ? 'text-amber-500 bg-amber-50' : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'}`}
+                        title={starred ? "Seçilmişlərdən çıxar" : "Seçilmişlərə əlavə et"}
+                        aria-label={starred ? "Seçilmişlərdən çıxar" : "Seçilmişlərə əlavə et"}
+                    >
+                        <Star size={16} fill={starred ? "currentColor" : "none"} />
+                    </button>
+                    <button
                         onClick={(e) => {
                             e.stopPropagation();
                             speak(type === 'noun' ? `${item.art} ${item.word}` : (item.infinitive || item.german || item.word || item.phrase));
                         }}
                         className="p-1.5 text-slate-400 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
                         title="Tələffüz"
+                        aria-label="Tələffüz et"
                     >
                         <Volume2 size={16} />
                     </button>
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
                         className="p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
+                        aria-label={isExpanded ? "Detalları gizlət" : "Detalları göstər"}
+                        aria-expanded={isExpanded}
                     >
                         {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                     </button>
@@ -126,6 +151,13 @@ const DataCard = ({ item, type }) => {
                             </div>
                         )}
                     </div>
+
+                    {item.note && (
+                        <div className="mt-3 p-2 bg-white rounded-lg border border-slate-100">
+                            <p className="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-1">İzah</p>
+                            <p className="text-xs text-slate-700 leading-relaxed">{item.note}</p>
+                        </div>
+                    )}
 
                     {(item.example || item.sentence) && (
                         <div className="mt-3 p-2 bg-white rounded-lg border border-slate-100">

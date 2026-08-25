@@ -10,7 +10,11 @@ import {
     MessageSquare,
     Layers,
     Menu,
-    X
+    X,
+    Sparkles,
+    Search,
+    GraduationCap,
+    Brain
 } from 'lucide-react';
 import logo from '../assets/logo.png';
 
@@ -40,13 +44,24 @@ const Layout = () => {
 
     const navItems = [
         { to: '/', icon: Home, label: 'Ana Səhifə' },
+        { to: '/start', icon: GraduationCap, label: 'Başlanğıc' },
+        { to: '/practice', icon: Brain, label: 'Məşq' },
         { to: '/grammar', icon: FileText, label: 'Qrammatika' },
+        { to: '/favorites', icon: Star, label: 'Seçilmişlər' },
         { to: '/nouns', icon: BookOpen, label: 'İsimlər' },
         { to: '/verbs', icon: Zap, label: 'Fellər' },
-        { to: '/adjectives', icon: Star, label: 'Sifətlər' },
+        { to: '/adjectives', icon: Sparkles, label: 'Sifətlər' },
         { to: '/professions', icon: Briefcase, label: 'Peşələr' },
         { to: '/phrases', icon: MessageSquare, label: 'İfadələr' },
         { to: '/miscellaneous', icon: Layers, label: 'Digər' },
+    ];
+
+    const mobileNavItems = [
+        { to: '/', icon: Home, label: 'Ana Səhifə' },
+        { to: '/start', icon: GraduationCap, label: 'Başlanğıc' },
+        { to: '/words', icon: Search, label: 'Sözlər' },
+        { to: '/practice', icon: Brain, label: 'Məşq' },
+        { to: '/favorites', icon: Star, label: 'Seçilmişlər' },
     ];
 
     return (
@@ -87,18 +102,23 @@ const Layout = () => {
 
             {/* Mobile Bottom Nav */}
             <nav className="md:hidden fixed bottom-0 left-0 right-0 glass-nav border-t border-slate-200 px-2 py-1 z-50">
-                <div className="flex justify-around items-center">
-                    {navItems.map((item) => {
-                        const isActive = location.pathname === item.to;
+                <div className="flex justify-around items-center px-2">
+                    {mobileNavItems.map((item) => {
+                        const isActive = location.pathname === item.to || (item.to === '/words' && [
+                            '/nouns', '/verbs', '/adjectives', '/professions', '/phrases', '/miscellaneous'
+                        ].includes(location.pathname));
+
                         return (
                             <Link
                                 key={item.to}
                                 to={item.to}
-                                className={`flex flex-col items-center p-2 rounded-xl transition-all ${isActive ? 'text-primary' : 'text-slate-400'
+                                className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${isActive ? 'text-primary scale-110' : 'text-slate-400'
                                     }`}
                             >
-                                <item.icon size={18} />
-                                <span className="text-[9px] font-medium mt-0.5">{item.label.split(' ')[0]}</span>
+                                <item.icon size={22} strokeWidth={isActive ? 2.5 : 2} />
+                                <span className={`text-[10px] font-bold mt-1 ${isActive ? 'text-primary' : 'text-slate-500'}`}>
+                                    {item.label}
+                                </span>
                             </Link>
                         );
                     })}

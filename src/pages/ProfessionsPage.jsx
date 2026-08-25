@@ -56,7 +56,7 @@ const ProfessionsPage = () => {
                                         {cat.icon}
                                     </span>
                                     <span className="text-[8px] font-black uppercase tracking-tight text-center leading-tight hidden md:block">
-                                        {cat.name}
+                                        {cat.title}
                                     </span>
                                 </button>
                             ))}
@@ -85,8 +85,9 @@ const ProfessionsPage = () => {
                 <div className="grid grid-cols-1 gap-6">
                     {filteredPhrases.map((item, idx) => (
                         <DataCard
-                            key={idx}
+                            key={`${item.german}-${idx}`}
                             item={item}
+                            type="phrase"
                         />
                     ))}
                 </div>

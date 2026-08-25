@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import SearchBar from '../components/SearchBar';
 import DataCard from '../components/DataCard';
+import { useIncremental } from '../utils/useIncremental';
 import verbsData from '../data/verbs.json';
 import { Zap } from 'lucide-react';
 
@@ -22,6 +23,8 @@ const VerbsPage = () => {
             return matchesSearch && matchesPriority;
         });
     }, [search, filter, priorityFilter]);
+
+    const { visible, hasMore, sentinelRef, total } = useIncremental(filteredData);
 
     return (
         <div className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -66,14 +69,21 @@ const VerbsPage = () => {
 
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {filteredData.map((item, idx) => (
+                {visible.map((item) => (
                     <DataCard
-                        key={idx}
+                        key={item.infinitive}
                         type="verb"
                         item={item}
                     />
                 ))}
             </div>
+
+            {hasMore && (
+                <div ref={sentinelRef} className="flex items-center justify-center py-8 text-xs font-medium text-slate-400">
+                    <div className="w-5 h-5 border-2 border-slate-200 border-t-primary rounded-full animate-spin mr-2" />
+                    {visible.length} / {total} yüklənir...
+                </div>
+            )}
 
             {filteredData.length === 0 && (
                 <div className="text-center py-32 bg-white/50 backdrop-blur-sm rounded-[40px] border-2 border-dashed border-slate-200">

@@ -1,0 +1,61 @@
+# alida — nümunə nginx konfiqurasiyası (Windows)
+# İstifadə: `npm run build` → yaranan `dist/` qovluğunu serve edin.
+#
+# VACİB: Service worker (PWA) yalnız HTTPS-də və ya http://localhost-da işləyir.
+# Real domendə PWA-nın qurulması (install) üçün SSL sertifikatı lazımdır.
+
+server {
+    listen       80;
+    server_name  localhost;        # öz domeninizlə əvəz edin
+
+    # dist qovluğunun TAM yolu (Windows-da irəli "/" işlədin):
+    root         C:/Users/Administrator/Desktop/deutsch/german-booklet/dist;
+    index        index.html;
+
+    # .webmanifest üçün düzgün MIME tipi (default mime.types-da olmaya bilər)
+    location = /manifest.webmanifest {
+        default_type application/manifest+json;
+        add_header Cache-Control "no-cache";
+    }
+
+    # Service worker HƏMİŞƏ yenidən yoxlanmalıdır ki, yeni build dərhal yayılsın.
+    location = /sw.js {
+        add_header Cache-Control "no-cache, no-store, must-revalidate";
+        expires off;
+    }
+    location = /registerSW.js {
+        add_header Cache-Control "no-cache";
+    }
+
+    # Hash-li (dəyişməz) fayllar — uzunmüddətli keş.
+    location /assets/ {
+        add_header Cache-Control "public, max-age=31536000, immutable";
+        try_files $uri =404;
+    }
+    location ~ ^/workbox-.*\.js$ {
+        add_header Cache-Control "public, max-age=31536000, immutable";
+    }
+
+    # SPA: bütün naməlum yollar index.html-ə yönləndirilir (React Router üçün).
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Sıxılma
+    gzip            on;
+    gzip_comp_level 6;
+    gzip_min_length 1024;
+    gzip_types      text/plain text/css application/javascript application/json
+                    image/svg+xml application/manifest+json;
+}
+
+# --- HTTPS nümunəsi (tövsiyə olunur, PWA install üçün lazımdır) ---
+# server {
+#     listen 443 ssl;
+#     server_name your-domain.com;
+#     ssl_certificate     C:/nginx/ssl/fullchain.pem;
+#     ssl_certificate_key C:/nginx/ssl/privkey.pem;
+#     root C:/Users/Administrator/Desktop/deutsch/german-booklet/dist;
+#     index index.html;
+#     # ... yuxarıdakı location blokları ilə eyni ...
+# }

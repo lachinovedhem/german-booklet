@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
     Home as HomeIcon,
@@ -9,9 +9,14 @@ import {
     Grid,
     FileText,
     MessageSquare,
-    ChevronRight
+    ChevronRight,
+    GraduationCap,
+    Brain
 } from 'lucide-react';
 import tipsData from '../data/tips.json';
+// Saylar əvvəlcədən hesablanmış kiçik fayldan gəlir (ağır data fayllarını
+// ana səhifəyə import etməmək üçün). Yeniləmək: npm run counts
+import counts from '../data/counts.json';
 
 const CategoryCard = ({ to, icon: Icon, label, count, color }) => (
     <Link
@@ -32,22 +37,17 @@ const CategoryCard = ({ to, icon: Icon, label, count, color }) => (
 );
 
 const Home = () => {
-    const [randomTip, setRandomTip] = useState(null);
-
-    useEffect(() => {
-        // Select a random tip on component mount
-        const randomIndex = Math.floor(Math.random() * tipsData.length);
-        setRandomTip(tipsData[randomIndex]);
-    }, []);
+    // Komponent ilk render olunanda təsadüfi məsləhət seçilir (effektsiz, lazy init).
+    const [randomTip] = useState(() => tipsData[Math.floor(Math.random() * tipsData.length)]);
 
     const categories = [
-        { to: '/grammar', icon: FileText, label: 'Qrammatika', count: '20+', color: 'from-indigo-500 to-blue-500' },
-        { to: '/nouns', icon: BookOpen, label: 'İsimlər', count: 1200, color: 'from-blue-500 to-cyan-500' },
-        { to: '/verbs', icon: Zap, label: 'Fellər', count: 500, color: 'from-rose-500 to-orange-500' },
-        { to: '/adjectives', icon: Star, label: 'Sifətlər', count: 800, color: 'from-purple-500 to-pink-500' },
-        { to: '/professions', icon: Briefcase, label: 'Peşələr', count: 300, color: 'from-amber-500 to-yellow-500' },
-        { to: '/phrases', icon: MessageSquare, label: 'İfadələr', count: 150, color: 'from-indigo-500 to-purple-500' },
-        { to: '/miscellaneous', icon: Grid, label: 'Digər', count: 150, color: 'from-emerald-500 to-teal-500' },
+        { to: '/grammar', icon: FileText, label: 'Qrammatika', count: counts.grammar, color: 'from-indigo-500 to-blue-500' },
+        { to: '/nouns', icon: BookOpen, label: 'İsimlər', count: counts.nouns, color: 'from-blue-500 to-cyan-500' },
+        { to: '/verbs', icon: Zap, label: 'Fellər', count: counts.verbs, color: 'from-rose-500 to-orange-500' },
+        { to: '/adjectives', icon: Star, label: 'Sifətlər', count: counts.adjectives, color: 'from-purple-500 to-pink-500' },
+        { to: '/professions', icon: Briefcase, label: 'Peşələr', count: counts.professions, color: 'from-amber-500 to-yellow-500' },
+        { to: '/phrases', icon: MessageSquare, label: 'İfadələr', count: counts.phrases, color: 'from-indigo-500 to-purple-500' },
+        { to: '/miscellaneous', icon: Grid, label: 'Digər', count: counts.miscellaneous, color: 'from-emerald-500 to-teal-500' },
     ];
 
     return (
@@ -67,6 +67,28 @@ const Home = () => {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-32 -mt-32" />
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-accent/10 rounded-full blur-3xl -ml-24 -mb-24" />
             </section>
+
+            {/* Beginner CTA */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link to="/start" className="glass-card p-5 rounded-2xl flex items-center gap-4 hover:scale-[1.02] transition-all duration-200 border-l-4 border-emerald-500">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white shadow-sm shrink-0">
+                        <GraduationCap size={24} />
+                    </div>
+                    <div>
+                        <h3 className="font-black text-slate-800">Yeni başlayırsan?</h3>
+                        <p className="text-xs text-slate-500">A1 başlanğıc bələdçisi — hardan başlamalı, tələffüz, artikllər.</p>
+                    </div>
+                </Link>
+                <Link to="/practice" className="glass-card p-5 rounded-2xl flex items-center gap-4 hover:scale-[1.02] transition-all duration-200 border-l-4 border-primary">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-sm shrink-0">
+                        <Brain size={24} />
+                    </div>
+                    <div>
+                        <h3 className="font-black text-slate-800">Sözləri möhkəmləndir</h3>
+                        <p className="text-xs text-slate-500">Flashcard və quiz ilə məşq et, nəticəni izlə.</p>
+                    </div>
+                </Link>
+            </div>
 
             {/* Categories Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

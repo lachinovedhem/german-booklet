@@ -20,31 +20,31 @@
                         ],
                         [
                             "Nominativ (Kim? Nə?)",
-                            "der / ein",
-                            "die / eine",
-                            "das / ein",
-                            "die / -"
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span> / ein",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / eine",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>das</span> / ein",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / -"
                         ],
                         [
                             "Akkusativ (Kimi? Nəyi?)",
-                            "den / einen",
-                            "die / eine",
-                            "das / ein",
-                            "die / -"
+                            "<span style='background-color: #ffe4e6; padding: 2px 4px; border-radius: 4px;'>den</span> / einen",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / eine",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>das</span> / ein",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / -"
                         ],
                         [
                             "Dativ (Kimə? Nərə?)",
-                            "dem / einem",
-                            "der / einer",
-                            "dem / einem",
-                            "den ...n"
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>dem</span> / einem",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span> / einer",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>dem</span> / einem",
+                            "<span style='background-color: #ffe4e6; padding: 2px 4px; border-radius: 4px;'>den</span> ...n"
                         ],
                         [
                             "Genitiv (Kimin? Nəyin?)",
-                            "des ...s",
-                            "der",
-                            "des ...s",
-                            "der"
+                            "<span style='background-color: #f3e8ff; padding: 2px 4px; border-radius: 4px;'>des</span> ...s",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span>",
+                            "<span style='background-color: #f3e8ff; padding: 2px 4px; border-radius: 4px;'>des</span> ...s",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span>"
                         ]
                     ]
                 },
@@ -64,24 +64,24 @@
                         ],
                         [
                             "<strong>Nominativ</strong>",
-                            "der gut<b>e</b> Mann",
-                            "die gut<b>e</b> Frau",
-                            "das gut<b>e</b> Kind",
-                            "die gut<b>en</b> Kinder"
+                            "der gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Mann",
+                            "die gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Frau",
+                            "das gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Kind",
+                            "die gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kinder"
                         ],
                         [
                             "<strong>Akkusativ</strong>",
-                            "den gut<b>en</b> Mann",
-                            "die gut<b>e</b> Frau",
-                            "das gut<b>e</b> Kind",
-                            "die gut<b>en</b> Kinder"
+                            "den gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Mann",
+                            "die gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Frau",
+                            "das gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Kind",
+                            "die gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kinder"
                         ],
                         [
                             "<strong>Dativ</strong>",
-                            "dem gut<b>en</b> Mann",
-                            "der gut<b>en</b> Frau",
-                            "dem gut<b>en</b> Kind",
-                            "den gut<b>en</b> Kindern"
+                            "dem gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Mann",
+                            "der gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Frau",
+                            "dem gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kind",
+                            "den gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kindern"
                         ]
                     ]
                 },
@@ -211,27 +211,66 @@
                     "text": "Düzgün Olmayan Fellər (Unregelmäßige Verben) ƏSAS"
                 },
                 {
-                    "type": "grid",
-                    "boxes": [
-                        {
-                            "title": "sein (olmaq)",
-                            "items": [],
-                            "p": [
-                                "<strong>Präsens:</strong> ich bin, du bist, er ist, wir sind, ihr seid, sie sind",
-                                "<strong>Präteritum:</strong> ich war, du warst, er war, wir waren, ihr wart, sie waren"
-                            ],
-                            "class": "example-box warning"
-                        },
-                        {
-                            "title": "haben (sahib olmaq)",
-                            "items": [],
-                            "p": [
-                                "<strong>Präsens:</strong> ich habe, du hast, er hat, wir haben, ihr habt, sie haben",
-                                "<strong>Präteritum:</strong> ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten"
-                            ],
-                            "class": "example-box warning"
-                        }
+                    "type": "h3",
+                    "text": "\"sein\" və \"haben\" Fellərinin Hallanması"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Şəxs",
+                            "sein (Präsens)",
+                            "sein (Präteritum/Waren)",
+                            "haben (Präsens)",
+                            "haben (Präteritum/Hatten)"
+                        ],
+                        [
+                            "ich",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>bin</span>",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>war</span>",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>habe</span>",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>hatte</span>"
+                        ],
+                        [
+                            "du",
+                            "bist",
+                            "warst",
+                            "hast",
+                            "hattest"
+                        ],
+                        [
+                            "er/sie/es",
+                            "ist",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>war</span>",
+                            "hat",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>hatte</span>"
+                        ],
+                        [
+                            "wir",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>sind</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>waren</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>haben</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>hatten</span>"
+                        ],
+                        [
+                            "ihr",
+                            "seid",
+                            "wart",
+                            "habt",
+                            "hattet"
+                        ],
+                        [
+                            "sie / Sie",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>sind</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>waren</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>haben</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>hatten</span>"
+                        ]
                     ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>Qaçırmayın:</strong> Diqqət etsəniz, keçmiş zamanda (Präteritum) <strong>ich</strong> və <strong>er/sie/es</strong> formaları tamamilə eynidir (sarı rəngli xanalar)."
                 },
                 {
                     "type": "h3",
@@ -275,60 +314,64 @@
                         [
                             "Fel",
                             "Mənası",
-                            "Präsens (ich/er)",
-                            "Präteritum",
-                            "Nümunə"
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>ich / er / sie / es</span>",
+                            "du",
+                            "wir / sie / Sie",
+                            "ihr"
                         ],
                         [
                             "<strong>können</strong>",
-                            "bacarmaq (bacarıq)",
-                            "kann",
-                            "konnte",
-                            "Ich kann schwimmen. (Üzə bilirəm)"
+                            "bacarmaq",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>kann</span>",
+                            "kannst",
+                            "können",
+                            "könnt"
                         ],
                         [
                             "<strong>müssen</strong>",
-                            "məcbur olmaq (lazım olmaq)",
-                            "muss",
-                            "musste",
-                            "Ich muss arbeiten. (İşləməliyəm)"
+                            "məcbur olmaq",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>muss</span>",
+                            "musst",
+                            "müssen",
+                            "müsst"
                         ],
                         [
                             "<strong>dürfen</strong>",
-                            "icazəli olmaq (icazə vermək)",
-                            "darf",
-                            "durfte",
-                            "Darf ich hereinkommen? (Daxil ola bilərəmmi?)"
+                            "icazəli olmaq",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>darf</span>",
+                            "darfst",
+                            "dürfen",
+                            "dürft"
                         ],
                         [
                             "<strong>sollen</strong>",
-                            "lazım olmaq (tövsiyə etmək)",
-                            "soll",
-                            "sollte",
-                            "Du sollst nicht lügen. (Yalan danışmamalısan)"
+                            "lazım olmaq",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>soll</span>",
+                            "sollst",
+                            "sollen",
+                            "sollt"
                         ],
                         [
                             "<strong>wollen</strong>",
-                            "istəmək (qəti qərarlı)",
-                            "will",
-                            "wollte",
-                            "Ich will Arzt werden. (Həkim olmaq istəyirəm)"
+                            "istəmək",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>will</span>",
+                            "willst",
+                            "wollen",
+                            "wollt"
                         ],
                         [
                             "<strong>mögen</strong>",
-                            "bəyənmək (xoşlamaq)",
-                            "mag",
-                            "mochte",
-                            "Ich mag Pizza. (Mənə pizza xoş gəlir)"
-                        ],
-                        [
-                            "<strong>möchten</strong>",
-                            "istəmək (nəzakətli)",
-                            "möchte",
-                            "möchte",
-                            "Ich möchte eine Tasse Kaffee. (Bir fincan qəhvə istəyirəm)"
+                            "bəyənmək",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>mag</span>",
+                            "magst",
+                            "mögen",
+                            "mögt"
                         ]
                     ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>QIZIL QAYDA:</strong> Bütün modal fellərdə <strong>ich</strong> (birinci şəxs) və <strong>er/sie/es</strong> (üçüncü şəxs tək) formaları <strong>HƏMİŞƏ</strong> eynidir (sarı rəngli sütun)."
                 },
                 {
                     "type": "rule",
@@ -419,6 +462,12 @@
                             "wurde + Partizip II",
                             "Das Auto <span class=\"highlight\">wurde repariert</span>.",
                             "Maşın təmir olundu."
+                        ],
+                        [
+                            "Zustandspassiv",
+                            "sein + Partizip II",
+                            "Das Auto <span class=\"highlight\">ist repariert</span>.",
+                            "Maşın təmir olunmuşdur (vəziyyət)."
                         ]
                     ]
                 },
@@ -452,6 +501,37 @@
                 {
                     "type": "html",
                     "html": "<div class='overflow-x-auto my-4'><table border='1' style='width:100%; border-collapse: collapse; font-family:\"Segoe UI\", Arial, sans-serif; text-align:left; color:#333;' class='grammar-table'><thead><tr style='background-color:#f2f2f2; text-align:center;'><th style='width:100px;'>Zaman / Növ</th><th style='width:120px;'>Mübtəda</th><th style='width:140px;'>Fel</th><th>Orta Hissə</th><th style='width:120px;'>Obyekt</th><th style='width:120px;'>Cümlə Sonu</th><th style='width:35%;'>Tərcümə</th></tr></thead><tbody><tr><td rowspan='2'><b>Indiki</b> (Präsens)</td><td><b>Ich</b></td><td style='color:#d35400;font-weight:bold;'>kauf<b>e</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(kaufen)</span></td><td>heute schnell</td><td>einen Apfel</td><td style='text-align:center;'>—</td><td><b>Ich kaufe heute schnell einen Apfel.</b><br>Mən bu gün tez bir alma alıram.</td></tr><tr><td><b>Der Zug</b></td><td style='color:#d35400;font-weight:bold;'>komm<b>t</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(kommen)</span></td><td>jetzt am Bahnhof</td><td>—</td><td style='text-align:center;'>an <span style='font-size:11px; color:#888; font-weight:normal;'>(ankommen)</span></td><td><b>Der Zug kommt jetzt am Bahnhof an.</b><br>Qatar indi vağzala çatır.</td></tr><tr><td rowspan='2'><b>Bitmiş</b> (Perfekt)</td><td><b>Der Student</b></td><td style='color:#d35400;font-weight:bold;'>ha<b>t</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(haben)</span></td><td>gestern wegen der Prüfung</td><td>den Text</td><td style='text-align:center;'>gelernt <span style='font-size:11px; color:#888; font-weight:normal;'>(lernen)</span></td><td><b>Der Student hat gestern den Text gelernt.</b><br>Tələbə dünən mətni öyrəndi.</td></tr><tr><td><b>Wir</b></td><td style='color:#d35400;font-weight:bold;'>sind <span style='font-size:11px; color:#888; font-weight:normal;'>(sein)</span></td><td>am Morgen nach Berlin</td><td>—</td><td style='text-align:center;'>gefahren <span style='font-size:11px; color:#888; font-weight:normal;'>(fahren)</span></td><td><b>Wir sind am Morgen nach Berlin gefahren.</b><br>Biz səhər Berlinə getdik.</td></tr><tr><td rowspan='2'><b>Keçmiş Bitmiş</b> (Plusquamperfekt)</td><td><b>Er</b></td><td style='color:#d35400;font-weight:bold;'>hat<b>te</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(haben)</span></td><td>schon vorab</td><td>das Ticket</td><td style='text-align:center;'>gekauft <span style='font-size:11px; color:#888; font-weight:normal;'>(kaufen)</span></td><td><b>Er hatte schon vorab das Ticket gekauft.</b><br>O, artıq qabaqcadan bileti almışdı.</td></tr><tr><td><b>Sie</b></td><td style='color:#d35400;font-weight:bold;'>war <span style='font-size:11px; color:#888; font-weight:normal;'>(sein)</span></td><td>bereits nach Hause</td><td>—</td><td style='text-align:center;'>gegangen <span style='font-size:11px; color:#888; font-weight:normal;'>(gehen)</span></td><td><b>Sie war bereits nach Hause gegangen.</b><br>O, artıq evə getmişdi.</td></tr><tr><td rowspan='2'><b>Keçmiş</b> (Präteritum)</td><td><b>Er</b></td><td style='color:#d35400;font-weight:bold;'>kauf<b>te</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(kaufen)</span></td><td>damals im Laden</td><td>das Buch</td><td style='text-align:center;'>—</td><td><b>Er kaufte damals im Laden das Buch.</b><br>O, o vaxt mağazada kitabı aldı.</td></tr><tr><td><b>Sie</b></td><td style='color:#d35400;font-weight:bold;'>fuhr<b>en</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(fahren)</span></td><td>mit dem Auto heim</td><td>—</td><td style='text-align:center;'>—</td><td><b>Sie fuhren mit dem Auto heim.</b><br>Onlar maşınla evə getdilər.</td></tr><tr><td rowspan='2'><b>Keçmiş</b> (haben/sein)</td><td><b>Wir</b></td><td style='color:#d35400;font-weight:bold;'>hat<b>ten</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(haben)</span></td><td>letztes Jahr viel</td><td>Glück</td><td style='text-align:center;'>—</td><td><b>Wir hatten letztes Jahr viel Glück.</b><br>Keçən il çox bəxtimiz gətirdi.</td></tr><tr><td><b>Ich</b></td><td style='color:#d35400;font-weight:bold;'>war <span style='font-size:11px; color:#888; font-weight:normal;'>(sein)</span></td><td>gestern Abend sehr</td><td>—</td><td style='text-align:center;'>müde</td><td><b>Ich war gestern Abend sehr müde.</b><br>Dünən axşam çox yorğun idim.</td></tr><tr><td><b>Gələcək</b> (Futur)</td><td><b>Du</b></td><td style='color:#d35400;font-weight:bold;'>wirs<b>t</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(werden)</span></td><td>bald in Deutschland</td><td>—</td><td style='text-align:center;'>leben <span style='font-size:11px; color:#888; font-weight:normal;'>(leben)</span></td><td><b>Du wirst bald in Deutschland leben.</b><br>Sən tezliklə Almaniyada yaşayacaqsan.</td></tr><tr><td><b>Modal</b></td><td><b>Der Arzt</b></td><td style='color:#d35400;font-weight:bold;'>muss <span style='font-size:11px; color:#888; font-weight:normal;'>(müssen)</span></td><td>sofort im Krankenhaus</td><td>den Patienten</td><td style='text-align:center;'>operieren <span style='font-size:11px; color:#888; font-weight:normal;'>(operieren)</span></td><td><b>Der Arzt muss den Patienten operieren.</b><br>Həkim xəstəni əməliyyat etməlidir.</td></tr><tr><td><b>Məchul</b> (Präsens)</td><td><b>Das Brot</b></td><td style='color:#d35400;font-weight:bold;'>wir<b>d</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(werden)</span></td><td>jeden Morgen hier</td><td>—</td><td style='text-align:center;'>gebacken <span style='font-size:11px; color:#888; font-weight:normal;'>(backen)</span></td><td><b>Das Brot wird jeden Morgen here gebacken.</b><br>Çörək burada bişirilir.</td></tr><tr><td><b>Məchul</b> (Präteritum)</td><td><b>Das Auto</b></td><td style='color:#d35400;font-weight:bold;'>wurd<b>e</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(werden)</span></td><td>gestern in der Werkstatt</td><td>—</td><td style='text-align:center;'>repariert <span style='font-size:11px; color:#888; font-weight:normal;'>(reparieren)</span></td><td><b>Das Auto wurde gestern repariert.</b><br>Maşın dünən təmir olundu.</td></tr></tbody></table></div>"
+                },
+                {
+                    "type": "h3",
+                    "text": "Cümlə Tipləri və TE-KA-MO-LO"
+                },
+                {
+                    "type": "html",
+                    "html": "<div class='overflow-x-auto my-4'><table border='1' style='width:100%; border-collapse: collapse; font-family:\"Segoe UI\", Arial, sans-serif; text-align:left; color:#333;' class='grammar-table'><thead><tr style='background-color:#f2f2f2; text-align:center;'><th>Cümlə Növü</th><th>1-ci Yer</th><th>2-ci Yer (Fel)</th><th>Orta Hissə (TE-KA-MO-LO)</th><th>Sonda (Felin qalan hissəsi)</th></tr></thead><tbody><tr><td><b>Nəqli (Düz)</b></td><td style='color:#2980b9;font-weight:bold;'>Ich</td><td style='color:#d35400;font-weight:bold;'>muss</td><td>heute schnell nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen.</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Mən)</td><td>(məcburam)</td><td>(bu gün cəld evə)</td><td>(getməyə)</td></tr><tr><td><b>İnversiya</b><br><small>(Vurğu zamanda)</small></td><td style='color:#2980b9;font-weight:bold;'>Heute</td><td style='color:#d35400;font-weight:bold;'>muss</td><td>ich schnell nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen.</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Bu gün)</td><td>(məcburam)</td><td>(mən cəld evə)</td><td>(getməyə)</td></tr><tr><td><b>W-Sual</b><br><small>(Sual sözü ilə)</small></td><td style='color:#2980b9;font-weight:bold;'>Warum</td><td style='color:#d35400;font-weight:bold;'>musst</td><td>du heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen?</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Niyə)</td><td>(məcburan)</td><td>(sən bu gün evə)</td><td>(getməyə)</td></tr><tr><td><b>Ja/Nein Sual</b><br><small>(Bəli/Xeyr)</small></td><td style='color:#d35400;font-weight:bold;'>Musst</td><td style='color:#2980b9;font-weight:bold;'>du</td><td>heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen?</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Məcburan?)</td><td>(sən)</td><td>(bu gün evə)</td><td>(getməyə)</td></tr><tr><td><b>Yan Cümlə</b><br><small>(Bağlayıcı ilə)</small></td><td style='color:#2980b9;font-weight:bold;'>... weil</td><td>ich</td><td>heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen muss.</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(...çünki)</td><td>(mən)</td><td>(bu gün evə)</td><td>(getməli olduğum üçün)</td></tr><tr><td><b>Əmr</b><br><small>(İmperativ)</small></td><td style='color:#d35400;font-weight:bold;'>Geh</td><td style='color:#2980b9;font-weight:bold;'>— / Sie</td><td>bitte heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>!</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Get)</td><td>(— / Siz)</td><td>(zəhmət olmasa bu gün evə)</td><td></td></tr><tr><td><b>Nida</b><br><small>(Exklamativ)</small></td><td style='color:#2980b9;font-weight:bold;'>Wie schön</td><td style='color:#d35400;font-weight:bold;'>ist</td><td>das heute</td><td style='color:#d35400;font-weight:bold;'>!</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Necə gözəl)</td><td>(dir)</td><td>(bu gün bu)</td><td></td></tr></tbody></table></div>"
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>TE-KA-MO-LO:</strong> Alman dilində orta hissənin ardıcıllığı belədir: <strong>Te</strong>mporal (Zaman), <strong>Ka</strong>usal (Səbəb), <strong>Mo</strong>dal (Tərz), <strong>Lo</strong>kal (Məkan)."
+                },
+                {
+                    "type": "h3",
+                    "text": "\"Es gibt\" (Var) Qaydası"
+                },
+                {
+                    "type": "p",
+                    "text": "<strong>Es gibt</strong> ifadəsi \"var\" mənasını bildirir və həmişə <strong>Akkusativ</strong> tələb edir."
+                },
+                {
+                    "type": "example-box",
+                    "title": "Cümlə Nümunələri",
+                    "items": [
+                        "<span class=\"german\">Es gibt <span class=\"highlight\">einen</span> Park hier.</span> (Burada bir park var) - [Düz]",
+                        "<span class=\"german\">Gibt es <span class=\"highlight\">ein</span> Problem?</span> (Bir problem var?) - [Sual]",
+                        "<span class=\"german\">Dort gibt es <span class=\"highlight\">keinen</span> Zucker.</span> (Orada şəkər yoxdur) - [Mənfi]",
+                        "<span class=\"german\">Heute gibt es <span class=\"highlight\">viele</span> Gäste.</span> (Bu gün çoxlu qonaq var) - [İnversiya]"
+                    ],
+                    "class": "example-box success"
                 }
             ]
         },
@@ -897,71 +977,51 @@
         },
         {
             "id": "partizip",
-            "title": "15. Partizip I & II Sifət kimi Peşəkar",
+            "title": "15. Partizip I & II (Felin Sifət Formaları)",
             "content": [
                 {
                     "type": "h3",
-                    "text": "Partizip I (Präsens Partizip) - Aktiv məna"
+                    "text": "Partizip I (Präsens Partizip) - Hazırda davam edən/Aktiv"
+                },
+                {
+                    "type": "rule",
+                    "text": "<strong>Düzəldilməsi:</strong> Felin infinitiv forması + <strong>-d</strong> şəkilçisi.<br><em>Nümunə:</em> spielen + d = spielend (oynayan)"
                 },
                 {
                     "type": "example-box",
                     "title": "",
                     "items": [
-                        "<span class=\"german\">das <span class=\"highlight\">laufende</span> Kind</span> (qaçan uşaq)",
-                        "<span class=\"german\">das <span class=\"highlight\">kochende</span> Wasser</span> (qaynayan su)",
-                        "<span class=\"german\">die <span class=\"highlight\">lachende</span> Frau</span> (gülən qadın)",
-                        "<span class=\"german\">der <span class=\"highlight\">arbeitende</span> Mann</span> (işləyən kişi)"
+                        "<span class=\"german\">das <span class=\"highlight\">singende</span> Kind</span> (oxuyan uşaq)",
+                        "<span class=\"german\">die <span class=\"highlight\">kommende</span> Woche</span> (gələn həftə)",
+                        "<span class=\"german\">das <span class=\"highlight\">brennende</span> Haus</span> (yanan ev)"
                     ],
                     "class": "example-box"
                 },
                 {
                     "type": "h3",
-                    "text": "Partizip II (Perfekt Partizip) - Passiv/Keçmiş məna"
+                    "text": "Partizip II (Perfekt Partizip) - Bitmiş/Passiv"
+                },
+                {
+                    "type": "rule",
+                    "text": "<strong>Düzəldilməsi:</strong> <strong>ge-</strong> + felin kökü + <strong>-(e)t</strong> (düzgün fellər) və ya <strong>-en</strong> (düzgün olmayan fellər).<br><em>Nümunə:</em> gekauft (alınmış), gelesen (oxunmuş)"
                 },
                 {
                     "type": "example-box",
                     "title": "",
                     "items": [
-                        "<span class=\"german\">das <span class=\"highlight\">gekaufte</span> Auto</span> (alınmış maşın)",
-                        "<span class=\"german\">die <span class=\"highlight\">geschriebene</span> E-Mail</span> (yazılmış e-poçt)",
-                        "<span class=\"german\">der <span class=\"highlight\">geöffnete</span> Brief</span> (açılmış məktub)",
-                        "<span class=\"german\">das <span class=\"highlight\">gebrochene</span> Fenster</span> (qırılmış pəncərə)"
+                        "<span class=\"german\">das <span class=\"highlight\">gekochte</span> Essen</span> (bişmiş yemək)",
+                        "<span class=\"german\">die <span class=\"highlight\">verlorene</span> Zeit</span> (itirilmiş vaxt)",
+                        "<span class=\"german\">der <span class=\"highlight\">gefundene</span> Schlüssel</span> (tapılmış açar)"
                     ],
                     "class": "example-box"
                 },
                 {
                     "type": "h3",
-                    "text": "Hallanma Cədvəli"
+                    "text": "Sifət kimi Hallanma"
                 },
                 {
-                    "type": "table",
-                    "rows": [
-                        [
-                            "Hal",
-                            "Partizip I (laufend)",
-                            "Partizip II (gekauft)"
-                        ],
-                        [
-                            "Nominativ",
-                            "der laufende Mann",
-                            "der gekaufte Wagen"
-                        ],
-                        [
-                            "Akkusativ",
-                            "den laufenden Mann",
-                            "den gekauften Wagen"
-                        ],
-                        [
-                            "Dativ",
-                            "dem laufenden Mann",
-                            "dem gekauften Wagen"
-                        ],
-                        [
-                            "Genitiv",
-                            "des laufenden Mannes",
-                            "des gekauften Wagens"
-                        ]
-                    ]
+                    "type": "tip",
+                    "text": "Partizip I və II sifət kimi işləndikdə, ismin qarşısında gəlir və normal sifət hallanması qaydalarına uyğun sonluqlar qəbul edir."
                 }
             ]
         },
@@ -1055,98 +1115,34 @@
             ]
         },
         {
-            "id": "partizip-adjektiv",
-            "title": "18. Partizip I & II Sifət kimi Daha Zəngin Dil",
+            "id": "indirekte-fragen",
+            "title": "17. İndirekte Fragen (Vasitəli Suallar)",
             "content": [
                 {
                     "type": "h3",
-                    "text": "Partizip I (Aktiv Məna) - \"Hazırda edən\""
+                    "text": "Vasitəli Sualın Quruluşu"
                 },
                 {
-                    "type": "example-box",
-                    "title": "",
-                    "items": [
-                        "<span class=\"german\">kochen → <span class=\"highlight\">kochend</span></span> - das <span class=\"highlight\">kochende</span> Wasser (qaynayan su)",
-                        "<span class=\"german\">lachen → <span class=\"highlight\">lachend</span></span> - die <span class=\"highlight\">lachende</span> Frau (gülən qadın)",
-                        "<span class=\"german\">laufen → <span class=\"highlight\">laufend</span></span> - der <span class=\"highlight\">laufende</span> Mann (qaçan kişi)",
-                        "<span class=\"german\">schlafen → <span class=\"highlight\">schlafend</span></span> - das <span class=\"highlight\">schlafende</span> Kind (yatayan uşaq)"
-                    ],
-                    "class": "example-box"
-                },
-                {
-                    "type": "h3",
-                    "text": "Partizip II (Passiv/Keçmiş Məna) - \"Edilmiş\""
-                },
-                {
-                    "type": "example-box",
-                    "title": "",
-                    "items": [
-                        "<span class=\"german\">kaufen → <span class=\"highlight\">gekauft</span></span> - das <span class=\"highlight\">gekaufte</span> Auto (alınmış maşın)",
-                        "<span class=\"german\">schreiben → <span class=\"highlight\">geschrieben</span></span> - der <span class=\"highlight\">geschriebene</span> Brief (yazılmış məktub)",
-                        "<span class=\"german\">öffnen → <span class=\"highlight\">geöffnet</span></span> - die <span class=\"highlight\">geöffnete</span> Tür (açılmış qapı)",
-                        "<span class=\"german\">brechen → <span class=\"highlight\">gebrochen</span></span> - das <span class=\"highlight\">gebrochene</span> Fenster (qırılmış pəncərə)"
-                    ],
-                    "class": "example-box"
-                },
-                {
-                    "type": "h3",
-                    "text": "Hallanma Nümunələri"
-                },
-                {
-                    "type": "table",
-                    "rows": [
-                        [
-                            "Hal",
-                            "Partizip I (laufend)",
-                            "Partizip II (gekauft)"
-                        ],
-                        [
-                            "Nominativ",
-                            "der <span class=\"highlight\">laufende</span> Mann",
-                            "der <span class=\"highlight\">gekaufte</span> Wagen"
-                        ],
-                        [
-                            "Akkusativ",
-                            "den <span class=\"highlight\">laufenden</span> Mann",
-                            "den <span class=\"highlight\">gekauften</span> Wagen"
-                        ],
-                        [
-                            "Dativ",
-                            "dem <span class=\"highlight\">laufenden</span> Mann",
-                            "dem <span class=\"highlight\">gekauften</span> Wagen"
-                        ],
-                        [
-                            "Genitiv",
-                            "des <span class=\"highlight\">laufenden</span> Mannes",
-                            "des <span class=\"highlight\">gekauften</span> Wagens"
-                        ]
-                    ]
-                },
-                {
-                    "type": "h3",
-                    "text": "Xüsusi Hallar"
+                    "type": "p",
+                    "text": "Vasitəli suallar yan cümlə hesab olunur və fel həmişə cümlənin sonunda gəlir."
                 },
                 {
                     "type": "grid",
                     "boxes": [
                         {
-                            "title": "Qeyri-müntəzəm Partizip II",
+                            "title": "W-Fragen (Sual sözü ilə)",
                             "items": [
-                                "sehen → gesehen - das gesehene Bild",
-                                "trinken → getrunken - das getrunkene Wasser",
-                                "lesen → gelesen - das gelesene Buch",
-                                "nehmen → genommen - das genommene Geld"
+                                "<span class=\"german\">Ich weiß nicht, <span class=\"highlight\">wann</span> der Zug <span class=\"highlight\">kommt</span>.</span> (Qatarın nə vaxt gəldiyini bilmirəm)",
+                                "<span class=\"german\">Können Sie mir sagen, <span class=\"highlight\">wo</span> der Bahnhof <span class=\"highlight\">ist</span>?</span> (Mənə deyə bilərsinizmi vağzal haradadır?)"
                             ],
                             "p": [],
-                            "class": "example-box warning"
+                            "class": "example-box"
                         },
                         {
-                            "title": "ge olmayan Partizip II",
+                            "title": "Ja/Nein Fragen (ob ilə)",
                             "items": [
-                                "studieren → studiert - der studierte Mann",
-                                "fotografieren → fotografiert - das fotografierte Haus",
-                                "diskutieren → diskutiert - die diskutierte Frage",
-                                "organisieren → organisiert - die organisierte Reise"
+                                "<span class=\"german\">Ich frage mich, <span class=\"highlight\">ob</span> er <span class=\"highlight\">kommt</span>.</span> (Onun gəlib-gəlməyəcəyini maraq edirəm)",
+                                "<span class=\"german\">Weißt du, <span class=\"highlight\">ob</span> es heute <span class=\"highlight\">regnet</span>?</span> (Bu gün yağış yağıb-yağmayacağını bilirsən?)"
                             ],
                             "p": [],
                             "class": "example-box warning"
@@ -1155,13 +1151,13 @@
                 },
                 {
                     "type": "tip",
-                    "text": "<strong>Qayda:</strong> Partizip I və II sifət kimi işləndikdə normal sifət hallanması qaydalarına uyğun hallanır.\n                (Məsələn: der laufende Mann, die laufenden Männer)"
+                    "text": "Vasitəli suallar adətən nəzakətli xahişlərdə və ya məlumatsızlıq bildirdikdə istifadə olunur."
                 }
             ]
         },
         {
             "id": "verben-praepositionen",
-            "title": "19. Verben mit Präpositionen (Feil + Sözönü) Əzbərlənməli",
+            "title": "18. Verben mit Präpositionen (Feil + Sözönü) Əzbərlənməli",
             "content": [
                 {
                     "type": "h3",

@@ -68,15 +68,41 @@
 }
 
 .grammar-table {
-  @apply w-full border-collapse my-4 text-[15px] shadow-sm overflow-hidden rounded-xl border border-slate-200;
+  @apply w-full border-collapse my-4 text-[13px] md:text-[15px] shadow-sm rounded-xl border border-slate-200 bg-white;
+  min-width: 500px;
+  /* Reduced slightly for better fit */
+}
+
+/* Ensure horizontal scroll on mobile */
+.overflow-x-auto {
+  @apply rounded-xl border border-slate-100;
+  -webkit-overflow-scrolling: touch;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+
+@media (min-width: 768px) {
+  .grammar-table {
+    min-width: auto;
+  }
 }
 
 .grammar-table th {
-  @apply bg-slate-50 text-rose-600 font-bold p-3 border border-slate-200 text-left;
+  @apply bg-slate-50 text-rose-600 font-bold p-2 md:p-3 border border-slate-200 text-left whitespace-nowrap;
 }
 
 .grammar-table td {
-  @apply p-4 border border-slate-100 text-slate-600 align-middle;
+  @apply p-3 md:p-4 border border-slate-100 text-slate-600 align-middle;
 }
 
 .grammar-table tr:nth-child(even) {

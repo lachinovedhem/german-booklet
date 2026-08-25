@@ -23,7 +23,9 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // PascalCase identifikatorları (JSX komponentləri, məs. `icon: Icon`) həm dəyişən,
+      // həm də arqument kimi istifadə olunmamış sayılmasın.
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^[A-Z_]' }],
     },
   },
 ])
