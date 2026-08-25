@@ -1,10 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import SearchBar from '../components/SearchBar';
 import DataCard from '../components/DataCard';
+import { useLanguage } from '../i18n/LanguageContext';
 import phrasesData from '../data/phrases.json';
-import { MessageSquare, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 const PhrasesPage = () => {
+    const { t, tCat } = useLanguage();
     const [search, setSearch] = useState('');
     const [activeCategory, setActiveCategory] = useState('all');
 
@@ -14,22 +16,19 @@ const PhrasesPage = () => {
     }, []);
 
     const filteredData = useMemo(() => {
+        const q = search.toLowerCase();
+        const matchItem = (item) =>
+            item.german.toLowerCase().includes(q) ||
+            (item.azeri && item.azeri.toLowerCase().includes(q)) ||
+            (item.en && item.en.toLowerCase().includes(q));
+
         return phrasesData.filter(section => {
             const matchesCategory = activeCategory === 'all' || section.category === activeCategory;
             if (!matchesCategory) return false;
-
-            const filteredItems = section.items.filter(item =>
-                item.german.toLowerCase().includes(search.toLowerCase()) ||
-                item.azeri.toLowerCase().includes(search.toLowerCase())
-            );
-
-            return filteredItems.length > 0;
+            return section.items.some(matchItem);
         }).map(section => ({
             ...section,
-            items: section.items.filter(item =>
-                item.german.toLowerCase().includes(search.toLowerCase()) ||
-                item.azeri.toLowerCase().includes(search.toLowerCase())
-            )
+            items: section.items.filter(matchItem)
         }));
     }, [search, activeCategory]);
 
@@ -39,8 +38,8 @@ const PhrasesPage = () => {
             <div className="sticky top-16 md:top-0 z-20 -mx-4 md:-mx-6 px-4 md:px-6 py-4 bg-slate-50/95 backdrop-blur-md border-b border-slate-200/50">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-4">
                     <div className="space-y-2">
-                        <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">İfadələr</h2>
-                        <p className="text-slate-500 font-medium max-w-md hidden md:block">Gündəlik həyatda və işdə ən çox istifadə olunan cümlələr.</p>
+                        <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">{t('phrases_title')}</h2>
+                        <p className="text-slate-500 font-medium max-w-md hidden md:block">{t('phrases_sub')}</p>
                     </div>
 
                     <select
@@ -50,7 +49,7 @@ const PhrasesPage = () => {
                     >
                         {categories.map(cat => (
                             <option key={cat} value={cat}>
-                                {cat === 'all' ? 'Hamısı' : cat}
+                                {cat === 'all' ? t('all') : tCat('phraseCats', cat)}
                             </option>
                         ))}
                     </select>
@@ -58,7 +57,7 @@ const PhrasesPage = () => {
 
                 <div className="relative">
                     <div className="absolute -inset-4 bg-indigo-500/5 blur-3xl rounded-full pointer-events-none" />
-                    <SearchBar value={search} onChange={setSearch} placeholder="İfadə və ya tərcümə axtar..." />
+                    <SearchBar value={search} onChange={setSearch} placeholder={t('phrases_search')} />
                 </div>
             </div>
 
@@ -67,7 +66,7 @@ const PhrasesPage = () => {
                     <div key={`${section.category}-${section.subcategory}`} className="space-y-4">
                         <div className="mb-3">
                             <h3 className="text-[10px] font-black text-slate-400 uppercase tracking-wider px-2 py-1 bg-slate-50 rounded-lg inline-block">
-                                {section.subcategory}
+                                {tCat('phraseSubcats', section.subcategory)}
                             </h3>
                         </div>
 
@@ -79,6 +78,7 @@ const PhrasesPage = () => {
                                     item={{
                                         german: item.german,
                                         translation: item.azeri,
+                                        en: item.en,
                                         cat: section.subcategory,
                                         note: item.note
                                     }}
@@ -94,7 +94,7 @@ const PhrasesPage = () => {
                     <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6">
                         <Sparkles size={32} className="text-slate-300" />
                     </div>
-                    <p className="text-slate-400 font-black uppercase tracking-widest text-sm">Heç bir nəticə tapılmadı</p>
+                    <p className="text-slate-400 font-black uppercase tracking-widest text-sm">{t('no_results_short')}</p>
                 </div>
             )}
         </div>

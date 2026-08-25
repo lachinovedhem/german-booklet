@@ -2,9 +2,11 @@ import React, { useState, useMemo } from 'react';
 import SearchBar from '../components/SearchBar';
 import DataCard from '../components/DataCard';
 import { getFavorites } from '../utils/favorites';
+import { useLanguage } from '../i18n/LanguageContext';
 import { Star } from 'lucide-react';
 
 const FavoritesPage = () => {
+    const { t } = useLanguage();
     const [search, setSearch] = useState('');
     // Seçilmişlər localStorage-dən ilk render zamanı yüklənir (lazy init).
     const [favorites, setFavorites] = useState(getFavorites);
@@ -12,10 +14,11 @@ const FavoritesPage = () => {
     const filteredData = useMemo(() => {
         return favorites.filter(item => {
             const word = (item.word || item.infinitive || item.german || item.phrase || '').toLowerCase();
-            const trans = (item.translation || item.meaning || item.trans || item.comp || item.azeri || '').toLowerCase();
+            const trans = (item.translation || item.meaning || item.trans || item.comp || item.azeri || item.en || '').toLowerCase();
+            const en = (item.en || '').toLowerCase();
             const searchLower = search.toLowerCase();
 
-            return word.includes(searchLower) || trans.includes(searchLower);
+            return word.includes(searchLower) || trans.includes(searchLower) || en.includes(searchLower);
         });
     }, [search, favorites]);
 
@@ -33,13 +36,13 @@ const FavoritesPage = () => {
                             <Star size={24} fill="currentColor" />
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">Seçilmişlər</h2>
-                            <p className="text-slate-500 hidden md:block">Ulduzladığınız sözlər və ifadələr.</p>
+                            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">{t('fav_title')}</h2>
+                            <p className="text-slate-500 hidden md:block">{t('fav_sub')}</p>
                         </div>
                     </div>
                 </div>
 
-                <SearchBar value={search} onChange={setSearch} placeholder="Seçilmişlərdə axtar..." />
+                <SearchBar value={search} onChange={setSearch} placeholder={t('fav_search')} />
             </div>
 
             {filteredData.length > 0 ? (
@@ -59,7 +62,7 @@ const FavoritesPage = () => {
                         <Star size={48} className="text-slate-200" />
                     </div>
                     <p className="text-slate-400 font-medium max-w-xs mx-auto">
-                        {search ? 'Axtarışa uyğun seçilmiş söz tapılmadı.' : 'Hələ heç bir sözü ulduzlamamısınız.'}
+                        {search ? t('fav_empty_search') : t('fav_empty')}
                     </p>
                 </div>
             )}

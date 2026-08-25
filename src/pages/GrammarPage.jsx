@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import grammarData from '../data/grammar.json';
-import { FileText, ChevronRight, List } from 'lucide-react';
+import { ChevronRight, List } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const GrammarPage = () => {
+    const { t, lang } = useLanguage();
     const [activeSection, setActiveSection] = useState(grammarData.sections[0]?.id);
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
     const observer = useRef(null);
+
+    const secTitle = (section) => (lang === 'en' && section.titleEn) ? section.titleEn : section.title;
+    const secContent = (section) => (lang === 'en' && section.contentEn) ? section.contentEn : section.content;
 
     useEffect(() => {
         observer.current = new IntersectionObserver((entries) => {
@@ -115,13 +120,16 @@ const GrammarPage = () => {
         <div className="flex flex-col lg:flex-row gap-6 relative">
             {/* Mobile Quick Nav Trigger */}
             <div className="lg:hidden sticky top-16 z-30 -mx-4 px-4 py-2 bg-white/80 backdrop-blur-md border-b border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Mövzular</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{t('grammar_topics')}</span>
                 <button
                     onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
                     className="flex items-center gap-2 px-3 py-1.5 bg-rose-50 text-rose-600 rounded-lg text-xs font-bold transition-all active:scale-95"
                 >
                     <List size={14} />
-                    {grammarData.sections.find(s => s.id === activeSection)?.title.split('.')[1]?.trim() || 'Seçin'}
+                    {(() => {
+                        const s = grammarData.sections.find(s => s.id === activeSection);
+                        return (s && secTitle(s).split('.')[1]?.trim()) || t('grammar_choose');
+                    })()}
                 </button>
             </div>
 
@@ -137,7 +145,7 @@ const GrammarPage = () => {
             <div className={`fixed inset-x-0 bottom-0 z-50 lg:hidden bg-white rounded-t-3xl shadow-2xl transition-transform duration-300 transform ${isMobileNavOpen ? 'translate-y-0' : 'translate-y-full'}`}>
                 <div className="p-6 max-h-[70vh] overflow-y-auto">
                     <div className="flex items-center justify-between mb-6">
-                        <h2 className="text-lg font-bold text-slate-800">Mövzular</h2>
+                        <h2 className="text-lg font-bold text-slate-800">{t('grammar_topics')}</h2>
                         <button onClick={() => setIsMobileNavOpen(false)} className="p-2 hover:bg-slate-100 rounded-full">
                             <ChevronRight size={20} className="rotate-90" />
                         </button>
@@ -152,7 +160,7 @@ const GrammarPage = () => {
                                     : 'text-slate-600 hover:bg-slate-50 border border-slate-100'
                                     }`}
                             >
-                                {section.title}
+                                {secTitle(section)}
                             </button>
                         ))}
                     </div>
@@ -161,7 +169,7 @@ const GrammarPage = () => {
 
             {/* Quick Nav - Desktop */}
             <aside className="hidden lg:block w-64 shrink-0 sticky top-24 self-start space-y-1">
-                <h2 className="text-xs font-bold text-slate-400 uppercase tracking-widest px-3 mb-3">Mövzular</h2>
+                <h2 className="text-xs font-bold text-slate-400 uppercase tracking-widest px-3 mb-3">{t('grammar_topics')}</h2>
                 {grammarData.sections.map(section => (
                     <button
                         key={section.id}
@@ -171,7 +179,7 @@ const GrammarPage = () => {
                             : 'text-slate-600 hover:bg-slate-100'
                             }`}
                     >
-                        {section.title.split('.')[1]?.trim() || section.title}
+                        {secTitle(section).split('.')[1]?.trim() || secTitle(section)}
                     </button>
                 ))}
             </aside>
@@ -180,9 +188,9 @@ const GrammarPage = () => {
             <div className="flex-1 space-y-8">
                 {grammarData.sections.map(section => (
                     <section key={section.id} id={section.id} className="grammar-section scroll-mt-24">
-                        <h2 className="grammar-h2">{section.title}</h2>
+                        <h2 className="grammar-h2">{secTitle(section)}</h2>
                         <div>
-                            {renderContent(section.content)}
+                            {renderContent(secContent(section))}
                         </div>
                     </section>
                 ))}

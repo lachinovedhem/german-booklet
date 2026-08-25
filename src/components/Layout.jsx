@@ -9,14 +9,13 @@ import {
     FileText,
     MessageSquare,
     Layers,
-    Menu,
-    X,
     Sparkles,
     Search,
     GraduationCap,
     Brain
 } from 'lucide-react';
 import logo from '../assets/logo.png';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const NavItem = ({ to, icon: Icon, label, active, onClick }) => (
     <Link
@@ -32,8 +31,34 @@ const NavItem = ({ to, icon: Icon, label, active, onClick }) => (
     </Link>
 );
 
+const LanguageToggle = ({ className = '' }) => {
+    const { lang, setLang, t } = useLanguage();
+    return (
+        <div
+            className={`inline-flex items-center rounded-xl bg-slate-100 p-0.5 ${className}`}
+            role="group"
+            aria-label={t('lang_switch')}
+        >
+            {['az', 'en'].map((code) => (
+                <button
+                    key={code}
+                    onClick={() => setLang(code)}
+                    aria-pressed={lang === code}
+                    className={`px-3 py-1 rounded-lg text-xs font-black tracking-wide transition-all ${lang === code
+                        ? 'bg-white text-primary shadow-sm'
+                        : 'text-slate-400 hover:text-slate-600'
+                        }`}
+                >
+                    {t(code === 'az' ? 'lang_az' : 'lang_en')}
+                </button>
+            ))}
+        </div>
+    );
+};
+
 const Layout = () => {
     const location = useLocation();
+    const { t } = useLanguage();
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -43,25 +68,25 @@ const Layout = () => {
     }, []);
 
     const navItems = [
-        { to: '/', icon: Home, label: 'Ana Səhifə' },
-        { to: '/start', icon: GraduationCap, label: 'Başlanğıc' },
-        { to: '/practice', icon: Brain, label: 'Məşq' },
-        { to: '/grammar', icon: FileText, label: 'Qrammatika' },
-        { to: '/favorites', icon: Star, label: 'Seçilmişlər' },
-        { to: '/nouns', icon: BookOpen, label: 'İsimlər' },
-        { to: '/verbs', icon: Zap, label: 'Fellər' },
-        { to: '/adjectives', icon: Sparkles, label: 'Sifətlər' },
-        { to: '/professions', icon: Briefcase, label: 'Peşələr' },
-        { to: '/phrases', icon: MessageSquare, label: 'İfadələr' },
-        { to: '/miscellaneous', icon: Layers, label: 'Digər' },
+        { to: '/', icon: Home, key: 'nav_home' },
+        { to: '/start', icon: GraduationCap, key: 'nav_start' },
+        { to: '/practice', icon: Brain, key: 'nav_practice' },
+        { to: '/grammar', icon: FileText, key: 'nav_grammar' },
+        { to: '/favorites', icon: Star, key: 'nav_favorites' },
+        { to: '/nouns', icon: BookOpen, key: 'nav_nouns' },
+        { to: '/verbs', icon: Zap, key: 'nav_verbs' },
+        { to: '/adjectives', icon: Sparkles, key: 'nav_adjectives' },
+        { to: '/professions', icon: Briefcase, key: 'nav_professions' },
+        { to: '/phrases', icon: MessageSquare, key: 'nav_phrases' },
+        { to: '/miscellaneous', icon: Layers, key: 'nav_misc' },
     ];
 
     const mobileNavItems = [
-        { to: '/', icon: Home, label: 'Ana Səhifə' },
-        { to: '/start', icon: GraduationCap, label: 'Başlanğıc' },
-        { to: '/words', icon: Search, label: 'Sözlər' },
-        { to: '/practice', icon: Brain, label: 'Məşq' },
-        { to: '/favorites', icon: Star, label: 'Seçilmişlər' },
+        { to: '/', icon: Home, key: 'nav_home' },
+        { to: '/start', icon: GraduationCap, key: 'nav_start' },
+        { to: '/words', icon: Search, key: 'nav_words' },
+        { to: '/practice', icon: Brain, key: 'nav_practice' },
+        { to: '/favorites', icon: Star, key: 'nav_favorites' },
     ];
 
     return (
@@ -76,20 +101,29 @@ const Layout = () => {
                     {navItems.map((item) => (
                         <NavItem
                             key={item.to}
-                            {...item}
+                            to={item.to}
+                            icon={item.icon}
+                            label={t(item.key)}
                             active={location.pathname === item.to}
                         />
                     ))}
                 </nav>
+
+                <div className="p-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                    <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">{t('lang_switch')}</span>
+                    <LanguageToggle />
+                </div>
             </aside>
 
             {/* Mobile Header */}
             <header className={`md:hidden fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-2 shadow-sm' : 'bg-white py-3 border-b border-slate-100'
                 }`}>
-                <div className="px-4 flex items-center justify-between">
-                    <div className="flex items-center justify-center w-full">
+                <div className="px-4 flex items-center justify-between gap-2">
+                    <div className="w-16 shrink-0" />
+                    <div className="flex items-center justify-center flex-1">
                         <img src={logo} alt="alida logo" className="h-10 w-auto object-contain" />
                     </div>
+                    <LanguageToggle className="shrink-0" />
                 </div>
             </header>
 
@@ -117,7 +151,7 @@ const Layout = () => {
                             >
                                 <item.icon size={22} strokeWidth={isActive ? 2.5 : 2} />
                                 <span className={`text-[10px] font-bold mt-1 ${isActive ? 'text-primary' : 'text-slate-500'}`}>
-                                    {item.label}
+                                    {t(item.key)}
                                 </span>
                             </Link>
                         );

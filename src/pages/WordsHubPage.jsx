@@ -10,6 +10,7 @@ import {
     ChevronRight,
     Search
 } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const HubCard = ({ to, icon: Icon, label, description, color }) => (
     <Link
@@ -32,20 +33,21 @@ const HubCard = ({ to, icon: Icon, label, description, color }) => (
 );
 
 const WordsHubPage = () => {
+    const { t } = useLanguage();
     const categories = [
-        { to: '/nouns', icon: BookOpen, label: 'İsimlər', description: 'Artikllər və cəm formaları', color: 'from-blue-500 to-indigo-600' },
-        { to: '/verbs', icon: Zap, label: 'Fellər', description: 'Zamanlar və qaydasız fellər', color: 'from-rose-500 to-orange-600' },
-        { to: '/adjectives', icon: Sparkles, label: 'Sifətlər', description: 'Müqayisə və xüsusiyyətlər', color: 'from-purple-500 to-fuchsia-600' },
-        { to: '/professions', icon: Briefcase, label: 'Peşələr', description: 'İş dünyasına dair ifadələr', color: 'from-amber-400 to-orange-500' },
-        { to: '/phrases', icon: MessageSquare, label: 'İfadələr', description: 'Gündəlik danışıq qəlibləri', color: 'from-emerald-500 to-teal-600' },
-        { to: '/miscellaneous', icon: Layers, label: 'Digər', description: 'Saylar, əvəzliklər və zərflər', color: 'from-slate-600 to-slate-800' },
+        { to: '/nouns', icon: BookOpen, label: t('nav_nouns'), description: t('words_nouns_desc'), color: 'from-blue-500 to-indigo-600' },
+        { to: '/verbs', icon: Zap, label: t('nav_verbs'), description: t('words_verbs_desc'), color: 'from-rose-500 to-orange-600' },
+        { to: '/adjectives', icon: Sparkles, label: t('nav_adjectives'), description: t('words_adj_desc'), color: 'from-purple-500 to-fuchsia-600' },
+        { to: '/professions', icon: Briefcase, label: t('nav_professions'), description: t('words_prof_desc'), color: 'from-amber-400 to-orange-500' },
+        { to: '/phrases', icon: MessageSquare, label: t('nav_phrases'), description: t('words_phrases_desc'), color: 'from-emerald-500 to-teal-600' },
+        { to: '/miscellaneous', icon: Layers, label: t('nav_misc'), description: t('words_misc_desc'), color: 'from-slate-600 to-slate-800' },
     ];
 
     return (
         <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <div className="flex flex-col gap-2">
-                <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">Söz Ehtiyatı</h2>
-                <p className="text-slate-500 font-medium text-lg">Alman dilində ən çox istifadə olunan sözlər və ifadələr.</p>
+                <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">{t('words_title')}</h2>
+                <p className="text-slate-500 font-medium text-lg">{t('words_sub')}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -57,8 +59,8 @@ const WordsHubPage = () => {
             <div className="p-8 rounded-[2.5rem] bg-gradient-to-r from-primary to-indigo-600 text-white relative overflow-hidden shadow-2xl">
                 <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="text-center md:text-left">
-                        <h3 className="text-2xl font-black mb-2 tracking-tight">Hər şeyi axtar</h3>
-                        <p className="text-blue-100/80 font-medium">Bütün bölmələr üzrə sürətli axtarış funksiyası çox yaxında!</p>
+                        <h3 className="text-2xl font-black mb-2 tracking-tight">{t('words_searchall_title')}</h3>
+                        <p className="text-blue-100/80 font-medium">{t('words_searchall_desc')}</p>
                     </div>
                     <div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
                         <Search size={32} className="text-white" />

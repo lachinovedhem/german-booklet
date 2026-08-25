@@ -4,28 +4,32 @@ import {
     Layers, Brain, Trophy, Sparkles,
 } from 'lucide-react';
 import { speak } from '../utils/speech';
+import { useLanguage } from '../i18n/LanguageContext';
 import nounsData from '../data/nouns.json';
 import verbsData from '../data/verbs.json';
 import adjectivesData from '../data/adjectives.json';
 
 const STATS_KEY = 'german_practice_stats';
 
-// Hər dataseti vahid {front, back, speak} formasına gətiririk.
+// Hər dataseti vahid {de, native, speak} formasına gətiririk. "native" öyrənmə
+// dilinə (AZ/EN) görə seçilir.
+const pick = (lang, en, az) => (lang === 'en' ? (en || az) : (az || en));
+
 const DATASETS = {
     nouns: {
-        label: 'İsimlər',
+        labelKey: 'nav_nouns',
         data: nounsData,
-        map: (x) => ({ de: `${x.art} ${x.word}`, az: x.translation, speak: `${x.art} ${x.word}`, priority: x.priority }),
+        map: (x, lang) => ({ de: `${x.art} ${x.word}`, native: pick(lang, x.en, x.translation), speak: `${x.art} ${x.word}`, priority: x.priority }),
     },
     verbs: {
-        label: 'Fellər',
+        labelKey: 'nav_verbs',
         data: verbsData,
-        map: (x) => ({ de: x.infinitive, az: x.meaning, speak: x.infinitive, priority: x.priority }),
+        map: (x, lang) => ({ de: x.infinitive, native: pick(lang, x.en, x.meaning), speak: x.infinitive, priority: x.priority }),
     },
     adjectives: {
-        label: 'Sifətlər',
+        labelKey: 'nav_adjectives',
         data: adjectivesData,
-        map: (x) => ({ de: x.german, az: x.meaning, speak: x.german, priority: x.priority }),
+        map: (x, lang) => ({ de: x.german, native: pick(lang, x.en, x.meaning), speak: x.german, priority: x.priority }),
     },
 };
 
@@ -48,9 +52,10 @@ const loadStats = () => {
 };
 
 const PracticePage = () => {
+    const { t, lang } = useLanguage();
     const [dataset, setDataset] = useState('nouns');
     const [mode, setMode] = useState('flashcard'); // flashcard | quiz
-    const [direction, setDirection] = useState('de-az'); // de-az | az-de
+    const [direction, setDirection] = useState('de-native'); // de-native | native-de
     const [onlyImportant, setOnlyImportant] = useState(true);
     const [started, setStarted] = useState(false);
 
@@ -61,8 +66,8 @@ const PracticePage = () => {
     const [answered, setAnswered] = useState(null); // quiz: seçilmiş cavab
     const [lifetime, setLifetime] = useState(loadStats);
 
-    // Parametrlər (dataset/rejim/istiqamət/əhatə) dəyişəndə sessiyanı render zamanı sıfırla.
-    const configKey = `${dataset}|${mode}|${direction}|${onlyImportant}`;
+    // Parametrlər (dataset/rejim/istiqamət/əhatə/dil) dəyişəndə sessiyanı render zamanı sıfırla.
+    const configKey = `${dataset}|${mode}|${direction}|${onlyImportant}|${lang}`;
     const [prevConfig, setPrevConfig] = useState(configKey);
     if (configKey !== prevConfig) {
         setPrevConfig(configKey);
@@ -76,27 +81,27 @@ const PracticePage = () => {
     // Seçilmiş datadan göyərtə (deck) qururuq
     const deck = useMemo(() => {
         const cfg = DATASETS[dataset];
-        let items = cfg.data.map(cfg.map).filter((x) => x.de && x.az);
+        let items = cfg.data.map((x) => cfg.map(x, lang)).filter((x) => x.de && x.native);
         if (onlyImportant) {
             const important = items.filter((x) => x.priority === 1 || x.priority === 2);
             if (important.length >= 8) items = important;
         }
         return shuffle(items).slice(0, 30);
-    }, [dataset, onlyImportant]);
+    }, [dataset, onlyImportant, lang]);
 
     const current = deck[index];
     const isFinished = started && index >= deck.length;
 
     // Cari sual üçün "ön" və "arxa" tərəfi istiqamətə görə təyin edirik
-    const front = current ? (direction === 'de-az' ? current.de : current.az) : '';
-    const back = current ? (direction === 'de-az' ? current.az : current.de) : '';
+    const front = current ? (direction === 'de-native' ? current.de : current.native) : '';
+    const back = current ? (direction === 'de-native' ? current.native : current.de) : '';
 
     // Quiz variantları
     const options = useMemo(() => {
         if (mode !== 'quiz' || !current) return [];
         const correctVal = back;
         const pool = deck
-            .map((x) => (direction === 'de-az' ? x.az : x.de))
+            .map((x) => (direction === 'de-native' ? x.native : x.de))
             .filter((v) => v && v !== correctVal);
         const distractors = shuffle([...new Set(pool)]).slice(0, 3);
         return shuffle([correctVal, ...distractors]);
@@ -155,12 +160,12 @@ const PracticePage = () => {
             <div className="flex items-center justify-between gap-3">
                 <div>
                     <h1 className="text-3xl font-black text-slate-900 tracking-tighter flex items-center gap-2">
-                        <Brain size={28} className="text-primary" /> Məşq
+                        <Brain size={28} className="text-primary" /> {t('practice_title')}
                     </h1>
-                    <p className="text-slate-500 text-sm">Flashcard və quiz ilə sözləri möhkəmləndir.</p>
+                    <p className="text-slate-500 text-sm">{t('practice_sub')}</p>
                 </div>
                 <div className="text-right shrink-0">
-                    <div className="text-xs text-slate-400 font-medium">Ümumi düzgün</div>
+                    <div className="text-xs text-slate-400 font-medium">{t('practice_total_correct')}</div>
                     <div className="text-lg font-black text-emerald-600">{lifetime.correct}</div>
                 </div>
             </div>
@@ -168,7 +173,7 @@ const PracticePage = () => {
             {/* Parametrlər */}
             <div className="glass-card rounded-3xl p-5 space-y-4">
                 <div>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Nəyi öyrənək?</p>
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t('practice_what')}</p>
                     <div className="grid grid-cols-3 gap-2">
                         {Object.entries(DATASETS).map(([key, cfg]) => (
                             <button
@@ -176,7 +181,7 @@ const PracticePage = () => {
                                 onClick={() => setDataset(key)}
                                 className={`py-2.5 rounded-xl text-sm font-bold transition-all ${dataset === key ? 'bg-primary text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
                             >
-                                {cfg.label}
+                                {t(cfg.labelKey)}
                             </button>
                         ))}
                     </div>
@@ -184,29 +189,29 @@ const PracticePage = () => {
 
                 <div className="grid grid-cols-2 gap-3">
                     <div>
-                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Rejim</p>
+                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t('practice_mode')}</p>
                         <div className="grid grid-cols-2 gap-2">
                             <button
                                 onClick={() => setMode('flashcard')}
                                 className={`py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1 transition-all ${mode === 'flashcard' ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
                             >
-                                <Layers size={14} /> Kart
+                                <Layers size={14} /> {t('practice_card')}
                             </button>
                             <button
                                 onClick={() => setMode('quiz')}
                                 className={`py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1 transition-all ${mode === 'quiz' ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
                             >
-                                <Sparkles size={14} /> Quiz
+                                <Sparkles size={14} /> {t('practice_quiz')}
                             </button>
                         </div>
                     </div>
                     <div>
-                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">İstiqamət</p>
+                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t('practice_direction')}</p>
                         <button
-                            onClick={() => setDirection((d) => (d === 'de-az' ? 'az-de' : 'de-az'))}
+                            onClick={() => setDirection((d) => (d === 'de-native' ? 'native-de' : 'de-native'))}
                             className="w-full py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all"
                         >
-                            {direction === 'de-az' ? '🇩🇪 Almanca → Azərbaycanca' : '🇦🇿 Azərbaycanca → Almanca'}
+                            {direction === 'de-native' ? t('practice_dir_de_native') : t('practice_dir_native_de')}
                         </button>
                     </div>
                 </div>
@@ -218,7 +223,7 @@ const PracticePage = () => {
                         onChange={(e) => setOnlyImportant(e.target.checked)}
                         className="w-4 h-4 accent-primary"
                     />
-                    Yalnız ən vacib sözlər (başlayanlar üçün tövsiyə olunur)
+                    {t('practice_only_important')}
                 </label>
 
                 {!started && (
@@ -226,7 +231,7 @@ const PracticePage = () => {
                         onClick={startSession}
                         className="w-full py-3 rounded-xl bg-primary text-white font-black hover:bg-primary-dark transition-colors shadow-md"
                     >
-                        Başla ({deck.length} söz)
+                        {t('practice_start')} ({deck.length} {t('practice_words')})
                     </button>
                 )}
             </div>
@@ -252,14 +257,14 @@ const PracticePage = () => {
                             <button
                                 onClick={sayGerman}
                                 className="absolute top-3 right-3 p-2 text-slate-300 hover:text-primary transition-colors"
-                                title="Tələffüz"
-                                aria-label="Tələffüz et"
+                                title={t('card_pronounce')}
+                                aria-label={t('card_pronounce_do')}
                             >
                                 <Volume2 size={20} />
                             </button>
 
                             <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mb-3">
-                                {flipped ? 'Cavab' : 'Sual'}
+                                {flipped ? t('practice_answer') : t('practice_question')}
                             </p>
                             <h2 className="text-3xl font-black text-slate-900 mb-2">{flipped ? back : front}</h2>
                             {flipped && <p className="text-slate-400 text-sm">{front}</p>}
@@ -269,7 +274,7 @@ const PracticePage = () => {
                                     onClick={() => setFlipped(true)}
                                     className="mt-6 px-6 py-2.5 rounded-xl bg-slate-900 text-white font-bold hover:bg-slate-800 transition-colors"
                                 >
-                                    Cavabı göstər
+                                    {t('practice_show_answer')}
                                 </button>
                             ) : (
                                 <div className="mt-6 flex gap-3 w-full max-w-xs">
@@ -277,13 +282,13 @@ const PracticePage = () => {
                                         onClick={() => recordFlashcard(false)}
                                         className="flex-1 py-2.5 rounded-xl bg-rose-50 text-rose-600 font-bold hover:bg-rose-100 transition-colors flex items-center justify-center gap-1"
                                     >
-                                        <X size={16} /> Bilmədim
+                                        <X size={16} /> {t('practice_didnt_know')}
                                     </button>
                                     <button
                                         onClick={() => recordFlashcard(true)}
                                         className="flex-1 py-2.5 rounded-xl bg-emerald-50 text-emerald-600 font-bold hover:bg-emerald-100 transition-colors flex items-center justify-center gap-1"
                                     >
-                                        <Check size={16} /> Bildim
+                                        <Check size={16} /> {t('practice_knew')}
                                     </button>
                                 </div>
                             )}
@@ -295,7 +300,7 @@ const PracticePage = () => {
                         <div className="glass-card rounded-3xl p-6">
                             <div className="flex items-center justify-center gap-2 mb-6">
                                 <h2 className="text-2xl font-black text-slate-900 text-center">{front}</h2>
-                                <button onClick={sayGerman} className="p-1.5 text-slate-300 hover:text-primary" title="Tələffüz" aria-label="Tələffüz et">
+                                <button onClick={sayGerman} className="p-1.5 text-slate-300 hover:text-primary" title={t('card_pronounce')} aria-label={t('card_pronounce_do')}>
                                     <Volume2 size={18} />
                                 </button>
                             </div>
@@ -326,14 +331,14 @@ const PracticePage = () => {
                                     onClick={advance}
                                     className="mt-4 w-full py-2.5 rounded-xl bg-primary text-white font-bold hover:bg-primary-dark transition-colors flex items-center justify-center gap-1"
                                 >
-                                    Növbəti <ChevronRight size={16} />
+                                    {t('practice_next')} <ChevronRight size={16} />
                                 </button>
                             )}
                         </div>
                     )}
 
                     <button onClick={reset} className="w-full text-xs text-slate-400 hover:text-slate-600 font-medium py-2">
-                        Sessiyanı dayandır
+                        {t('practice_stop')}
                     </button>
                 </div>
             )}
@@ -344,28 +349,28 @@ const PracticePage = () => {
                     <div className="w-16 h-16 mx-auto rounded-full bg-amber-100 text-amber-500 flex items-center justify-center">
                         <Trophy size={32} />
                     </div>
-                    <h2 className="text-2xl font-black text-slate-900">Sessiya bitdi!</h2>
+                    <h2 className="text-2xl font-black text-slate-900">{t('practice_finished')}</h2>
                     <div className="flex justify-center gap-6">
                         <div>
                             <div className="text-3xl font-black text-emerald-600">{score.correct}</div>
-                            <div className="text-xs text-slate-400 font-bold uppercase">Düzgün</div>
+                            <div className="text-xs text-slate-400 font-bold uppercase">{t('practice_correct')}</div>
                         </div>
                         <div>
                             <div className="text-3xl font-black text-rose-500">{score.wrong}</div>
-                            <div className="text-xs text-slate-400 font-bold uppercase">Səhv</div>
+                            <div className="text-xs text-slate-400 font-bold uppercase">{t('practice_wrong')}</div>
                         </div>
                         <div>
                             <div className="text-3xl font-black text-slate-700">
                                 {deck.length ? Math.round((score.correct / deck.length) * 100) : 0}%
                             </div>
-                            <div className="text-xs text-slate-400 font-bold uppercase">Nəticə</div>
+                            <div className="text-xs text-slate-400 font-bold uppercase">{t('practice_result')}</div>
                         </div>
                     </div>
                     <button
                         onClick={startSession}
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white font-black hover:bg-primary-dark transition-colors"
                     >
-                        <RotateCcw size={18} /> Yenidən başla
+                        <RotateCcw size={18} /> {t('practice_restart')}
                     </button>
                 </div>
             )}

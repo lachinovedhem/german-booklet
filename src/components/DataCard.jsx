@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Volume2, ChevronDown, ChevronUp, Star } from 'lucide-react';
 import { speak } from '../utils/speech';
 import { isFavorite, toggleFavorite } from '../utils/favorites';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const DataCard = ({ item, type, onToggle }) => {
+    const { t, tr, tLabel } = useLanguage();
     const [isExpanded, setIsExpanded] = useState(false);
     const [starred, setStarred] = useState(isFavorite(item, type));
 
@@ -40,10 +42,10 @@ const DataCard = ({ item, type, onToggle }) => {
 
     const getPriorityLabel = (priority) => {
         switch (priority) {
-            case 1: return 'Çox vacib';
-            case 2: return 'Vacib';
-            case 3: return 'Orta';
-            case 4: return 'Nadir';
+            case 1: return t('prio_1');
+            case 2: return t('prio_2');
+            case 3: return t('prio_3');
+            case 4: return t('prio_4');
             default: return '';
         }
     };
@@ -51,7 +53,7 @@ const DataCard = ({ item, type, onToggle }) => {
     return (
         <div className="glass-card rounded-xl overflow-hidden transition-all duration-200 hover:shadow-md group relative">
             {item.priority && (
-                <div className="absolute top-0 right-0 p-2 flex gap-0.5" title={`Prioritet: ${getPriorityLabel(item.priority)}`}>
+                <div className="absolute top-0 right-0 p-2 flex gap-0.5" title={`${t('prio_label')}: ${getPriorityLabel(item.priority)}`}>
                     {[...Array(4)].map((_, i) => (
                         <div
                             key={i}
@@ -76,7 +78,7 @@ const DataCard = ({ item, type, onToggle }) => {
                             {type === 'noun' ? item.word : (item.infinitive || item.german || item.word)}
                         </h3>
                         <p className="text-xs text-slate-500 break-words">
-                            {item.translation || item.meaning || item.trans || item.comp || item.azeri}
+                            {tr(item)}
                         </p>
                     </div>
                 </div>
@@ -85,8 +87,8 @@ const DataCard = ({ item, type, onToggle }) => {
                     <button
                         onClick={handleToggleFavorite}
                         className={`p-1.5 rounded-lg transition-colors ${starred ? 'text-amber-500 bg-amber-50' : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'}`}
-                        title={starred ? "Seçilmişlərdən çıxar" : "Seçilmişlərə əlavə et"}
-                        aria-label={starred ? "Seçilmişlərdən çıxar" : "Seçilmişlərə əlavə et"}
+                        title={starred ? t('card_fav_remove') : t('card_fav_add')}
+                        aria-label={starred ? t('card_fav_remove') : t('card_fav_add')}
                     >
                         <Star size={16} fill={starred ? "currentColor" : "none"} />
                     </button>
@@ -96,15 +98,15 @@ const DataCard = ({ item, type, onToggle }) => {
                             speak(type === 'noun' ? `${item.art} ${item.word}` : (item.infinitive || item.german || item.word || item.phrase));
                         }}
                         className="p-1.5 text-slate-400 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
-                        title="Tələffüz"
-                        aria-label="Tələffüz et"
+                        title={t('card_pronounce')}
+                        aria-label={t('card_pronounce_do')}
                     >
                         <Volume2 size={16} />
                     </button>
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
                         className="p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
-                        aria-label={isExpanded ? "Detalları gizlət" : "Detalları göstər"}
+                        aria-label={isExpanded ? t('card_hide_details') : t('card_show_details')}
                         aria-expanded={isExpanded}
                     >
                         {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
@@ -117,31 +119,31 @@ const DataCard = ({ item, type, onToggle }) => {
                     <div className="grid grid-cols-2 gap-3 text-[11px]">
                         {type === 'noun' && item.plural && (
                             <div>
-                                <p className="text-slate-400 font-medium mb-0.5">Cəm forması</p>
+                                <p className="text-slate-400 font-medium mb-0.5">{t('card_plural')}</p>
                                 <p className="text-slate-700 font-bold">{item.plural}</p>
                             </div>
                         )}
                         {type === 'verb' && item.partizip && (
                             <div>
-                                <p className="text-slate-400 font-medium mb-0.5">Partizip II</p>
+                                <p className="text-slate-400 font-medium mb-0.5">{t('card_partizip')}</p>
                                 <p className="text-slate-700 font-bold">{item.partizip}</p>
                             </div>
                         )}
                         {type === 'adjective' && item.comparative && (
                             <div>
-                                <p className="text-slate-400 font-medium mb-0.5">Müqayisə</p>
+                                <p className="text-slate-400 font-medium mb-0.5">{t('card_comparative')}</p>
                                 <p className="text-slate-700 font-bold">{item.comparative}</p>
                             </div>
                         )}
                         {item.cat && (
                             <div>
-                                <p className="text-slate-400 font-medium mb-0.5">Kateqoriya</p>
-                                <p className="text-slate-700 font-bold">{item.cat}</p>
+                                <p className="text-slate-400 font-medium mb-0.5">{t('card_category')}</p>
+                                <p className="text-slate-700 font-bold">{tLabel(item.cat)}</p>
                             </div>
                         )}
                         {item.priority && (
                             <div>
-                                <p className="text-slate-400 font-medium mb-0.5">Vaciblik</p>
+                                <p className="text-slate-400 font-medium mb-0.5">{t('card_importance')}</p>
                                 <p className={`font-bold ${item.priority === 1 ? 'text-emerald-600' :
                                     item.priority === 2 ? 'text-blue-600' :
                                         item.priority === 3 ? 'text-amber-600' : 'text-slate-500'
@@ -154,7 +156,7 @@ const DataCard = ({ item, type, onToggle }) => {
 
                     {item.note && (
                         <div className="mt-3 p-2 bg-white rounded-lg border border-slate-100">
-                            <p className="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-1">İzah</p>
+                            <p className="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-1">{t('card_note')}</p>
                             <p className="text-xs text-slate-700 leading-relaxed">{item.note}</p>
                         </div>
                     )}
@@ -162,7 +164,7 @@ const DataCard = ({ item, type, onToggle }) => {
                     {(item.example || item.sentence) && (
                         <div className="mt-3 p-2 bg-white rounded-lg border border-slate-100">
                             <div className="flex items-center justify-between mb-1">
-                                <p className="text-[10px] font-bold text-primary uppercase tracking-wider">Nümunə</p>
+                                <p className="text-[10px] font-bold text-primary uppercase tracking-wider">{t('card_example')}</p>
                                 <button
                                     onClick={() => speak(item.example || item.sentence)}
                                     className="text-slate-300 hover:text-primary transition-colors"

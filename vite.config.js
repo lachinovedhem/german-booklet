@@ -3,9 +3,14 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
+// Base yolu build zamani teyin olunur:
+//   default '/'                -> oz subdomeni (https://alidadeutsch.simpler.az/)
+//   BASE_PATH=/german-booklet/ -> GitHub Pages layihe sehifesi
+// GitHub Actions workflow-u BASE_PATH-i oz-ozune verir; lokal `npm run build` root ucun qalir.
+const BASE = process.env.BASE_PATH || '/'
+
 export default defineConfig({
-  // GitHub Pages layihə səhifəsi: https://lachinovedhem.github.io/german-booklet/
-  base: '/german-booklet/',
+  base: BASE,
   plugins: [
     react(),
     VitePWA({
@@ -21,8 +26,8 @@ export default defineConfig({
         background_color: '#f8fafc',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/german-booklet/',
-        start_url: '/german-booklet/',
+        scope: BASE,
+        start_url: BASE,
         categories: ['education', 'books'],
         icons: [
           { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
@@ -35,7 +40,7 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,woff,woff2}'],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         // SPA marşrutları (məs. /practice) offline da işləsin.
-        navigateFallback: '/german-booklet/index.html',
+        navigateFallback: BASE + 'index.html',
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',

@@ -1,10 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import SearchBar from '../components/SearchBar';
 import DataCard from '../components/DataCard';
+import { useLanguage } from '../i18n/LanguageContext';
 import professionsData from '../data/professions.json';
-import { Briefcase, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 const ProfessionsPage = () => {
+    const { t, tObj } = useLanguage();
     const [search, setSearch] = useState('');
     const [activeCategoryId, setActiveCategoryId] = useState(professionsData.categories[0].id);
 
@@ -12,12 +14,17 @@ const ProfessionsPage = () => {
         return professionsData.categories.find(cat => cat.id === activeCategoryId);
     }, [activeCategoryId]);
 
+    const catTitle = (cat) => tObj('profCats', cat.id, 'titleEn', cat.title);
+    const catDesc = (cat) => tObj('profCats', cat.id, 'descriptionEn', cat.description);
+
     const filteredPhrases = useMemo(() => {
+        const q = search.toLowerCase();
         const phrases = professionsData.phrases[activeCategoryId] || [];
         return phrases.filter(item =>
-            item.german.toLowerCase().includes(search.toLowerCase()) ||
-            item.azeri.toLowerCase().includes(search.toLowerCase()) ||
-            item.context.toLowerCase().includes(search.toLowerCase())
+            item.german.toLowerCase().includes(q) ||
+            (item.azeri && item.azeri.toLowerCase().includes(q)) ||
+            (item.en && item.en.toLowerCase().includes(q)) ||
+            (item.context && item.context.toLowerCase().includes(q))
         );
     }, [search, activeCategoryId]);
 
@@ -28,13 +35,13 @@ const ProfessionsPage = () => {
                 <div className="space-y-3">
                     <div className="flex items-center justify-between gap-3">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">Peşələr</h2>
-                            <p className="text-slate-500 font-medium max-w-md hidden md:block text-sm">İş sahələrinə uyğun gündəlik ifadələr və dialoqlar.</p>
+                            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">{t('prof_title')}</h2>
+                            <p className="text-slate-500 font-medium max-w-md hidden md:block text-sm">{t('prof_sub')}</p>
                         </div>
                         {/* Active Category Info - Mobile Only */}
                         <div className="flex md:hidden items-center gap-2 bg-white/50 rounded-lg px-2 py-1 border border-slate-100">
                             <span className="text-2xl">{activeCategory.icon}</span>
-                            <span className="text-xs font-bold text-slate-700 max-w-[80px] truncate">{activeCategory.title}</span>
+                            <span className="text-xs font-bold text-slate-700 max-w-[80px] truncate">{catTitle(activeCategory)}</span>
                         </div>
                     </div>
 
@@ -56,14 +63,14 @@ const ProfessionsPage = () => {
                                         {cat.icon}
                                     </span>
                                     <span className="text-[8px] font-black uppercase tracking-tight text-center leading-tight hidden md:block">
-                                        {cat.title}
+                                        {catTitle(cat)}
                                     </span>
                                 </button>
                             ))}
                         </div>
                     </div>
 
-                    <SearchBar value={search} onChange={setSearch} placeholder="İfadə və ya tərcümə axtar..." />
+                    <SearchBar value={search} onChange={setSearch} placeholder={t('prof_search')} />
 
                     {/* Active Category Info - Desktop Only */}
                     <div className="hidden md:flex items-center gap-3 p-3 bg-white/50 rounded-xl border border-slate-100">
@@ -71,8 +78,8 @@ const ProfessionsPage = () => {
                             {activeCategory.icon}
                         </div>
                         <div className="min-w-0">
-                            <h3 className="text-lg font-black text-slate-900 truncate">{activeCategory.title}</h3>
-                            <p className="text-xs text-slate-500">{activeCategory.description}</p>
+                            <h3 className="text-lg font-black text-slate-900 truncate">{catTitle(activeCategory)}</h3>
+                            <p className="text-xs text-slate-500">{catDesc(activeCategory)}</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +104,7 @@ const ProfessionsPage = () => {
                         <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4">
                             <Sparkles size={24} className="text-slate-300" />
                         </div>
-                        <p className="text-slate-400 font-black uppercase tracking-widest text-xs">Nəticə tapılmadı</p>
+                        <p className="text-slate-400 font-black uppercase tracking-widest text-xs">{t('no_results_short')}</p>
                     </div>
                 )}
             </div>
