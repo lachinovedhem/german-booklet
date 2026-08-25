@@ -118,6 +118,123 @@
                     "type": "tip",
                     "text": "<strong>Qeyd:</strong> Müqayisə dərəcələrində \"als\" (kimdən/dan) sözü ilə müqayisə edilir: <span class=\"german\">Ich bin älter als du.</span> (Mən səndən yaşlıyam)"
                 }
+            ],
+            "titleEn": "1. Nouns, Articles and Adjective Declension",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Declension of Nouns and Articles (Deklination)"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Case",
+                            "Masculine (Maskulin)",
+                            "Feminine (Feminin)",
+                            "Neuter (Neutral)",
+                            "Plural (Plural)"
+                        ],
+                        [
+                            "Nominative (Who? What?)",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span> / ein",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / eine",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>das</span> / ein",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / -"
+                        ],
+                        [
+                            "Accusative (Whom? What?)",
+                            "<span style='background-color: #ffe4e6; padding: 2px 4px; border-radius: 4px;'>den</span> / einen",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / eine",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>das</span> / ein",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>die</span> / -"
+                        ],
+                        [
+                            "Dative (To whom? Where to?)",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>dem</span> / einem",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span> / einer",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>dem</span> / einem",
+                            "<span style='background-color: #ffe4e6; padding: 2px 4px; border-radius: 4px;'>den</span> ...n"
+                        ],
+                        [
+                            "Genitive (Whose? Of what?)",
+                            "<span style='background-color: #f3e8ff; padding: 2px 4px; border-radius: 4px;'>des</span> ...s",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span>",
+                            "<span style='background-color: #f3e8ff; padding: 2px 4px; border-radius: 4px;'>des</span> ...s",
+                            "<span style='background-color: #ffedd5; padding: 2px 4px; border-radius: 4px;'>der</span>"
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Adjective Declension with the Definite Article (Adjektivdeklination)"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Case",
+                            "Maskulin (der)",
+                            "Feminin (die)",
+                            "Neutrum (das)",
+                            "Plural (die)"
+                        ],
+                        [
+                            "<strong>Nominativ</strong>",
+                            "der gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Mann",
+                            "die gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Frau",
+                            "das gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Kind",
+                            "die gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kinder"
+                        ],
+                        [
+                            "<strong>Akkusativ</strong>",
+                            "den gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Mann",
+                            "die gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Frau",
+                            "das gut<b style='background-color: #d1fae5; padding: 0 4px; border-radius: 4px;'>e</b> Kind",
+                            "die gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kinder"
+                        ],
+                        [
+                            "<strong>Dativ</strong>",
+                            "dem gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Mann",
+                            "der gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Frau",
+                            "dem gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kind",
+                            "den gut<b style='background-color: #fee2e2; padding: 0 4px; border-radius: 4px;'>en</b> Kindern"
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Comparison Degrees of Adjectives (Komparativ and Superlativ)"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "Regular adjectives",
+                            "items": [
+                                "<span class=\"german\">alt (old)</span> → <span class=\"german\">älter</span> → <span class=\"german\">am ältesten</span>",
+                                "<span class=\"german\">jung (young)</span> → <span class=\"german\">jünger</span> → <span class=\"german\">am jüngsten</span>",
+                                "<span class=\"german\">schnell (fast)</span> → <span class=\"german\">schneller</span> → <span class=\"german\">am schnellsten</span>"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "Special cases",
+                            "items": [
+                                "<span class=\"german\">gut (good)</span> → <span class=\"german\">besser</span> → <span class=\"german\">am besten</span>",
+                                "<span class=\"german\">viel (much)</span> → <span class=\"german\">mehr</span> → <span class=\"german\">am meisten</span>",
+                                "<span class=\"german\">gern (gladly)</span> → <span class=\"german\">lieber</span> → <span class=\"german\">am liebsten</span>"
+                            ],
+                            "p": [],
+                            "class": "example-box warning"
+                        }
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>Note:</strong> In comparative degrees, comparison is made with the word \"als\" (than): <span class=\"german\">Ich bin älter als du.</span> (I am older than you)"
+                }
             ]
         },
         {
@@ -195,6 +312,85 @@
                             "p": [
                                 "<strong>meine</strong> - <strong>deine</strong> - <strong>seine</strong> - <strong>ihre</strong>",
                                 "<em>Nümunə:</em> Ich liebe <span class=\"highlight\">meine</span> Mutter. (Mən anamı sevirəm)"
+                            ],
+                            "class": "verb-conjugation"
+                        }
+                    ]
+                }
+            ],
+            "titleEn": "2. Complete Declension of Pronouns",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Personal Pronouns (Personalpronomen)"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Case",
+                            "ich (I)",
+                            "du (you)",
+                            "er (he)",
+                            "sie (she)",
+                            "wir (we)",
+                            "ihr (you pl.)",
+                            "sie (they)"
+                        ],
+                        [
+                            "<strong>Nominativ</strong>",
+                            "ich",
+                            "du",
+                            "er",
+                            "sie",
+                            "wir",
+                            "ihr",
+                            "sie"
+                        ],
+                        [
+                            "<strong>Akkusativ</strong>",
+                            "mich",
+                            "dich",
+                            "ihn",
+                            "sie",
+                            "uns",
+                            "euch",
+                            "sie"
+                        ],
+                        [
+                            "<strong>Dativ</strong>",
+                            "mir",
+                            "dir",
+                            "ihm",
+                            "ihr",
+                            "uns",
+                            "euch",
+                            "ihnen"
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Possessive Pronouns (Possessivpronomen) KEY"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "Maskulin (der)",
+                            "items": [],
+                            "p": [
+                                "<strong>mein</strong> (my) - <strong>dein</strong> (your) - <strong>sein</strong> (his/its) - <strong>ihr</strong> (her)",
+                                "<em>Example:</em> Das ist <span class=\"highlight\">mein</span> Vater. (This is my father)"
+                            ],
+                            "class": "verb-conjugation"
+                        },
+                        {
+                            "title": "Feminin (die)",
+                            "items": [],
+                            "p": [
+                                "<strong>meine</strong> - <strong>deine</strong> - <strong>seine</strong> - <strong>ihre</strong>",
+                                "<em>Example:</em> Ich liebe <span class=\"highlight\">meine</span> Mutter. (I love my mother)"
                             ],
                             "class": "verb-conjugation"
                         }
@@ -298,6 +494,101 @@
                     ],
                     "class": "example-box"
                 }
+            ],
+            "titleEn": "3. Verbs, Prefixes and Reflexive Verbs",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Irregular Verbs (Unregelmäßige Verben) KEY"
+                },
+                {
+                    "type": "h3",
+                    "text": "Conjugation of the Verbs \"sein\" and \"haben\""
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Person",
+                            "sein (Präsens)",
+                            "sein (Präteritum/Waren)",
+                            "haben (Präsens)",
+                            "haben (Präteritum/Hatten)"
+                        ],
+                        [
+                            "ich",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>bin</span>",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>war</span>",
+                            "<span style='background-color: #e0f2fe; padding: 2px 4px; border-radius: 4px;'>habe</span>",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>hatte</span>"
+                        ],
+                        [
+                            "du",
+                            "bist",
+                            "warst",
+                            "hast",
+                            "hattest"
+                        ],
+                        [
+                            "er/sie/es",
+                            "ist",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>war</span>",
+                            "hat",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>hatte</span>"
+                        ],
+                        [
+                            "wir",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>sind</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>waren</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>haben</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>hatten</span>"
+                        ],
+                        [
+                            "ihr",
+                            "seid",
+                            "wart",
+                            "habt",
+                            "hattet"
+                        ],
+                        [
+                            "sie / Sie",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>sind</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>waren</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>haben</span>",
+                            "<span style='background-color: #dcfce7; padding: 2px 4px; border-radius: 4px;'>hatten</span>"
+                        ]
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>Don't miss:</strong> If you pay attention, in the past tense (Präteritum) the <strong>ich</strong> and <strong>er/sie/es</strong> forms are exactly the same (yellow-colored cells)."
+                },
+                {
+                    "type": "h3",
+                    "text": "Separable Prefixes (Trennbare Präfixe) Attention"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">aufstehen (to get up):</span> Ich <span class=\"highlight\">stehe</span> um 7 Uhr <span class=\"highlight\">auf</span>. (I get up at 7 o'clock)",
+                        "<span class=\"german\">anrufen (to call):</span> Er <span class=\"highlight\">ruft</span> mich morgen <span class=\"highlight\">an</span>. (He will call me tomorrow)"
+                    ],
+                    "class": "example-box"
+                },
+                {
+                    "type": "h3",
+                    "text": "Reflexive Verbs (Reflexive Verben) Important"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">sich freuen (to be glad):</span> Ich freue <span class=\"highlight\">mich</span> auf deinen Besuch. (I am looking forward to your visit)",
+                        "<span class=\"german\">sich waschen (to wash oneself):</span> Er wäscht <span class=\"highlight\">sich</span> jeden Morgen. (He washes himself every morning)"
+                    ],
+                    "class": "example-box"
+                }
             ]
         },
         {
@@ -377,6 +668,82 @@
                     "type": "rule",
                     "text": "<p><strong>Qayda:</strong> Modal feldən sonra gələn fel cümlənin sonunda və infinitiv formada olur.</p>\n                <p><em>Nümunə:</em> Ich <span class=\"highlight\">will</span> morgen ins Kino <span class=\"highlight\">gehen</span>. (Sabah kinoya getmək istəyirəm)</p>"
                 }
+            ],
+            "titleEn": "4. Modal Verbs and Rules of Use",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Complete Table of Modal Verbs KEY"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Verb",
+                            "Meaning",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>ich / er / sie / es</span>",
+                            "du",
+                            "wir / sie / Sie",
+                            "ihr"
+                        ],
+                        [
+                            "<strong>können</strong>",
+                            "to be able to",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>kann</span>",
+                            "kannst",
+                            "können",
+                            "könnt"
+                        ],
+                        [
+                            "<strong>müssen</strong>",
+                            "to have to",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>muss</span>",
+                            "musst",
+                            "müssen",
+                            "müsst"
+                        ],
+                        [
+                            "<strong>dürfen</strong>",
+                            "to be allowed to",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>darf</span>",
+                            "darfst",
+                            "dürfen",
+                            "dürft"
+                        ],
+                        [
+                            "<strong>sollen</strong>",
+                            "to be supposed to",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>soll</span>",
+                            "sollst",
+                            "sollen",
+                            "sollt"
+                        ],
+                        [
+                            "<strong>wollen</strong>",
+                            "to want",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>will</span>",
+                            "willst",
+                            "wollen",
+                            "wollt"
+                        ],
+                        [
+                            "<strong>mögen</strong>",
+                            "to like",
+                            "<span style='background-color: #fef3c7; padding: 2px 4px; border-radius: 4px;'>mag</span>",
+                            "magst",
+                            "mögen",
+                            "mögt"
+                        ]
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>GOLDEN RULE:</strong> In all modal verbs, the <strong>ich</strong> (first person) and <strong>er/sie/es</strong> (third person singular) forms are <strong>ALWAYS</strong> the same (yellow-colored column)."
+                },
+                {
+                    "type": "rule",
+                    "text": "<p><strong>Rule:</strong> The verb that comes after a modal verb is placed at the end of the sentence in the infinitive form.</p>\n                <p><em>Example:</em> Ich <span class=\"highlight\">will</span> morgen ins Kino <span class=\"highlight\">gehen</span>. (I want to go to the cinema tomorrow)</p>"
+                }
             ]
         },
         {
@@ -429,6 +796,58 @@
                     "title": "",
                     "items": [
                         "<span class=\"german\">Nachdem ich gegessen hatte, ging ich spazieren.</span> (Yedikdən sonra gəzməyə getdim)"
+                    ],
+                    "class": "example-box warning"
+                }
+            ],
+            "titleEn": "5. Past Tenses (Perfekt, Präteritum, Plusquamperfekt)",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Perfekt (Present Perfect) - The Most Frequently Used KEY"
+                },
+                {
+                    "type": "p",
+                    "text": "Most frequently used in spoken language. The auxiliary verb \"haben\" or \"sein\" + Partizip II form."
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "With haben - Most verbs",
+                            "items": [],
+                            "p": [
+                                "<strong>ich habe gespielt</strong> (I played)",
+                                "<strong>du hast gearbeitet</strong> (you worked)",
+                                "<strong>er hat gelernt</strong> (he learned)"
+                            ],
+                            "class": "verb-conjugation"
+                        },
+                        {
+                            "title": "With sein - Verbs of movement",
+                            "items": [],
+                            "p": [
+                                "<strong>ich bin gegangen</strong> (I went)",
+                                "<strong>du bist gekommen</strong> (you came)",
+                                "<strong>er ist gefahren</strong> (he drove)"
+                            ],
+                            "class": "verb-conjugation"
+                        }
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Plusquamperfekt (Past Perfect)"
+                },
+                {
+                    "type": "p",
+                    "text": "Expresses an action that happened before another action in the past."
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">Nachdem ich gegessen hatte, ging ich spazieren.</span> (After I had eaten, I went for a walk)"
                     ],
                     "class": "example-box warning"
                 }
@@ -488,6 +907,59 @@
                     ],
                     "class": "example-box success"
                 }
+            ],
+            "titleEn": "6. Passive Voice (Passiv) and Future Tense",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Complete Conjugation of the Passive Voice"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Tense",
+                            "Formula",
+                            "Example",
+                            "Translation"
+                        ],
+                        [
+                            "Präsens Passiv",
+                            "wird + Partizip II",
+                            "Das Auto <span class=\"highlight\">wird repariert</span>.",
+                            "The car is being repaired."
+                        ],
+                        [
+                            "Präteritum Passiv",
+                            "wurde + Partizip II",
+                            "Das Auto <span class=\"highlight\">wurde repariert</span>.",
+                            "The car was repaired."
+                        ],
+                        [
+                            "Zustandspassiv",
+                            "sein + Partizip II",
+                            "Das Auto <span class=\"highlight\">ist repariert</span>.",
+                            "The car is repaired (state)."
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Future Tense (Futur I) Simple"
+                },
+                {
+                    "type": "p",
+                    "text": "Expresses an action that will happen in the future or a probability."
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">Ich werde morgen arbeiten.</span> (I will work tomorrow)",
+                        "<span class=\"german\">Er wird nächstes Jahr nach Deutschland fahren.</span> (He will go to Germany next year)"
+                    ],
+                    "class": "example-box success"
+                }
             ]
         },
         {
@@ -533,6 +1005,48 @@
                     ],
                     "class": "example-box success"
                 }
+            ],
+            "titleEn": "7. Sentence Structure (Satzbau)",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Structure of the Main Clause (Wortstellung)"
+                },
+                {
+                    "type": "html",
+                    "html": "<div class='overflow-x-auto my-4'><table border='1' style='width:100%; border-collapse: collapse; font-family:\"Segoe UI\", Arial, sans-serif; text-align:left; color:#333;' class='grammar-table'><thead><tr style='background-color:#f2f2f2; text-align:center;'><th style='width:100px;'>Tense / Type</th><th style='width:120px;'>Subject</th><th style='width:140px;'>Verb</th><th>Middle Part</th><th style='width:120px;'>Object</th><th style='width:120px;'>Sentence End</th><th style='width:35%;'>Translation</th></tr></thead><tbody><tr><td rowspan='2'><b>Present</b> (Präsens)</td><td><b>Ich</b></td><td style='color:#d35400;font-weight:bold;'>kauf<b>e</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(kaufen)</span></td><td>heute schnell</td><td>einen Apfel</td><td style='text-align:center;'>—</td><td><b>Ich kaufe heute schnell einen Apfel.</b><br>I quickly buy an apple today.</td></tr><tr><td><b>Der Zug</b></td><td style='color:#d35400;font-weight:bold;'>komm<b>t</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(kommen)</span></td><td>jetzt am Bahnhof</td><td>—</td><td style='text-align:center;'>an <span style='font-size:11px; color:#888; font-weight:normal;'>(ankommen)</span></td><td><b>Der Zug kommt jetzt am Bahnhof an.</b><br>The train is now arriving at the station.</td></tr><tr><td rowspan='2'><b>Perfect</b> (Perfekt)</td><td><b>Der Student</b></td><td style='color:#d35400;font-weight:bold;'>ha<b>t</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(haben)</span></td><td>gestern wegen der Prüfung</td><td>den Text</td><td style='text-align:center;'>gelernt <span style='font-size:11px; color:#888; font-weight:normal;'>(lernen)</span></td><td><b>Der Student hat gestern den Text gelernt.</b><br>The student learned the text yesterday.</td></tr><tr><td><b>Wir</b></td><td style='color:#d35400;font-weight:bold;'>sind <span style='font-size:11px; color:#888; font-weight:normal;'>(sein)</span></td><td>am Morgen nach Berlin</td><td>—</td><td style='text-align:center;'>gefahren <span style='font-size:11px; color:#888; font-weight:normal;'>(fahren)</span></td><td><b>Wir sind am Morgen nach Berlin gefahren.</b><br>We went to Berlin in the morning.</td></tr><tr><td rowspan='2'><b>Past Perfect</b> (Plusquamperfekt)</td><td><b>Er</b></td><td style='color:#d35400;font-weight:bold;'>hat<b>te</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(haben)</span></td><td>schon vorab</td><td>das Ticket</td><td style='text-align:center;'>gekauft <span style='font-size:11px; color:#888; font-weight:normal;'>(kaufen)</span></td><td><b>Er hatte schon vorab das Ticket gekauft.</b><br>He had already bought the ticket in advance.</td></tr><tr><td><b>Sie</b></td><td style='color:#d35400;font-weight:bold;'>war <span style='font-size:11px; color:#888; font-weight:normal;'>(sein)</span></td><td>bereits nach Hause</td><td>—</td><td style='text-align:center;'>gegangen <span style='font-size:11px; color:#888; font-weight:normal;'>(gehen)</span></td><td><b>Sie war bereits nach Hause gegangen.</b><br>She had already gone home.</td></tr><tr><td rowspan='2'><b>Past</b> (Präteritum)</td><td><b>Er</b></td><td style='color:#d35400;font-weight:bold;'>kauf<b>te</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(kaufen)</span></td><td>damals im Laden</td><td>das Buch</td><td style='text-align:center;'>—</td><td><b>Er kaufte damals im Laden das Buch.</b><br>He bought the book in the shop back then.</td></tr><tr><td><b>Sie</b></td><td style='color:#d35400;font-weight:bold;'>fuhr<b>en</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(fahren)</span></td><td>mit dem Auto heim</td><td>—</td><td style='text-align:center;'>—</td><td><b>Sie fuhren mit dem Auto heim.</b><br>They drove home by car.</td></tr><tr><td rowspan='2'><b>Past</b> (haben/sein)</td><td><b>Wir</b></td><td style='color:#d35400;font-weight:bold;'>hat<b>ten</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(haben)</span></td><td>letztes Jahr viel</td><td>Glück</td><td style='text-align:center;'>—</td><td><b>Wir hatten letztes Jahr viel Glück.</b><br>We were very lucky last year.</td></tr><tr><td><b>Ich</b></td><td style='color:#d35400;font-weight:bold;'>war <span style='font-size:11px; color:#888; font-weight:normal;'>(sein)</span></td><td>gestern Abend sehr</td><td>—</td><td style='text-align:center;'>müde</td><td><b>Ich war gestern Abend sehr müde.</b><br>I was very tired last night.</td></tr><tr><td><b>Future</b> (Futur)</td><td><b>Du</b></td><td style='color:#d35400;font-weight:bold;'>wirs<b>t</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(werden)</span></td><td>bald in Deutschland</td><td>—</td><td style='text-align:center;'>leben <span style='font-size:11px; color:#888; font-weight:normal;'>(leben)</span></td><td><b>Du wirst bald in Deutschland leben.</b><br>You will soon live in Germany.</td></tr><tr><td><b>Modal</b></td><td><b>Der Arzt</b></td><td style='color:#d35400;font-weight:bold;'>muss <span style='font-size:11px; color:#888; font-weight:normal;'>(müssen)</span></td><td>sofort im Krankenhaus</td><td>den Patienten</td><td style='text-align:center;'>operieren <span style='font-size:11px; color:#888; font-weight:normal;'>(operieren)</span></td><td><b>Der Arzt muss den Patienten operieren.</b><br>The doctor must operate on the patient.</td></tr><tr><td><b>Passive</b> (Präsens)</td><td><b>Das Brot</b></td><td style='color:#d35400;font-weight:bold;'>wir<b>d</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(werden)</span></td><td>jeden Morgen hier</td><td>—</td><td style='text-align:center;'>gebacken <span style='font-size:11px; color:#888; font-weight:normal;'>(backen)</span></td><td><b>Das Brot wird jeden Morgen here gebacken.</b><br>The bread is baked here.</td></tr><tr><td><b>Passive</b> (Präteritum)</td><td><b>Das Auto</b></td><td style='color:#d35400;font-weight:bold;'>wurd<b>e</b> <span style='font-size:11px; color:#888; font-weight:normal;'>(werden)</span></td><td>gestern in der Werkstatt</td><td>—</td><td style='text-align:center;'>repariert <span style='font-size:11px; color:#888; font-weight:normal;'>(reparieren)</span></td><td><b>Das Auto wurde gestern repariert.</b><br>The car was repaired yesterday.</td></tr></tbody></table></div>"
+                },
+                {
+                    "type": "h3",
+                    "text": "Sentence Types and TE-KA-MO-LO"
+                },
+                {
+                    "type": "html",
+                    "html": "<div class='overflow-x-auto my-4'><table border='1' style='width:100%; border-collapse: collapse; font-family:\"Segoe UI\", Arial, sans-serif; text-align:left; color:#333;' class='grammar-table'><thead><tr style='background-color:#f2f2f2; text-align:center;'><th>Sentence Type</th><th>1st Position</th><th>2nd Position (Verb)</th><th>Middle Part (TE-KA-MO-LO)</th><th>At the End (Rest of the Verb)</th></tr></thead><tbody><tr><td><b>Declarative (Direct)</b></td><td style='color:#2980b9;font-weight:bold;'>Ich</td><td style='color:#d35400;font-weight:bold;'>muss</td><td>heute schnell nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen.</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(I)</td><td>(I must)</td><td>(quickly home today)</td><td>(to go)</td></tr><tr><td><b>Inversion</b><br><small>(Emphasis on time)</small></td><td style='color:#2980b9;font-weight:bold;'>Heute</td><td style='color:#d35400;font-weight:bold;'>muss</td><td>ich schnell nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen.</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Today)</td><td>(I must)</td><td>(I quickly home)</td><td>(to go)</td></tr><tr><td><b>W-Question</b><br><small>(With a question word)</small></td><td style='color:#2980b9;font-weight:bold;'>Warum</td><td style='color:#d35400;font-weight:bold;'>musst</td><td>du heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen?</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Why)</td><td>(you must)</td><td>(you home today)</td><td>(to go)</td></tr><tr><td><b>Ja/Nein Question</b><br><small>(Yes/No)</small></td><td style='color:#d35400;font-weight:bold;'>Musst</td><td style='color:#2980b9;font-weight:bold;'>du</td><td>heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen?</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Must you?)</td><td>(you)</td><td>(home today)</td><td>(to go)</td></tr><tr><td><b>Subordinate Clause</b><br><small>(With a conjunction)</small></td><td style='color:#2980b9;font-weight:bold;'>... weil</td><td>ich</td><td>heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>gehen muss.</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(...because)</td><td>(I)</td><td>(home today)</td><td>(because I have to go)</td></tr><tr><td><b>Command</b><br><small>(Imperative)</small></td><td style='color:#d35400;font-weight:bold;'>Geh</td><td style='color:#2980b9;font-weight:bold;'>— / Sie</td><td>bitte heute nach Hause</td><td style='color:#d35400;font-weight:bold;'>!</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(Go)</td><td>(— / You)</td><td>(please home today)</td><td></td></tr><tr><td><b>Exclamation</b><br><small>(Exclamative)</small></td><td style='color:#2980b9;font-weight:bold;'>Wie schön</td><td style='color:#d35400;font-weight:bold;'>ist</td><td>das heute</td><td style='color:#d35400;font-weight:bold;'>!</td></tr><tr style='background-color:#f9f9f9; font-size: 0.85em; color: #555;'><td></td><td>(How beautiful)</td><td>(is)</td><td>(this today)</td><td></td></tr></tbody></table></div>"
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>TE-KA-MO-LO:</strong> In German the order of the middle part is as follows: <strong>Te</strong>mporal (Time), <strong>Ka</strong>usal (Reason), <strong>Mo</strong>dal (Manner), <strong>Lo</strong>kal (Place)."
+                },
+                {
+                    "type": "h3",
+                    "text": "\"Es gibt\" (There is) Rule"
+                },
+                {
+                    "type": "p",
+                    "text": "The expression <strong>Es gibt</strong> means \"there is\" and always requires the <strong>Akkusativ</strong>."
+                },
+                {
+                    "type": "example-box",
+                    "title": "Example Sentences",
+                    "items": [
+                        "<span class=\"german\">Es gibt <span class=\"highlight\">einen</span> Park hier.</span> (There is a park here) - [Direct]",
+                        "<span class=\"german\">Gibt es <span class=\"highlight\">ein</span> Problem?</span> (Is there a problem?) - [Question]",
+                        "<span class=\"german\">Dort gibt es <span class=\"highlight\">keinen</span> Zucker.</span> (There is no sugar there) - [Negative]",
+                        "<span class=\"german\">Heute gibt es <span class=\"highlight\">viele</span> Gäste.</span> (Today there are many guests) - [Inversion]"
+                    ],
+                    "class": "example-box success"
+                }
             ]
         },
         {
@@ -571,6 +1085,53 @@
                 {
                     "type": "h3",
                     "text": "Vacib Qısaltmalar"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">am</span> = an dem",
+                        "<span class=\"german\">im</span> = in dem",
+                        "<span class=\"german\">zum</span> = zu dem",
+                        "<span class=\"german\">zur</span> = zu der"
+                    ],
+                    "class": "example-box success"
+                }
+            ],
+            "titleEn": "8. Prepositions (Präpositionen) and Their Combinations",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Grouping Prepositions by Case KEY"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "Those requiring Akkusativ",
+                            "items": [
+                                "<span class=\"german\">für</span> (for) - Das Geschenk ist <span class=\"highlight\">für dich</span>.",
+                                "<span class=\"german\">durch</span> (through) - Wir fahren <span class=\"highlight\">durch den Tunnel</span>.",
+                                "<span class=\"german\">ohne</span> (without) - Ich trinke Kaffee <span class=\"highlight\">ohne Zucker</span>."
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "Those requiring Dativ",
+                            "items": [
+                                "<span class=\"german\">mit</span> (with) - Ich fahre <span class=\"highlight\">mit dem Bus</span>.",
+                                "<span class=\"german\">nach</span> (after, to a place) - Wir fahren <span class=\"highlight\">nach Berlin</span>.",
+                                "<span class=\"german\">von</span> (from) - Das ist ein Geschenk <span class=\"highlight\">von meiner Mutter</span>."
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        }
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Important Contractions"
                 },
                 {
                     "type": "example-box",
@@ -635,6 +1196,55 @@
                     ],
                     "class": "example-box"
                 }
+            ],
+            "titleEn": "9. Conjunctions (Konjunktionen) and Sentence Structure",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Grouping Conjunctions by Type"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Conjunction",
+                            "Translation",
+                            "Verb Position",
+                            "Example"
+                        ],
+                        [
+                            "<strong>und, aber, oder, denn, sondern</strong>",
+                            "and, but, or, because, but rather",
+                            "Direct (Verb in 2nd position)",
+                            "Ich lese ein Buch, <span style=\"background-color: #ffff00; font-weight: bold;\">aber</span> er sieht fern."
+                        ],
+                        [
+                            "<strong>weil, da, dass, ob, wenn, falls, als, während, bevor, nachdem, bis, seit, damit, obwohl</strong>",
+                            "because, that, whether, if, when, while, before, after, until, since, so that, although",
+                            "<span style=\"background-color: #ffff00; font-weight: bold;\">Inverted (Verb at the very end)</span>",
+                            "Ich bleibe zu Hause, <span style=\"background-color: #ffff00; font-weight: bold;\">weil</span> ich krank <span style=\"background-color: #ffff00; font-weight: bold;\">bin</span>."
+                        ],
+                        [
+                            "<strong>deshalb, deswegen, darum, trotzdem, dennoch, dann, danach, sonst</strong>",
+                            "therefore, nevertheless, then, otherwise",
+                            "<span style=\"background-color: #ffff00; font-weight: bold;\">Inversion (Conjunction + Verb)</span>",
+                            "Ich bin krank. <span style=\"background-color: #ffff00; font-weight: bold;\">Deshalb bleibe</span> ich zu Hause."
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Subordinate Clauses with the Conjunction \"dass\" KEY"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">Ich weiß, dass du Recht hast.</span> (I know that you are right)",
+                        "<span class=\"german\">Es tut mir leid, dass ich zu spät komme.</span> (I am sorry that I am late)"
+                    ],
+                    "class": "example-box"
+                }
             ]
         },
         {
@@ -663,6 +1273,36 @@
                             "p": [
                                 "<span class=\"german\">Ich hätte gerne mehr Zeit.</span> (Daha çox vaxtımın olmasını arzulayırdım)",
                                 "<span class=\"german\">Wenn ich Geld hätte, würde ich reisen.</span> (Əgər pulum olsaydı, səyahət edərdim)"
+                            ],
+                            "class": "example-box warning"
+                        }
+                    ]
+                }
+            ],
+            "titleEn": "10. Subjunctive (Konjunktiv) - Expressing Condition and Wish",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Konjunktiv II - Unreal Conditions and Wishes KEY"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "wäre (would be) - Konjunktiv II of the verb sein",
+                            "items": [],
+                            "p": [
+                                "<span class=\"german\">Ich wäre gerne reich.</span> (I would like to be rich)",
+                                "<span class=\"german\">Wenn ich du wäre, würde ich das nicht tun.</span> (If I were you, I would not do this)"
+                            ],
+                            "class": "example-box warning"
+                        },
+                        {
+                            "title": "hätte (would have) - Konjunktiv II of the verb haben",
+                            "items": [],
+                            "p": [
+                                "<span class=\"german\">Ich hätte gerne mehr Zeit.</span> (I would like to have more time)",
+                                "<span class=\"german\">Wenn ich Geld hätte, würde ich reisen.</span> (If I had money, I would travel)"
                             ],
                             "class": "example-box warning"
                         }
@@ -720,6 +1360,58 @@
                         "<span class=\"german\">wegen (görə)</span> - wegen <span class=\"highlight\">des Regens</span> (yağışa görə)",
                         "<span class=\"german\">statt (əvəzinə)</span> - statt <span class=\"highlight\">eines Autos</span> (maşın əvəzinə)",
                         "<span class=\"german\">trotz (baxmayaraq)</span> - trotz <span class=\"highlight\">der Kälte</span> (soyuğa baxmayaraq)"
+                    ],
+                    "class": "example-box"
+                }
+            ],
+            "titleEn": "11. Genitive (Possessive Case) Formal",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Structure of the Genitive Case"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Article",
+                            "Masculine (der)",
+                            "Feminine (die)",
+                            "Neuter (das)",
+                            "Plural (die)"
+                        ],
+                        [
+                            "Definite",
+                            "des Mann<b>es</b>",
+                            "der Frau",
+                            "des Kind<b>es</b>",
+                            "der Kinder"
+                        ],
+                        [
+                            "Indefinite",
+                            "eines Mann<b>es</b>",
+                            "einer Frau",
+                            "eines Kind<b>es</b>",
+                            "---"
+                        ]
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>Rule:</strong> Masculine and neuter singular nouns take the suffix -es or -s.\n                <br>Multi-syllable nouns: des Mann<b>es</b>, short nouns: des Auto<b>s</b>"
+                },
+                {
+                    "type": "h3",
+                    "text": "Prepositions with the Genitive"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">während (during)</span> - während <span class=\"highlight\">des Unterrichts</span> (during the lesson)",
+                        "<span class=\"german\">wegen (because of)</span> - wegen <span class=\"highlight\">des Regens</span> (because of the rain)",
+                        "<span class=\"german\">statt (instead of)</span> - statt <span class=\"highlight\">eines Autos</span> (instead of a car)",
+                        "<span class=\"german\">trotz (despite)</span> - trotz <span class=\"highlight\">der Kälte</span> (despite the cold)"
                     ],
                     "class": "example-box"
                 }
@@ -805,6 +1497,90 @@
                             "items": [],
                             "p": [
                                 "der Türke (türk)<br>der Franzose (fransız)<br>der Russe (rus)<br>der Chinese (çinli)"
+                            ],
+                            "class": "example-box warning"
+                        }
+                    ]
+                }
+            ],
+            "titleEn": "12. n-Declension (Weak Nouns) Special",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Rule: In singular cases, -n/-en is added to the end"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Case",
+                            "der Junge (boy)",
+                            "der Name (name)",
+                            "der Herr (gentleman)",
+                            "der Mensch (person)"
+                        ],
+                        [
+                            "Nominativ",
+                            "der Junge",
+                            "der Name",
+                            "der Herr",
+                            "der Mensch"
+                        ],
+                        [
+                            "Akkusativ",
+                            "den Junge<b>n</b>",
+                            "den Name<b>n</b>",
+                            "den Herr<b>n</b>",
+                            "den Mensch<b>en</b>"
+                        ],
+                        [
+                            "Dativ",
+                            "dem Junge<b>n</b>",
+                            "dem Name<b>n</b>",
+                            "dem Herr<b>n</b>",
+                            "dem Mensch<b>en</b>"
+                        ],
+                        [
+                            "Genitiv",
+                            "des Junge<b>n</b>",
+                            "des Name<b>ns</b>",
+                            "des Herr<b>n</b>",
+                            "des Mensch<b>en</b>"
+                        ]
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>Which nouns?:</strong> Living beings (der Junge, der Student), nouns ending in -e (der Name),\n                some special nouns (der Herr, der Mensch, der Prinz)."
+                },
+                {
+                    "type": "h3",
+                    "text": "Main n-Declension Nouns"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "Those ending in -e",
+                            "items": [],
+                            "p": [
+                                "der Junge (boy)<br>der Name (name)<br>der Kunde (customer)<br>der Kollege (colleague)"
+                            ],
+                            "class": "example-box warning"
+                        },
+                        {
+                            "title": "Other weak nouns",
+                            "items": [],
+                            "p": [
+                                "der Herr (gentleman)<br>der Mensch (person)<br>der Prinz (prince)<br>der Nachbar (neighbor)"
+                            ],
+                            "class": "example-box warning"
+                        },
+                        {
+                            "title": "Nationalities",
+                            "items": [],
+                            "p": [
+                                "der Türke (Turk)<br>der Franzose (Frenchman)<br>der Russe (Russian)<br>der Chinese (Chinese person)"
                             ],
                             "class": "example-box warning"
                         }
@@ -908,6 +1684,101 @@
                     "type": "rule",
                     "text": "<strong>Xüsusi hallar:</strong> in, an, auf, über, unter, vor, zwischen sözönləri ilə işlədikdə \"da-\" əvəzinə \"dar-\" olur.\n                <br><em>Nümunə:</em> in → <span class=\"highlight\">darin</span>, an → <span class=\"highlight\">daran</span>"
                 }
+            ],
+            "titleEn": "13. Pronominal Adverbs (da- / wo- Combinations) Important",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "da- / wo- + Preposition = New word"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Preposition",
+                            "da- (with this)",
+                            "wo- (with what)",
+                            "Meaning"
+                        ],
+                        [
+                            "für",
+                            "<span class=\"highlight\">dafür</span>",
+                            "<span class=\"highlight\">wofür</span>",
+                            "for this / for what"
+                        ],
+                        [
+                            "mit",
+                            "<span class=\"highlight\">damit</span>",
+                            "<span class=\"highlight\">womit</span>",
+                            "with this / with what"
+                        ],
+                        [
+                            "über",
+                            "<span class=\"highlight\">darüber</span>",
+                            "<span class=\"highlight\">worüber</span>",
+                            "about this / about what"
+                        ],
+                        [
+                            "auf",
+                            "<span class=\"highlight\">darauf</span>",
+                            "<span class=\"highlight\">worauf</span>",
+                            "on this / on what"
+                        ],
+                        [
+                            "an",
+                            "<span class=\"highlight\">daran</span>",
+                            "<span class=\"highlight\">woran</span>",
+                            "at this / at what"
+                        ],
+                        [
+                            "von",
+                            "<span class=\"highlight\">davon</span>",
+                            "<span class=\"highlight\">wovon</span>",
+                            "from this / from what"
+                        ],
+                        [
+                            "zu",
+                            "<span class=\"highlight\">dazu</span>",
+                            "<span class=\"highlight\">wozu</span>",
+                            "to this / to what"
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Usage Examples"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "da- (with this) - Answer",
+                            "items": [
+                                "<span class=\"german\">Ich denke <span class=\"highlight\">daran</span>.</span> (I think about it)",
+                                "<span class=\"german\">Ich freue mich <span class=\"highlight\">darauf</span>.</span> (I look forward to it)",
+                                "<span class=\"german\">Er besteht <span class=\"highlight\">darauf</span>.</span> (He insists on it)",
+                                "<span class=\"german\">Wir warten <span class=\"highlight\">darauf</span>.</span> (We are waiting for it)"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "wo- (with what) - Question",
+                            "items": [
+                                "<span class=\"german\"><span class=\"highlight\">Woran</span> denkst du?</span> (What are you thinking about?)",
+                                "<span class=\"german\"><span class=\"highlight\">Worüber</span> sprichst du?</span> (What are you talking about?)",
+                                "<span class=\"german\"><span class=\"highlight\">Wofür</span> interessierst du dich?</span> (What are you interested in?)",
+                                "<span class=\"german\"><span class=\"highlight\">Womit</span> kann ich dir helfen?</span> (With what can I help you?)"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        }
+                    ]
+                },
+                {
+                    "type": "rule",
+                    "text": "<strong>Special cases:</strong> When used with the prepositions in, an, auf, über, unter, vor, zwischen, \"da-\" becomes \"dar-\" instead.\n                <br><em>Example:</em> in → <span class=\"highlight\">darin</span>, an → <span class=\"highlight\">daran</span>"
+                }
             ]
         },
         {
@@ -973,6 +1844,68 @@
                     ],
                     "class": "example-box"
                 }
+            ],
+            "titleEn": "14. Infinitive with \"zu\" (zu + Infinitive) Purpose",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "zu + Infinitive Structure"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">Ich versuche, Deutsch <span class=\"highlight\">zu lernen</span>.</span> (I am trying to learn German)",
+                        "<span class=\"german\">Er beginnt <span class=\"highlight\">zu arbeiten</span>.</span> (He is starting to work)",
+                        "<span class=\"german\">Sie hat vor, nach Deutschland <span class=\"highlight\">zu fahren</span>.</span> (She plans to go to Germany)",
+                        "<span class=\"german\">Es ist wichtig, pünktlich <span class=\"highlight\">zu sein</span>.</span> (It is important to be on time)"
+                    ],
+                    "class": "example-box success"
+                },
+                {
+                    "type": "h3",
+                    "text": "Verbs used without \"zu\""
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "Modal verbs",
+                            "items": [],
+                            "p": [
+                                "Ich <span class=\"highlight\">kann</span> schwimmen. (not: zu schwimmen)",
+                                "Du <span class=\"highlight\">musst</span> lernen. (not: zu lernen)"
+                            ],
+                            "class": "example-box warning"
+                        },
+                        {
+                            "title": "Some special verbs",
+                            "items": [],
+                            "p": [
+                                "Ich <span class=\"highlight\">gehe</span> einkaufen. (I go shopping)",
+                                "Er <span class=\"highlight\">lernt</span> kochen. (He is learning to cook)"
+                            ],
+                            "class": "example-box warning"
+                        }
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Main Verbs Used with zu + Infinitive"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">anfangen</span> (to start) - Ich fange an <span class=\"highlight\">zu lesen</span>.",
+                        "<span class=\"german\">aufhören</span> (to stop) - Hör auf <span class=\"highlight\">zu reden</span>!",
+                        "<span class=\"german\">versuchen</span> (to try) - Ich versuche <span class=\"highlight\">zu schlafen</span>.",
+                        "<span class=\"german\">vergessen</span> (to forget) - Ich habe vergessen <span class=\"highlight\">anzurufen</span>.",
+                        "<span class=\"german\">planen</span> (to plan) - Wir planen <span class=\"highlight\">zu reisen</span>.",
+                        "<span class=\"german\">hoffen</span> (to hope) - Ich hoffe <span class=\"highlight\">zu gewinnen</span>."
+                    ],
+                    "class": "example-box"
+                }
             ]
         },
         {
@@ -1022,6 +1955,53 @@
                 {
                     "type": "tip",
                     "text": "Partizip I və II sifət kimi işləndikdə, ismin qarşısında gəlir və normal sifət hallanması qaydalarına uyğun sonluqlar qəbul edir."
+                }
+            ],
+            "titleEn": "15. Partizip I & II (Adjectival Forms of the Verb)",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Partizip I (Präsens Partizip) - Currently ongoing/Active"
+                },
+                {
+                    "type": "rule",
+                    "text": "<strong>Formation:</strong> The infinitive form of the verb + the suffix <strong>-d</strong>.<br><em>Example:</em> spielen + d = spielend (playing)"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">das <span class=\"highlight\">singende</span> Kind</span> (the singing child)",
+                        "<span class=\"german\">die <span class=\"highlight\">kommende</span> Woche</span> (the coming week)",
+                        "<span class=\"german\">das <span class=\"highlight\">brennende</span> Haus</span> (the burning house)"
+                    ],
+                    "class": "example-box"
+                },
+                {
+                    "type": "h3",
+                    "text": "Partizip II (Perfekt Partizip) - Completed/Passive"
+                },
+                {
+                    "type": "rule",
+                    "text": "<strong>Formation:</strong> <strong>ge-</strong> + the verb stem + <strong>-(e)t</strong> (regular verbs) or <strong>-en</strong> (irregular verbs).<br><em>Example:</em> gekauft (bought), gelesen (read)"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">das <span class=\"highlight\">gekochte</span> Essen</span> (the cooked food)",
+                        "<span class=\"german\">die <span class=\"highlight\">verlorene</span> Zeit</span> (the lost time)",
+                        "<span class=\"german\">der <span class=\"highlight\">gefundene</span> Schlüssel</span> (the found key)"
+                    ],
+                    "class": "example-box"
+                },
+                {
+                    "type": "h3",
+                    "text": "Declension like an Adjective"
+                },
+                {
+                    "type": "tip",
+                    "text": "When Partizip I and II are used as adjectives, they come before the noun and take endings according to the normal rules of adjective declension."
                 }
             ]
         },
@@ -1112,6 +2092,92 @@
                     "type": "rule",
                     "text": "<p><strong>Qayda 1:</strong> Relativsatz əsas cümlədən vergüllə ayrılır.</p>\n                <p><strong>Qayda 2:</strong> Relativpronomen cins və sayca isimlə uyğun, halca isə yan cümlədəki rolu ilə uyğun olur.</p>\n                <p><strong>Qayda 3:</strong> Fel yan cümlənin sonunda olur (tərs qayda).</p>\n                <p><em>Nümunə:</em> Der Mann <span class=\"highlight\">, der</span> das Auto fährt <span class=\"highlight\">,</span> ist mein Vater.</p>"
                 }
+            ],
+            "titleEn": "16. Relative Clauses (Relativsätze) KEY",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Relativpronomen (Relative Pronouns)"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Noun",
+                            "der/die/das",
+                            "welcher/welche/welches",
+                            "was (for things)",
+                            "wo (for places)"
+                        ],
+                        [
+                            "Masculine",
+                            "<span class=\"highlight\">der</span>",
+                            "welcher",
+                            "---",
+                            "---"
+                        ],
+                        [
+                            "Feminine",
+                            "<span class=\"highlight\">die</span>",
+                            "welche",
+                            "---",
+                            "---"
+                        ],
+                        [
+                            "Neuter",
+                            "<span class=\"highlight\">das</span>",
+                            "welches",
+                            "<span class=\"highlight\">was</span>",
+                            "<span class=\"highlight\">wo</span>"
+                        ],
+                        [
+                            "Plural",
+                            "<span class=\"highlight\">die</span>",
+                            "welche",
+                            "<span class=\"highlight\">was</span>",
+                            "---"
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Example Sentences"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "With der/die/das",
+                            "items": [
+                                "<span class=\"german\">Der Mann, <span class=\"highlight\">der</span> dort steht, ist mein Lehrer.</span> (The man standing there is my teacher)",
+                                "<span class=\"german\">Die Frau, <span class=\"highlight\">die</span> ich gestern traf, ist Ärztin.</span> (The woman I met yesterday is a doctor)",
+                                "<span class=\"german\">Das Buch, <span class=\"highlight\">das</span> ich lese, ist sehr spannend.</span> (The book I am reading is very exciting)",
+                                "<span class=\"german\">Die Kinder, <span class=\"highlight\">die</span> im Garten spielen, sind laut.</span> (The children playing in the garden are loud)"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "With was/wo",
+                            "items": [
+                                "<span class=\"german\">Alles, <span class=\"highlight\">was</span> du sagst, ist richtig.</span> (Everything you say is correct)",
+                                "<span class=\"german\">Das ist das Beste, <span class=\"highlight\">was</span> mir passiert ist.</span> (This is the best thing that has happened to me)",
+                                "<span class=\"german\">Berlin, <span class=\"highlight\">wo</span> ich wohne, ist eine große Stadt.</span> (Berlin, where I live, is a big city)",
+                                "<span class=\"german\">Das Haus, <span class=\"highlight\">in dem</span> ich wohne, ist alt.</span> (The house I live in is old)"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        }
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Relative Clause Structure"
+                },
+                {
+                    "type": "rule",
+                    "text": "<p><strong>Rule 1:</strong> The relative clause is separated from the main clause by a comma.</p>\n                <p><strong>Rule 2:</strong> The relative pronoun agrees with the noun in gender and number, and in case according to its role in the subordinate clause.</p>\n                <p><strong>Rule 3:</strong> The verb goes at the end of the subordinate clause (inverted rule).</p>\n                <p><em>Example:</em> Der Mann <span class=\"highlight\">, der</span> das Auto fährt <span class=\"highlight\">,</span> ist mein Vater.</p>"
+                }
             ]
         },
         {
@@ -1152,6 +2218,44 @@
                 {
                     "type": "tip",
                     "text": "Vasitəli suallar adətən nəzakətli xahişlərdə və ya məlumatsızlıq bildirdikdə istifadə olunur."
+                }
+            ],
+            "titleEn": "17. Indirekte Fragen (Indirect Questions)",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "Structure of the Indirect Question"
+                },
+                {
+                    "type": "p",
+                    "text": "Indirect questions are considered subordinate clauses and the verb always comes at the end of the sentence."
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "W-Fragen (With a question word)",
+                            "items": [
+                                "<span class=\"german\">Ich weiß nicht, <span class=\"highlight\">wann</span> der Zug <span class=\"highlight\">kommt</span>.</span> (I don't know when the train comes)",
+                                "<span class=\"german\">Können Sie mir sagen, <span class=\"highlight\">wo</span> der Bahnhof <span class=\"highlight\">ist</span>?</span> (Can you tell me where the station is?)"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "Ja/Nein Fragen (With ob)",
+                            "items": [
+                                "<span class=\"german\">Ich frage mich, <span class=\"highlight\">ob</span> er <span class=\"highlight\">kommt</span>.</span> (I wonder whether he will come)",
+                                "<span class=\"german\">Weißt du, <span class=\"highlight\">ob</span> es heute <span class=\"highlight\">regnet</span>?</span> (Do you know whether it will rain today?)"
+                            ],
+                            "p": [],
+                            "class": "example-box warning"
+                        }
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "Indirect questions are usually used in polite requests or when expressing a lack of knowledge."
                 }
             ]
         },
@@ -1381,6 +2485,243 @@
                 {
                     "type": "h3",
                     "text": "Pronominaladverb ilə İstifadə"
+                },
+                {
+                    "type": "example-box",
+                    "title": "",
+                    "items": [
+                        "<span class=\"german\">Ich warte <span class=\"highlight\">auf den Bus</span>.</span> → Ich warte <span class=\"highlight\">darauf</span>.",
+                        "<span class=\"german\">Ich freue mich <span class=\"highlight\">auf die Ferien</span>.</span> → Ich freue mich <span class=\"highlight\">darauf</span>.",
+                        "<span class=\"german\">Er denkt <span class=\"highlight\">an seine Freundin</span>.</span> → Er denkt <span class=\"highlight\">daran</span>.",
+                        "<span class=\"german\">Wir sprechen <span class=\"highlight\">über das Wetter</span>.</span> → Wir sprechen <span class=\"highlight\">darüber</span>."
+                    ],
+                    "class": "example-box"
+                }
+            ],
+            "titleEn": "18. Verben mit Präpositionen (Verb + Preposition) To Be Memorized",
+            "contentEn": [
+                {
+                    "type": "h3",
+                    "text": "The Most Frequently Used Verb + Preposition Combinations"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "mit + Dativ",
+                            "items": [
+                                "<span class=\"german\">beginnen <span class=\"highlight\">mit</span></span> (to begin) - Ich beginne <span class=\"highlight\">mit</span> der Arbeit.",
+                                "<span class=\"german\">rechnen <span class=\"highlight\">mit</span></span> (to expect) - Ich rechne <span class=\"highlight\">mit</span> deiner Hilfe.",
+                                "<span class=\"german\">sprechen <span class=\"highlight\">mit</span></span> (to speak) - Ich spreche <span class=\"highlight\">mit</span> dem Lehrer.",
+                                "<span class=\"german\">vergleichen <span class=\"highlight\">mit</span></span> (to compare) - Ich vergleiche es <span class=\"highlight\">mit</span> dem Original."
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "über + Akkusativ",
+                            "items": [
+                                "<span class=\"german\">sprechen <span class=\"highlight\">über</span></span> (to talk) - Wir sprechen <span class=\"highlight\">über</span> Politik.",
+                                "<span class=\"german\">sich freuen <span class=\"highlight\">über</span></span> (to be glad) - Ich freue mich <span class=\"highlight\">über</span> das Geschenk.",
+                                "<span class=\"german\">nachdenken <span class=\"highlight\">über</span></span> (to think about) - Ich denke <span class=\"highlight\">über</span> das Problem nach.",
+                                "<span class=\"german\">berichten <span class=\"highlight\">über</span></span> (to report) - Er berichtet <span class=\"highlight\">über</span> die Reise."
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        }
+                    ]
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "auf + Akkusativ",
+                            "items": [
+                                "<span class=\"german\">warten <span class=\"highlight\">auf</span></span> (to wait) - Ich warte <span class=\"highlight\">auf</span> den Bus.",
+                                "<span class=\"german\">sich freuen <span class=\"highlight\">auf</span></span> (to look forward to) - Ich freue mich <span class=\"highlight\">auf</span> den Urlaub.",
+                                "<span class=\"german\">antworten <span class=\"highlight\">auf</span></span> (to answer) - Er antwortet <span class=\"highlight\">auf</span> meine Frage.",
+                                "<span class=\"german\">achten <span class=\"highlight\">auf</span></span> (to pay attention) - Achte <span class=\"highlight\">auf</span> die Kinder!"
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        },
+                        {
+                            "title": "für + Akkusativ",
+                            "items": [
+                                "<span class=\"german\">danken <span class=\"highlight\">für</span></span> (to thank) - Ich danke dir <span class=\"highlight\">für</span> deine Hilfe.",
+                                "<span class=\"german\">sich interessieren <span class=\"highlight\">für</span></span> (to be interested) - Ich interessiere mich <span class=\"highlight\">für</span> Musik.",
+                                "<span class=\"german\">sorgen <span class=\"highlight\">für</span></span> (to care for) - Sie sorgt <span class=\"highlight\">für</span> die Kinder.",
+                                "<span class=\"german\">halten <span class=\"highlight\">für</span></span> (to consider) - Ich halte ihn <span class=\"highlight\">für</span> ehrlich."
+                            ],
+                            "p": [],
+                            "class": "example-box"
+                        }
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Table of Special Combinations"
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        [
+                            "Verb",
+                            "Preposition",
+                            "Case",
+                            "Meaning",
+                            "Example"
+                        ],
+                        [
+                            "<strong>achten</strong>",
+                            "auf",
+                            "Akk",
+                            "to pay attention",
+                            "Achte auf die Straße!"
+                        ],
+                        [
+                            "<strong>ankommen</strong>",
+                            "auf",
+                            "Akk",
+                            "to depend",
+                            "Es kommt auf dich an."
+                        ],
+                        [
+                            "<strong>bitten</strong>",
+                            "um",
+                            "Akk",
+                            "to ask / request",
+                            "Ich bitte um Verzeihung."
+                        ],
+                        [
+                            "<strong>denken</strong>",
+                            "an",
+                            "Akk",
+                            "to remember",
+                            "Ich denke an dich."
+                        ],
+                        [
+                            "<strong>erkennen</strong>",
+                            "an",
+                            "Dat",
+                            "to recognize",
+                            "Ich erkenne ihn an der Stimme."
+                        ],
+                        [
+                            "<strong>glauben</strong>",
+                            "an",
+                            "Akk",
+                            "to believe",
+                            "Ich glaube an Gott."
+                        ],
+                        [
+                            "<strong>halten</strong>",
+                            "von",
+                            "Dat",
+                            "to have an opinion of",
+                            "Was hältst du von ihm?"
+                        ],
+                        [
+                            "<strong>hoffen</strong>",
+                            "auf",
+                            "Akk",
+                            "to hope",
+                            "Ich hoffe auf gutes Wetter."
+                        ],
+                        [
+                            "<strong>sich kümmern</strong>",
+                            "um",
+                            "Akk",
+                            "to take care of",
+                            "Sie kümmert sich um die Patienten."
+                        ],
+                        [
+                            "<strong>lachen</strong>",
+                            "über",
+                            "Akk",
+                            "to laugh",
+                            "Wir lachen über den Witz."
+                        ],
+                        [
+                            "<strong>sich sehnen</strong>",
+                            "nach",
+                            "Dat",
+                            "to long for",
+                            "Ich sehne mich nach dir."
+                        ],
+                        [
+                            "<strong>sprechen</strong>",
+                            "mit/von",
+                            "Dat",
+                            "to speak",
+                            "Sprich mit dem Chef."
+                        ],
+                        [
+                            "<strong>träumen</strong>",
+                            "von",
+                            "Dat",
+                            "to dream",
+                            "Ich träume von einer Reise."
+                        ],
+                        [
+                            "<strong>sich verlieben</strong>",
+                            "in",
+                            "Akk",
+                            "to fall in love",
+                            "Er verliebt sich in sie."
+                        ],
+                        [
+                            "<strong>sich verlassen</strong>",
+                            "auf",
+                            "Akk",
+                            "to rely on",
+                            "Ich verlasse mich auf dich."
+                        ],
+                        [
+                            "<strong>sich wundern</strong>",
+                            "über",
+                            "Akk",
+                            "to be surprised",
+                            "Ich wundere mich über sein Verhalten."
+                        ]
+                    ]
+                },
+                {
+                    "type": "h3",
+                    "text": "Memorization Methods"
+                },
+                {
+                    "type": "grid",
+                    "boxes": [
+                        {
+                            "title": "1. Groups of Verbs with the Same Preposition",
+                            "items": [],
+                            "p": [
+                                "<strong>an + Akk:</strong> denken, glauben, sich erinnern",
+                                "<strong>auf + Akk:</strong> warten, hoffen, sich freuen",
+                                "<strong>über + Akk:</strong> sich freuen, sprechen, lachen",
+                                "<strong>mit + Dat:</strong> sprechen, beginnen, rechnen"
+                            ],
+                            "class": "example-box success"
+                        },
+                        {
+                            "title": "2. Mixed Prepositions",
+                            "items": [],
+                            "p": [
+                                "<strong>sich freuen:</strong>\n                        <br>• <span class=\"highlight\">über</span> + Akk (present)\n                        <br>• <span class=\"highlight\">auf</span> + Akk (future)",
+                                "<strong>sprechen:</strong>\n                        <br>• <span class=\"highlight\">mit</span> + Dat (with whom)\n                        <br>• <span class=\"highlight\">über</span> + Akk (about what)"
+                            ],
+                            "class": "example-box success"
+                        }
+                    ]
+                },
+                {
+                    "type": "tip",
+                    "text": "<strong>To Remember:</strong> Memorize verb + preposition combinations together with sentences.\n                For example: memorize the whole sentence \"Ich warte <span class=\"highlight\">auf</span> den Bus\"."
+                },
+                {
+                    "type": "h3",
+                    "text": "Usage with Pronominal Adverbs"
                 },
                 {
                     "type": "example-box",

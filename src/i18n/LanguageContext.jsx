@@ -81,6 +81,7 @@ export const LanguageProvider = ({ children }) => {
     return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useLanguage = () => {
     const ctx = useContext(LanguageContext);
     if (!ctx) throw new Error('useLanguage must be used within a LanguageProvider');
